@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <meta charset="UTF-8">
+    <script>
+        (function(){
+            var s = localStorage.getItem('orion-theme');
+            if (s === 'light' || s === 'dark') { document.documentElement.setAttribute('data-theme', s); }
+            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) { document.documentElement.setAttribute('data-theme', 'light'); }
+            else { document.documentElement.setAttribute('data-theme', 'dark'); }
+        })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Videography | Capital Region NY | Orion Media</title>
+    <meta name="description" content="Cinematic wedding videography in the Capital Region of New York. Highlight films, full ceremony coverage, drone aerials, and the famous Drunk Advice Booth. Packages starting at $2,500. Serving Albany, Saratoga Springs, Troy, and beyond.">
+    <meta name="keywords" content="wedding videographer Capital Region NY, wedding videography Albany, wedding video Saratoga Springs, cinematic wedding film Troy NY, wedding videographer near me, Orion Media wedding">
+    <meta name="author" content="Orion Media Service">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <link rel="canonical" href="https://orionmediaservice.com/wedding-videography.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wedding Videography | Capital Region NY | Orion Media">
+<meta name="twitter:description" content="Cinematic wedding videography in the Capital Region. Highlight films, full ceremonies, and reception coverage.">
+<meta property="og:title" content="Wedding Videography | Orion Media | Capital Region NY">
+    <meta property="og:description" content="Cinematic wedding videography starting at $2,500. Highlight films, drone aerials, and the famous Drunk Advice Booth.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://orionmediaservice.com/wedding-videography">
+
+    <!-- Service Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Wedding Videography",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Orion Media Service",
+            "telephone": "(518) 222-9845",
+            "email": "Ryan@OrionMediaService.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Cohoes",
+                "addressRegion": "NY",
+                "addressCountry": "US"
+            }
+        },
+        "areaServed": [
+            "Capital Region NY", "Albany", "Troy", "Saratoga Springs",
+            "Schenectady", "Cohoes", "Johnstown", "Gloversville"
+        ],
+        "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": "2500",
+            "highPrice": "5500",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --deep-space: #0c0e1a;
+            --nebula: #1a1d3a;
+            --constellation: #2d3065;
+            --starlight: #ffffff;
+            --star-dim: #b8bce0;
+            --star-glow: #c9b8ff;
+            --shutter-accent: #7b6fcc;
+            --warm-highlight: #e8c97a;
+            --glass-white: rgba(255, 255, 255, 0.06);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --font-display: 'Playfair Display', Georgia, serif;
+            --font-body: 'Outfit', sans-serif;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--deep-space);
+            color: var(--starlight);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a { color: inherit; text-decoration: none; }
+        img { max-width: 100%; display: block; }
+
+        /* Stars */
+        .stars {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            background:
+                radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,0.4), transparent),
+                radial-gradient(1px 1px at 25% 50%, rgba(255,255,255,0.3), transparent),
+                radial-gradient(1.5px 1.5px at 40% 15%, rgba(255,255,255,0.5), transparent),
+                radial-gradient(1px 1px at 55% 70%, rgba(255,255,255,0.25), transparent),
+                radial-gradient(1px 1px at 70% 35%, rgba(255,255,255,0.35), transparent),
+                radial-gradient(1.5px 1.5px at 85% 60%, rgba(255,255,255,0.4), transparent),
+                radial-gradient(1px 1px at 15% 80%, rgba(255,255,255,0.2), transparent),
+                radial-gradient(1px 1px at 90% 10%, rgba(255,255,255,0.3), transparent),
+                radial-gradient(1px 1px at 50% 90%, rgba(255,255,255,0.2), transparent),
+                radial-gradient(1.5px 1.5px at 65% 45%, rgba(255,255,255,0.35), transparent);
+        }
+
+        /* ============================================
+           NAVIGATION (same as homepage)
+           ============================================ */
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 1000;
+            padding: 0 2rem;
+            background: rgba(12, 14, 26, 0.92);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .nav-inner {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .nav-logo img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        .nav-logo-text {
+            font-family: var(--font-body);
+            font-weight: 300;
+            font-size: 1.25rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        .nav-logo-text span { font-weight: 600; }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.85rem;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--star-dim);
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px; left: 0;
+            width: 0; height: 1px;
+            background: var(--shutter-accent);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover { color: var(--starlight); }
+        .nav-links a:hover::after { width: 100%; }
+
+        .nav-phone {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--star-dim);
+            letter-spacing: 0.05em;
+        }
+
+        .nav-phone:hover { color: var(--warm-highlight); }
+
+        .nav-cta {
+            background: var(--shutter-accent);
+            color: var(--starlight) !important;
+            padding: 0.6rem 1.4rem;
+            border-radius: 4px;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .nav-cta:hover { background: #6a5dbb; transform: translateY(-1px); }
+        .nav-cta::after { display: none !important; }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 8px;
+            background: none;
+            border: none;
+        }
+
+        .nav-toggle span {
+            width: 24px; height: 2px;
+            background: var(--starlight);
+            transition: all 0.3s ease;
+        }
+
+        /* ============================================
+           PAGE HERO
+           ============================================ */
+        .page-hero {
+            position: relative;
+            z-index: 1;
+            padding: 10rem 2rem 5rem;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 50% 80%, rgba(123, 111, 204, 0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 20% 20%, rgba(45, 48, 101, 0.2) 0%, transparent 50%),
+                linear-gradient(180deg, var(--deep-space) 0%, transparent 30%, var(--deep-space) 100%);
+            z-index: -1;
+        }
+
+        .page-hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeUp 1s ease-out;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .breadcrumb {
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--star-dim);
+            margin-bottom: 1.5rem;
+        }
+
+        .breadcrumb a { transition: color 0.3s ease; }
+        .breadcrumb a:hover { color: var(--starlight); }
+        .breadcrumb .sep { margin: 0 0.5rem; opacity: 0.4; }
+
+        .page-hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 5.5vw, 4.2rem);
+            font-weight: 400;
+            line-height: 1.15;
+            margin-bottom: 1.5rem;
+        }
+
+        .page-hero h1 em {
+            font-style: italic;
+            color: var(--star-glow);
+        }
+
+        .page-hero-sub {
+            font-size: 1.1rem;
+            font-weight: 300;
+            color: var(--star-dim);
+            max-width: 620px;
+            margin: 0 auto 2rem;
+            line-height: 1.7;
+        }
+
+        .hero-price-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1.25rem;
+            background: rgba(232, 201, 122, 0.1);
+            border: 1px solid rgba(232, 201, 122, 0.25);
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--warm-highlight);
+        }
+
+        /* ============================================
+           FEATURED VIDEO
+           ============================================ */
+        .featured-video {
+            position: relative;
+            z-index: 1;
+            padding: 0 2rem 6rem;
+        }
+
+        .video-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 20px 80px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(123, 111, 204, 0.1);
+        }
+
+        .video-wrapper::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            border-radius: 17px;
+            padding: 1px;
+            background: linear-gradient(135deg, rgba(123, 111, 204, 0.3), transparent 50%, rgba(201, 184, 255, 0.1));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .video-responsive {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-responsive iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            border: 0;
+        }
+
+        .video-caption {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            color: var(--star-dim);
+            font-weight: 300;
+            letter-spacing: 0.05em;
+        }
+
+        /* ============================================
+           SECTION COMMONS
+           ============================================ */
+        section { position: relative; z-index: 1; }
+
+        .section-pad { padding: 6rem 2rem; }
+
+        .container { max-width: 1200px; margin: 0 auto; }
+
+        .section-label {
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--shutter-accent);
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-desc {
+            font-size: 1.05rem;
+            font-weight: 300;
+            color: var(--star-dim);
+            max-width: 600px;
+            line-height: 1.7;
+        }
+
+        .section-center { text-align: center; }
+        .section-center .section-desc { margin: 0 auto; }
+
+        /* ============================================
+           WHAT YOU GET (process / deliverables)
+           ============================================ */
+        .deliverables {
+            background: linear-gradient(180deg, var(--deep-space) 0%, var(--nebula) 50%, var(--deep-space) 100%);
+        }
+
+        .deliverables-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .deliverable-card {
+            background: var(--glass-white);
+            border: 1px solid var(--glass-border);
+            border-radius: 14px;
+            padding: 2rem 1.75rem;
+            text-align: center;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .deliverable-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-4px);
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .deliverable-icon {
+            width: 56px; height: 56px;
+            margin: 0 auto 1.25rem;
+            background: rgba(123, 111, 204, 0.12);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--shutter-accent);
+        }
+
+        .deliverable-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 400;
+            margin-bottom: 0.6rem;
+        }
+
+        .deliverable-card p {
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: var(--star-dim);
+            line-height: 1.5;
+        }
+
+        /* ============================================
+           PRICING TIERS
+           ============================================ */
+        .pricing {
+            background: var(--deep-space);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-top: 3rem;
+            align-items: stretch;
+        }
+
+        .price-card {
+            background: var(--glass-white);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 2.5rem 2rem;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .price-card:hover {
+            border-color: rgba(255, 255, 255, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .price-card.popular {
+            background: linear-gradient(135deg, rgba(123, 111, 204, 0.12), rgba(255, 255, 255, 0.06));
+            border-color: rgba(123, 111, 204, 0.35);
+            box-shadow: 0 0 0 1px rgba(123, 111, 204, 0.2), 0 12px 40px rgba(123, 111, 204, 0.15);
+            z-index: 2;
+        }
+
+        .price-card.popular:hover {
+            transform: translateY(-4px);
+        }
+
+        .popular-tag {
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 0.35rem 1.25rem;
+            background: var(--shutter-accent);
+            border-radius: 100px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .price-card-name {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+
+        .price-card-tagline {
+            font-size: 0.8rem;
+            font-weight: 300;
+            color: var(--star-dim);
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+
+        .price-amount {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--warm-highlight);
+            line-height: 1;
+            margin-bottom: 0.25rem;
+        }
+
+        .price-amount .dollar {
+            font-size: 1.5rem;
+            vertical-align: top;
+            margin-right: 2px;
+            font-weight: 400;
+        }
+
+        .price-note {
+            font-size: 0.75rem;
+            color: var(--star-dim);
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+
+        .price-divider {
+            width: 100%;
+            height: 1px;
+            background: var(--glass-border);
+            margin: 0 0 1.5rem;
+        }
+
+        .price-features {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .price-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            font-size: 0.88rem;
+            font-weight: 300;
+            color: var(--star-dim);
+            line-height: 1.4;
+        }
+
+        .price-features li .check {
+            flex-shrink: 0;
+            width: 18px; height: 18px;
+            margin-top: 1px;
+            background: rgba(123, 111, 204, 0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .price-features li .check svg {
+            width: 10px; height: 10px;
+            color: var(--star-glow);
+        }
+
+        .price-cta {
+            display: block;
+            width: 100%;
+            padding: 0.85rem;
+            text-align: center;
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .price-cta-outline {
+            background: transparent;
+            color: var(--starlight);
+            border: 1px solid var(--glass-border);
+        }
+
+        .price-cta-outline:hover {
+            border-color: var(--star-dim);
+            background: var(--glass-white);
+        }
+
+        .price-cta-fill {
+            background: var(--shutter-accent);
+            color: var(--starlight);
+        }
+
+        .price-cta-fill:hover {
+            background: #6a5dbb;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 30px rgba(123, 111, 204, 0.25);
+        }
+
+        /* ============================================
+           ADD-ONS
+           ============================================ */
+        .addons {
+            background: linear-gradient(180deg, var(--deep-space) 0%, var(--nebula) 100%);
+        }
+
+        .addons-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.25rem;
+            margin-top: 3rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .addon-card {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            padding: 1.5rem;
+            background: var(--glass-white);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .addon-card:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .addon-card.highlight {
+            background: linear-gradient(135deg, rgba(232, 201, 122, 0.08), var(--glass-white));
+            border-color: rgba(232, 201, 122, 0.2);
+        }
+
+        .addon-price {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--warm-highlight);
+            min-width: 70px;
+        }
+
+        .addon-info h4 {
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-bottom: 0.2rem;
+        }
+
+        .addon-info p {
+            font-size: 0.8rem;
+            color: var(--star-dim);
+            font-weight: 300;
+        }
+
+        .addon-badge {
+            display: inline-block;
+            padding: 0.15rem 0.5rem;
+            background: rgba(232, 201, 122, 0.15);
+            border-radius: 3px;
+            font-size: 0.6rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--warm-highlight);
+            margin-left: 0.5rem;
+            vertical-align: middle;
+        }
+
+        /* ============================================
+           MORE WORK (video gallery)
+           ============================================ */
+        .more-work {
+            background: var(--nebula);
+        }
+
+        .video-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 3rem;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .gallery-video {
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+            transition: all 0.3s ease;
+        }
+
+        .gallery-video:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery-video .video-responsive { border-radius: 0; }
+
+        /* ============================================
+           FAQ
+           ============================================ */
+        .faq {
+            background: linear-gradient(180deg, var(--nebula) 0%, var(--deep-space) 100%);
+        }
+
+        .faq-list {
+            max-width: 800px;
+            margin: 3rem auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .faq-item {
+            background: var(--glass-white);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: border-color 0.3s ease;
+        }
+
+        .faq-item:hover { border-color: rgba(255, 255, 255, 0.15); }
+
+        .faq-question {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.25rem 1.5rem;
+            background: none;
+            border: none;
+            color: var(--starlight);
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-align: left;
+            cursor: pointer;
+            gap: 1rem;
+        }
+
+        .faq-icon {
+            width: 24px; height: 24px;
+            min-width: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.open .faq-icon { transform: rotate(45deg); }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 300px;
+        }
+
+        .faq-answer-inner {
+            padding: 0 1.5rem 1.25rem;
+            font-size: 0.9rem;
+            font-weight: 300;
+            color: var(--star-dim);
+            line-height: 1.7;
+        }
+
+        /* ============================================
+           CTA BANNER
+           ============================================ */
+        .cta-banner {
+            background: var(--deep-space);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-banner-inner {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-banner::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at center, rgba(123, 111, 204, 0.1) 0%, transparent 70%);
+        }
+
+        .cta-banner .section-desc {
+            margin: 0 auto 2.5rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.9rem 2rem;
+            background: var(--shutter-accent);
+            color: var(--starlight);
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: #6a5dbb;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(123, 111, 204, 0.3);
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.9rem 2rem;
+            background: transparent;
+            color: var(--starlight);
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            font-weight: 400;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            border: 1px solid var(--glass-border);
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--star-dim);
+            background: var(--glass-white);
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        .footer {
+            background: var(--deep-space);
+            border-top: 1px solid var(--glass-border);
+            padding: 3rem 2rem 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .footer-brand p {
+            font-size: 0.85rem;
+            color: var(--star-dim);
+            font-weight: 300;
+            line-height: 1.6;
+            margin-top: 1rem;
+            max-width: 300px;
+        }
+
+        .footer h5 {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--starlight);
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .footer-links a {
+            font-size: 0.85rem;
+            color: var(--star-dim);
+            font-weight: 300;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover { color: var(--starlight); }
+
+        .footer-social {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        .footer-social a {
+            width: 36px; height: 36px;
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--star-dim);
+            transition: all 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            border-color: var(--shutter-accent);
+            color: var(--starlight);
+            background: rgba(123, 111, 204, 0.1);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 2rem auto 0;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--glass-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.75rem;
+            color: var(--star-dim);
+            font-weight: 300;
+        }
+
+        /* ============================================
+           ANIMATIONS
+           ============================================ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .stagger .reveal:nth-child(1) { transition-delay: 0.05s; }
+        .stagger .reveal:nth-child(2) { transition-delay: 0.1s; }
+        .stagger .reveal:nth-child(3) { transition-delay: 0.15s; }
+        .stagger .reveal:nth-child(4) { transition-delay: 0.2s; }
+
+        /* ============================================
+           RESPONSIVE
+           ============================================ */
+        @media (max-width: 1024px) {
+            .pricing-grid { grid-template-columns: 1fr; max-width: 500px; margin-left: auto; margin-right: auto; }
+            .price-card.popular { transform: none; }
+            .price-card.popular:hover { transform: translateY(-4px); }
+            .deliverables-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-inner { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .nav-toggle { display: flex; }
+
+            .nav-links.open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 80px; left: 0; right: 0;
+                background: rgba(12, 14, 26, 0.97);
+                backdrop-filter: blur(20px);
+                padding: 2rem;
+                gap: 1.5rem;
+                border-bottom: 1px solid var(--glass-border);
+            }
+
+            .nav-phone { display: none; }
+            .section-pad { padding: 4rem 1.5rem; }
+            .page-hero { padding: 8rem 1.5rem 3rem; }
+            .featured-video { padding: 0 1.5rem 4rem; }
+            .deliverables-grid { grid-template-columns: 1fr; }
+            .addons-grid { grid-template-columns: 1fr; }
+            .video-gallery { grid-template-columns: 1fr; }
+            .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+            .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
+        }
+
+        /* ============================================
+           LIGHT MODE OVERRIDES
+           ============================================ */
+        html[data-theme="light"] {
+            --deep-space: #f5f5f8;
+            --nebula: #eaeaf0;
+            --constellation: #d8d8e4;
+            --starlight: #1a1a2e;
+            --star-dim: #4a4a6a;
+            --star-glow: #5a4fb8;
+            --shutter-accent: #6b5fbf;
+            --warm-highlight: #b8860b;
+            --glass-white: rgba(0, 0, 0, 0.04);
+            --glass-border: rgba(0, 0, 0, 0.1);
+        }
+
+        html[data-theme="light"] .stars { opacity: 0; transition: opacity 0.5s ease; }
+        html[data-theme="dark"] .stars { opacity: 1; transition: opacity 0.5s ease; }
+
+        html[data-theme="light"] .nav { background: rgba(245, 245, 248, 0.92); border-bottom-color: rgba(0, 0, 0, 0.08); }
+        html[data-theme="light"] .nav-toggle span { background: var(--starlight); }
+        html[data-theme="light"] .nav-links.open { background: rgba(245, 245, 248, 0.97); }
+
+        html[data-theme="light"] .page-hero::before {
+            background:
+                radial-gradient(ellipse at 50% 80%, rgba(107, 95, 191, 0.06) 0%, transparent 60%),
+                radial-gradient(ellipse at 20% 20%, rgba(216, 216, 228, 0.3) 0%, transparent 50%),
+                linear-gradient(180deg, var(--deep-space) 0%, transparent 30%, var(--deep-space) 100%);
+        }
+        html[data-theme="light"] .hero-price-badge { background: rgba(184, 134, 11, 0.08); border-color: rgba(184, 134, 11, 0.2); }
+
+        html[data-theme="light"] .deliverable-card:hover,
+        html[data-theme="light"] .addon-card:hover { background: rgba(0, 0, 0, 0.06); }
+
+        html[data-theme="light"] .price-card.popular {
+            background: linear-gradient(135deg, rgba(107, 95, 191, 0.08), rgba(0, 0, 0, 0.02));
+            border-color: rgba(107, 95, 191, 0.25);
+        }
+
+        html[data-theme="light"] .stat-number { color: #9a7209; }
+
+        html[data-theme="light"] .deliverables { background: linear-gradient(180deg, var(--deep-space) 0%, var(--nebula) 50%, var(--deep-space) 100%); }
+        html[data-theme="light"] .addons { background: linear-gradient(180deg, var(--deep-space) 0%, var(--nebula) 100%); }
+        html[data-theme="light"] .more-work { background: var(--nebula); }
+        html[data-theme="light"] .faq { background: linear-gradient(180deg, var(--nebula) 0%, var(--deep-space) 100%); }
+        html[data-theme="light"] .cta-banner::before { background: radial-gradient(ellipse at center, rgba(107, 95, 191, 0.05) 0%, transparent 70%); }
+        html[data-theme="light"] .footer { background: var(--nebula); border-top-color: rgba(0, 0, 0, 0.08); }
+
+        html[data-theme="light"] .addon-card.highlight {
+            background: linear-gradient(135deg, rgba(184, 134, 11, 0.06), rgba(0, 0, 0, 0.02));
+            border-color: rgba(184, 134, 11, 0.15);
+        }
+
+        html[data-theme="light"] .video-wrapper { box-shadow: 0 20px 80px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(107, 95, 191, 0.08); }
+        html[data-theme="light"] .faq-question { color: var(--starlight); }
+
+        /* ============================================
+           THEME TOGGLE (inline in nav)
+           ============================================ */
+        .nav-theme-toggle {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0 0.25rem;
+        }
+
+        .theme-toggle-icon {
+            width: 18px; height: 18px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+            opacity: 0.6;
+            line-height: 1;
+        }
+        .theme-toggle-icon:hover { opacity: 1; }
+
+        .theme-toggle-track {
+            width: 34px; height: 18px;
+            background: rgba(123, 111, 204, 0.2);
+            border-radius: 100px;
+            position: relative;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            border: 1px solid rgba(123, 111, 204, 0.15);
+        }
+        .theme-toggle-track:hover { background: rgba(123, 111, 204, 0.3); }
+
+        .theme-toggle-thumb {
+            width: 12px; height: 12px;
+            background: var(--shutter-accent);
+            border-radius: 50%;
+            position: absolute;
+            top: 2px; left: 2px;
+            transition: transform 0.3s cubic-bezier(0.68, -0.15, 0.265, 1.35);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        html[data-theme="dark"] .theme-toggle-thumb { transform: translateX(16px); }
+
+        html.theme-transitioning,
+        html.theme-transitioning *,
+        html.theme-transitioning *::before,
+        html.theme-transitioning *::after {
+            transition-duration: 0.4s !important;
+            transition-timing-function: ease !important;
+        }
+    
+/* Photo grid */
+.photo-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;margin-top:2rem}
+.photo-grid-item{flex:0 0 calc(25% - .5625rem);aspect-ratio:4/3;border-radius:10px;overflow:hidden;cursor:pointer;position:relative;border:1px solid var(--glass-border);transition:all .3s}
+.photo-grid-item:hover{border-color:rgba(255,255,255,.2);transform:scale(1.02)}
+.photo-grid-item img{width:100%;height:100%;object-fit:cover;display:block}
+.video-section{margin-top:3rem}
+.video-section h3{font-family:var(--font-display);font-size:1.4rem;font-weight:400;text-align:center;margin-bottom:1.25rem}
+.video-grid-service{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}.video-grid-service>*:last-child:nth-child(2n+1){grid-column:1/-1;max-width:calc(50% - .625rem);justify-self:center}
+/* Lightbox */
+.lightbox{display:none;position:fixed;inset:0;z-index:10000;background:rgba(0,0,0,.92);backdrop-filter:blur(10px);align-items:center;justify-content:center}
+.lightbox.open{display:flex}
+.lightbox-content{position:relative;max-width:90vw;max-height:85vh;display:flex;align-items:center;justify-content:center}
+.lightbox-content img{max-width:90vw;max-height:85vh;border-radius:8px;object-fit:contain}
+.lightbox-close{position:fixed;top:1.5rem;right:1.5rem;width:44px;height:44px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#fff;font-size:1.2rem;transition:all .3s;z-index:10001}
+.lightbox-close:hover{background:rgba(255,255,255,.2)}
+.lightbox-nav{position:fixed;top:50%;transform:translateY(-50%);width:44px;height:44px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#fff;font-size:1.1rem;transition:all .3s;z-index:10001}
+.lightbox-nav:hover{background:rgba(255,255,255,.2)}
+.lightbox-prev{left:1.5rem}.lightbox-next{right:1.5rem}
+.lightbox-counter{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);font-size:.8rem;color:rgba(255,255,255,.5);z-index:10001}
+@media(max-width:768px){.photo-grid-item{flex:0 0 calc(33.333% - .5rem)}.video-grid-service{grid-template-columns:1fr}}
+@media(max-width:480px){.photo-grid-item{flex:0 0 calc(50% - .375rem)}}
+
+.photo-grid:not(.expanded) .photo-grid-item:nth-child(n+9){display:none}.gallery-toggle-btn{display:flex;align-items:center;justify-content:center;gap:.5rem;margin:1.5rem auto 0;padding:.75rem 2rem;background:transparent;border:1px solid var(--glass-border);color:var(--star-dim);font-family:var(--font-body);font-size:.82rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;border-radius:4px;cursor:pointer;transition:all .3s}.gallery-toggle-btn:hover{border-color:rgba(255,255,255,.25);color:var(--starlight);background:var(--glass-white)}.video-grid-single{grid-template-columns:minmax(0,1fr)!important;max-width:720px;margin-left:auto!important;margin-right:auto!important}.page-hero.has-photo{background-size:cover;background-position:center;background-repeat:no-repeat}.page-hero.has-photo::before{background:linear-gradient(180deg,rgba(12,14,26,.82) 0%,rgba(12,14,26,.45) 45%,rgba(12,14,26,.72) 100%),radial-gradient(ellipse at 50% 60%,rgba(123,111,204,.08) 0%,transparent 60%)!important}
+.nav-has-dropdown{position:relative}.nav-dropdown{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);padding-top:8px;background:transparent;min-width:220px;list-style:none;z-index:1001}.nav-dropdown::before{content:'';position:absolute;top:8px;left:0;right:0;bottom:0;background:rgba(12,14,26,.97);backdrop-filter:blur(20px);border:1px solid var(--glass-border);border-radius:8px;z-index:-1}.nav-dropdown li{white-space:nowrap}.nav-dropdown a{display:block;padding:.55rem 1.25rem;font-size:.8rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:var(--star-dim);transition:color .2s,background .2s}.nav-dropdown a:hover{color:var(--starlight);background:var(--glass-white)}.nav-dropdown a::after{display:none!important}.nav-has-dropdown>a::after{display:none!important}.nav-has-dropdown:hover .nav-dropdown{display:block}@media(max-width:768px){.nav-has-dropdown .nav-dropdown{display:block;position:static;transform:none;border:none;border-radius:0;background:transparent;backdrop-filter:none;padding:.25rem 0 .25rem 1rem;margin:0}.nav-dropdown a{padding:.35rem .5rem;font-size:.78rem}}</style>
+</head>
+<body>
+
+    <div class="stars"></div>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="images/orion-logo.png" alt="Orion Media Logo">
+                <div class="nav-logo-text"><span>Orion</span> Media</div>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li class="nav-has-dropdown"><a href="index.html#services">Services &#9662;</a><ul class="nav-dropdown"><li><a href="wedding-videography.html">Wedding Videography</a></li><li><a href="real-estate-photography.html">Real Estate</a></li><li><a href="event-commercial-video.html">Events &amp; Commercial</a></li><li><a href="drone-services.html">Drone Aerial</a></li><li><a href="matterport-tours.html">3D Matterport Tours</a></li></ul></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="areas-served.html">Areas</a></li>
+                <li><a href="tel:+15182229845" class="nav-phone">(518) 222-9845</a></li>
+                <li class="nav-theme-toggle">
+                    <span class="theme-toggle-icon" id="themeIconLight">☀️</span>
+                    <div class="theme-toggle-track" id="themeTrack"><div class="theme-toggle-thumb"></div></div>
+                    <span class="theme-toggle-icon" id="themeIconDark">🌙</span>
+                </li>
+                <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== PAGE HERO ========== -->
+    <section class="page-hero has-photo" style="background-image:url('images/heroes/wedding-hero.jpg')">
+        <div class="page-hero-content">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="sep">/</span>
+                <a href="index.html#services">Services</a>
+                <span class="sep">/</span>
+                Wedding Videography
+            </div>
+
+            <h1>Wedding Videography<br>That Feels <em>Cinematic</em></h1>
+
+            <p class="page-hero-sub">
+                Your wedding day moves fast. We capture every moment — the vows, the laughter, the tears, the dance floor — and turn it into a film you'll watch over and over.
+            </p>
+
+            <div class="hero-price-badge">
+                Packages starting at $2,500
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FEATURED VIDEO ========== -->
+    <section class="featured-video">
+        <div class="video-wrapper reveal">
+            <div class="video-responsive">
+                <iframe
+                    src="https://www.youtube.com/embed/utfJA9qwyxQ?rel=0&modestbranding=1"
+                    title="Orion Media — Wedding Videography Highlight Film"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <p class="video-caption reveal">Featured Wedding Film — Shot & Edited by Orion Media</p>
+    </section>
+
+    <!-- ========== WHAT YOU GET ========== -->
+    <section class="deliverables section-pad" id="deliverables">
+        <div class="container">
+            <div class="section-center reveal">
+                <p class="section-label">What You Get</p>
+                <h2 class="section-title">Every Detail, Beautifully Captured</h2>
+                <p class="section-desc">
+                    More than just a videographer — we're storytellers who craft cinematic films from your real moments.
+                </p>
+            </div>
+
+            <div class="deliverables-grid stagger">
+                <div class="deliverable-card reveal">
+                    <div class="deliverable-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polygon points="5,3 19,12 5,21"/>
+                        </svg>
+                    </div>
+                    <h3>Highlight Film</h3>
+                    <p>A 3–5 minute cinematic edit that captures the best moments of your day — perfect for sharing and reliving.</p>
+                </div>
+
+                <div class="deliverable-card reveal">
+                    <div class="deliverable-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="18" rx="2"/>
+                            <path d="M8 21V3M16 21V3M2 12h20"/>
+                        </svg>
+                    </div>
+                    <h3>Extended Film</h3>
+                    <p>A 20-minute feature-length edit with full ceremony coverage, speeches, and the moments in between.</p>
+                </div>
+
+                <div class="deliverable-card reveal">
+                    <div class="deliverable-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>Drone Aerials</h3>
+                    <p>Sweeping aerial shots of your venue and surroundings that add a breathtaking cinematic scale to your film.</p>
+                </div>
+
+                <div class="deliverable-card reveal">
+                    <div class="deliverable-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3>Full-Day Coverage</h3>
+                    <p>From getting ready to the last dance — 8 to 10+ hours of seamless, unobtrusive coverage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRICING ========== -->
+    <section class="pricing section-pad" id="pricing">
+        <div class="container">
+            <div class="section-center reveal">
+                <p class="section-label">Packages</p>
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <p class="section-desc">
+                    Three tiers designed to match your day. Every package includes professional editing, color grading, and licensed music.
+                </p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- ESSENTIAL -->
+                <div class="price-card reveal">
+                    <div class="price-card-name">Essential</div>
+                    <p class="price-card-tagline">Beautiful coverage for couples who want the highlights captured perfectly.</p>
+                    <div class="price-amount"><span class="dollar">$</span>2,500</div>
+                    <p class="price-note">One-time investment</p>
+                    <div class="price-divider"></div>
+                    <ul class="price-features">
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            8-hour single videographer
+                        </li>
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            3–5 min cinematic highlight film
+                        </li>
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            Full ceremony edit
+                        </li>
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            Online delivery of final films
+                        </li>
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            Professional color grading
+                        </li>
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            Licensed music soundtrack
+                        </li>
+                    </ul>
+                    <a href="contact.html?service=wedding-video&pkg=I%27m+interested+in+the+Wedding+Essential+video+package+%28%242%2C500%29." class="price-cta price-cta-outline">Get Started</a>
+                </div>
+
+                <!-- CINEMATIC (POPULAR) -->
+                <div class="price-card popular reveal">
+                    <div class="popular-tag">Most Popular</div>
+                    <div class="price-card-name">Cinematic</div>
+                    <p class="price-card-tagline">The full experience — extended coverage, extended film, and stunning aerials.</p>
+                    <div class="price-amount"><span class="dollar">$</span>4,000</div>
+                    <p class="price-note">One-time investment</p>
+                    <div class="price-divider"></div>
+                    <ul class="price-features">
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            10+ hour single videographer
+                        </li>
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            3–5 min cinematic highlight film
+                        </li>
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            20-min extended feature film
+                        </li>
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            Full ceremony edit
+                        </li>
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            Drone aerial footage
+                        </li>
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            Raw footage included
+                        </li>
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            Professional color grading
+                        </li>
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            Licensed music soundtrack
+                        </li>
+                    </ul>
+                    <a href="contact.html?service=wedding-video&pkg=I%27m+interested+in+the+Wedding+Cinematic+package+%28%244%2C000%29+%E2%80%94+full-day+coverage%2C+cinematic+highlight+film%2C+and+raw+footage." class="price-cta price-cta-fill">Book Cinematic</a>
+                </div>
+
+                <!-- ULTIMATE -->
+                <div class="price-card reveal">
+                    <div class="price-card-name">Ultimate</div>
+                    <p class="price-card-tagline">The complete Orion experience — two videographers, bonus sessions, and a same-week teaser.</p>
+                    <div class="price-amount"><span class="dollar">$</span>5,500</div>
+                    <p class="price-note">One-time investment</p>
+                    <div class="price-divider"></div>
+                    <ul class="price-features">
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            Everything in Cinematic, plus:
+                        </li>
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            Second videographer for full coverage
+                        </li>
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            Same-week :30 teaser for social media
+                        </li>
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            Pre-wedding / engagement shoot
+                        </li>
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            Anniversary session
+                        </li>
+                    </ul>
+                    <a href="contact.html?service=wedding-video&pkg=I%27m+interested+in+the+Wedding+Ultimate+package+%28%245%2C500%29+%E2%80%94+full-day+multi-camera+coverage%2C+highlight+film%2C+raw+footage%2C+and+drone." class="price-cta price-cta-outline">Book Ultimate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ADD-ONS ========== -->
+    <section class="addons section-pad" id="addons">
+        <div class="container">
+            <div class="section-center reveal">
+                <p class="section-label">Customize Your Package</p>
+                <h2 class="section-title">Add-Ons</h2>
+                <p class="section-desc">
+                    Make your package your own. These can be added to any tier.
+                </p>
+            </div>
+
+            <div class="addons-grid">
+                <div class="addon-card highlight reveal">
+                    <div class="addon-price">$350</div>
+                    <div class="addon-info">
+                        <h4>Drunk Advice Booth <span class="addon-badge">Fan Favorite</span></h4>
+                        <p>We set up a camera and interview your guests after they've had a few — the results are hilarious and heartfelt advice for the newlyweds.</p>
+                    </div>
+                </div>
+
+                <div class="addon-card reveal">
+                    <div class="addon-price">+$2,000</div>
+                    <div class="addon-info">
+                        <h4>Photography Bundle</h4>
+                        <p>Add a professional photographer to capture your full day alongside the video team.</p>
+                    </div>
+                </div>
+
+                <div class="addon-card reveal">
+                    <div class="addon-price">+$1,000</div>
+                    <div class="addon-info">
+                        <h4>Second Photographer</h4>
+                        <p>Dual-angle photo coverage for larger weddings and venues.</p>
+                    </div>
+                </div>
+
+                <div class="addon-card reveal">
+                    <div class="addon-price">$300/hr</div>
+                    <div class="addon-info">
+                        <h4>Extra Videography Hours</h4>
+                        <p>Need more time? Add hours to any package at our hourly rate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MORE WORK ========== -->
+    <section class="more-work section-pad" id="work">
+        <div class="container">
+            <div class="section-center reveal">
+                <p class="section-label">More Wedding Films</p>
+                <h2 class="section-title">Every Couple Has a Story</h2>
+                <p class="section-desc">
+                    Here are a few more of our favorite wedding films from across the Capital Region.
+                </p>
+            </div>
+
+            <div class="video-gallery">
+                <div class="gallery-video reveal">
+                    <div class="video-responsive">
+                        <iframe
+                            src="https://www.youtube.com/embed/kqCHQlZ5mWU?rel=0&modestbranding=1"
+                            title="Orion Media Wedding Film"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="gallery-video reveal">
+                    <div class="video-responsive">
+                        <iframe
+                            src="https://www.youtube.com/embed/1psHS4BBGk4?rel=0&modestbranding=1"
+                            title="Orion Media Wedding Film"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="faq section-pad" id="faq">
+        <div class="container">
+            <div class="section-center reveal">
+                <p class="section-label">Questions</p>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        How far in advance should I book?
+                        <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="2" x2="8" y2="14"/><line x1="2" y1="8" x2="14" y2="8"/></svg></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="faq-answer-inner">We recommend booking 6–12 months in advance, especially for peak wedding season (May through October). Popular dates fill up fast, so the earlier the better. That said, we do accommodate last-minute bookings when availability allows — just reach out!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        How long until I receive my wedding video?
+                        <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="2" x2="8" y2="14"/><line x1="2" y1="8" x2="14" y2="8"/></svg></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="faq-answer-inner">Typical turnaround is 8–12 weeks for your complete film package. If you booked the Ultimate package, your :30 social media teaser will be delivered within the same week as your wedding. We'll keep you updated throughout the editing process.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        Do you travel outside the Capital Region?
+                        <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="2" x2="8" y2="14"/><line x1="2" y1="8" x2="14" y2="8"/></svg></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="faq-answer-inner">Absolutely! While we're based in Cohoes and serve the entire Capital Region, we love traveling for weddings. We've shot in the Catskills, Hudson Valley, Lake George, and beyond. Travel fees may apply depending on distance — just ask when you reach out.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        What is the Drunk Advice Booth?
+                        <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="2" x2="8" y2="14"/><line x1="2" y1="8" x2="14" y2="8"/></svg></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="faq-answer-inner">It's one of our most popular add-ons! We set up a camera station at your reception and invite guests to sit down and give their best marriage advice to the newlyweds. After everyone's had some time to celebrate (and enjoy the open bar), the results are absolutely priceless — equal parts hilarious and heartfelt. You'll get a fully edited compilation video that's guaranteed to make you laugh and cry.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        Can I combine video and photography?
+                        <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="2" x2="8" y2="14"/><line x1="2" y1="8" x2="14" y2="8"/></svg></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="faq-answer-inner">Yes! We offer a Photography Bundle add-on that pairs a professional photographer with your videographer. This way everything is coordinated seamlessly under one team — no competing for angles or missing moments. You can add this to any package tier.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal">
+                    <button class="faq-question">
+                        Do you require a deposit?
+                        <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="2" x2="8" y2="14"/><line x1="2" y1="8" x2="14" y2="8"/></svg></span>
+                    </button>
+                    <div class="faq-answer">
+                        <p class="faq-answer-inner">Yes, we require a 30% deposit to secure your date, with the remaining balance due two weeks before your wedding day. We accept all major forms of payment. Your date isn't officially locked in until the deposit is received.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA BANNER ========== -->
+    <section class="cta-banner section-pad">
+        <div class="cta-banner-inner reveal">
+            <p class="section-label">Ready?</p>
+            <h2 class="section-title">Let's Tell Your Love Story</h2>
+            <p class="section-desc">
+                Every wedding is unique. Reach out and let's talk about how we can capture yours.
+            </p>
+            <div class="cta-buttons">
+                <a href="index.html#contact" class="btn-primary">Get a Free Quote</a>
+                <a href="tel:+15182229845" class="btn-secondary">Call (518) 222-9845</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    
+<!-- GALLERY -->
+<section class="section-pad" style="background:linear-gradient(180deg,var(--deep-space) 0%,var(--nebula) 100%)" id="gallery">
+<div class="container">
+<div class="section-center reveal"><p class="section-label">Our Films</p><h2 class="section-title">Weddings We've Captured</h2><p class="section-desc">Every couple's story is unique — here's a glimpse of the moments we've preserved.</p></div>
+<div class="photo-grid" data-gallery="main" style="margin-top:2rem">
+<div class="photo-grid-item" data-src="images/portfolio/weddings/RTM01909.jpg"><img src="images/portfolio/weddings/RTM01909.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
+<div class="photo-grid-item" data-src="images/portfolio/weddings/RTM02195.jpg"><img src="images/portfolio/weddings/RTM02195.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
+<div class="photo-grid-item" data-src="images/portfolio/weddings/RTM02449.jpg"><img src="images/portfolio/weddings/RTM02449.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
+<div class="photo-grid-item" data-src="images/portfolio/weddings/RTM02711.jpg"><img src="images/portfolio/weddings/RTM02711.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
+<div class="photo-grid-item" data-src="images/portfolio/weddings/RTM02935.jpg"><img src="images/portfolio/weddings/RTM02935.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
+<div class="photo-grid-item" data-src="images/portfolio/weddings/RTM03025.jpg"><img src="images/portfolio/weddings/RTM03025.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
+<div class="photo-grid-item" data-src="images/portfolio/weddings/RTM03045.jpg"><img src="images/portfolio/weddings/RTM03045.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
+<div class="photo-grid-item" data-src="images/portfolio/weddings/RTM03477.jpg"><img src="images/portfolio/weddings/RTM03477.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
+<div class="photo-grid-item" data-src="images/portfolio/weddings/RTM03485.jpg"><img src="images/portfolio/weddings/RTM03485.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
+<div class="photo-grid-item" data-src="images/portfolio/weddings/drunk%20advice.jpg"><img src="images/portfolio/weddings/drunk%20advice.jpg" alt="Fun wedding reception moment" loading="lazy"></div>
+</div>
+<div style="text-align:center"><button class="gallery-toggle-btn" onclick="var c=this.parentNode;while(c&&!c.querySelector('.photo-grid'))c=c.parentNode;var g=c&&c.querySelector('.photo-grid');if(g){var ex=g.classList.toggle('expanded');this.textContent=ex?'Show Less ▴':'View More Photos ▾'}">View More Photos ▾</button></div>
+<div class="video-section reveal">
+<h3>Highlight Film</h3>
+<div class="video-grid-service" style="grid-template-columns:repeat(2,1fr);gap:1.25rem;max-width:1000px;margin:0 auto">
+<div class="video-embed" style="aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000;border:1px solid var(--glass-border)"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/utfJA9qwyxQ?rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:block"></iframe></div>
+<div class="video-embed" style="aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000;border:1px solid var(--glass-border)"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/dj9sBMF_9cs?rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:block"></iframe></div>
+<div class="video-embed" style="aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000;border:1px solid var(--glass-border)"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/WlEv9Ltxhws?rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:block"></iframe></div>
+<div class="video-embed" style="aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000;border:1px solid var(--glass-border)"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/YZnWSFwEDls?rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:block"></iframe></div>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="index.html" class="nav-logo">
+                    <img src="images/orion-logo.png" alt="Orion Media Logo" style="height:40px;width:40px;border-radius:50%;">
+                    <div class="nav-logo-text"><span>Orion</span> Media</div>
+                </a>
+                <p>Professional videography and photography serving the Capital Region of New York. Weddings, events, real estate, and more.</p>
+
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/OrionMediaService" aria-label="Facebook" target="_blank" rel="noopener">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="https://www.youtube.com/@OrionMedia-NY" aria-label="YouTube" target="_blank" rel="noopener">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                    <a href="https://share.google/M9tTWiMECg1B1rnOa" aria-label="Google Business Profile" target="_blank" rel="noopener">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h5>Services</h5>
+                <ul class="footer-links">
+                    <li><a href="wedding-videography.html">Wedding Video</a></li>
+                    <li><a href="event-commercial-video.html">Event Recaps</a></li>
+                    <li><a href="real-estate-photography.html">Real Estate</a></li>
+                    <li><a href="drone-services.html">Drone / Aerial</a></li>
+                    <li><a href="matterport-tours.html">3D Tours</a></li>
+                    <li><a href="event-commercial-video.html">Commercial</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5>Company</h5>
+                <ul class="footer-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html#reviews">Testimonials</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5>Contact</h5>
+                <ul class="footer-links">
+                    <li><a href="tel:+15182229845">(518) 222-9845</a></li>
+                    <li><a href="mailto:Ryan@OrionMediaService.com">Ryan@OrionMediaService.com</a></li>
+                    <li>Cohoes, NY</li>
+                    <li>Capital Region, New York</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>&copy; 2026 Orion Media Service. All rights reserved.</span>
+            <span>Wedding Videography — Capital Region NY</span>
+        </div>
+    </footer>
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script>
+        // Reveal on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Mobile menu
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => navLinks.classList.remove('open'));
+        });
+
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                const isOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+                if (!isOpen) item.classList.add('open');
+            });
+        });
+
+        // ============================================
+        // THEME TOGGLE
+        // ============================================
+        (function () {
+            function applyTheme(theme, save) {
+                document.documentElement.classList.add('theme-transitioning');
+                document.documentElement.setAttribute('data-theme', theme);
+                if (save) localStorage.setItem('orion-theme', theme);
+                setTimeout(function() { document.documentElement.classList.remove('theme-transitioning'); }, 450);
+            }
+
+            if (window.matchMedia) {
+                window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', function(e) {
+                    if (!localStorage.getItem('orion-theme')) {
+                        applyTheme(e.matches ? 'light' : 'dark', false);
+                    }
+                });
+            }
+
+            document.getElementById('themeTrack').addEventListener('click', function() {
+                var current = document.documentElement.getAttribute('data-theme');
+                applyTheme(current === 'dark' ? 'light' : 'dark', true);
+            });
+            document.getElementById('themeIconLight').addEventListener('click', function() { applyTheme('light', true); });
+            document.getElementById('themeIconDark').addEventListener('click', function() { applyTheme('dark', true); });
+        })();
+    
+
+/* Lightbox */
+(function(){var lb=document.getElementById('lightbox');if(!lb)return;var lbImg=document.getElementById('lbImg');var lbCounter=document.getElementById('lbCounter');var items=[];var idx=0;var startX=0;
+function openLB(grid,i){items=Array.from(grid.querySelectorAll('.photo-grid-item'));idx=i;showSlide();lb.classList.add('open');document.body.style.overflow='hidden'}
+function closeLB(){lb.classList.remove('open');document.body.style.overflow=''}
+function showSlide(){var item=items[idx];var src=item.getAttribute('data-src');lbImg.src=src;lbImg.style.display='block';lbCounter.textContent=(idx+1)+' / '+items.length}
+function next(){idx=(idx+1)%items.length;showSlide()}
+function prev(){idx=(idx-1+items.length)%items.length;showSlide()}
+document.querySelectorAll('.photo-grid').forEach(function(grid){grid.querySelectorAll('.photo-grid-item').forEach(function(item,i){item.addEventListener('click',function(){openLB(grid,i)})})});
+document.getElementById('lbClose').addEventListener('click',closeLB);
+document.getElementById('lbNext').addEventListener('click',next);
+document.getElementById('lbPrev').addEventListener('click',prev);
+lb.addEventListener('click',function(e){if(e.target===lb)closeLB()});
+document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')closeLB();if(e.key==='ArrowRight')next();if(e.key==='ArrowLeft')prev()});
+lb.addEventListener('touchstart',function(e){startX=e.changedTouches[0].screenX},{passive:true});
+lb.addEventListener('touchend',function(e){var diff=e.changedTouches[0].screenX-startX;if(Math.abs(diff)>50){if(diff<0)next();else prev()}},{passive:true});
+})();
+</script>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+<button class="lightbox-close" id="lbClose">&times;</button>
+<button class="lightbox-nav lightbox-prev" id="lbPrev">&#8249;</button>
+<button class="lightbox-nav lightbox-next" id="lbNext">&#8250;</button>
+<div class="lightbox-content"><img id="lbImg" src="" alt=""></div>
+<div class="lightbox-counter" id="lbCounter"></div>
+</div>
+</body>
+</html>

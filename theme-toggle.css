@@ -1,0 +1,256 @@
+/* ============================================
+   LIGHT MODE OVERRIDES
+   ============================================ */
+html[data-theme="light"] {
+    --deep-space: #f5f5f8;
+    --nebula: #eaeaf0;
+    --constellation: #d8d8e4;
+    --starlight: #1a1a2e;
+    --star-dim: #4a4a6a;
+    --star-glow: #5a4fb8;
+    --shutter-accent: #6b5fbf;
+    --warm-highlight: #b8860b;
+    --glass-white: rgba(0, 0, 0, 0.04);
+    --glass-border: rgba(0, 0, 0, 0.1);
+}
+
+/* Stars hidden in light mode */
+html[data-theme="light"] .stars {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+html[data-theme="dark"] .stars {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+/* Nav adjustments */
+html[data-theme="light"] .nav,
+html[data-theme="light"] .nav.scrolled {
+    background: rgba(245, 245, 248, 0.92);
+    border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+html[data-theme="light"] .nav-toggle span {
+    background: var(--starlight);
+}
+
+html[data-theme="light"] .nav-links.open {
+    background: rgba(245, 245, 248, 0.97);
+}
+
+/* Hero adjustments */
+html[data-theme="light"] .hero::before {
+    background:
+        radial-gradient(ellipse at 30% 50%, rgba(107, 95, 191, 0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 70% 30%, rgba(216, 216, 228, 0.4) 0%, transparent 50%),
+        linear-gradient(180deg, transparent 0%, var(--deep-space) 100%);
+}
+
+html[data-theme="light"] .hero-badge {
+    background: rgba(0, 0, 0, 0.04);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Cards */
+html[data-theme="light"] .service-card:hover,
+html[data-theme="light"] .deliverable-card:hover,
+html[data-theme="light"] .addon-card:hover {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+html[data-theme="light"] .service-card.featured {
+    background: linear-gradient(135deg, rgba(107, 95, 191, 0.06), rgba(0, 0, 0, 0.03));
+    border-color: rgba(107, 95, 191, 0.15);
+}
+
+/* Pricing cards */
+html[data-theme="light"] .price-card.popular {
+    background: linear-gradient(135deg, rgba(107, 95, 191, 0.08), rgba(0, 0, 0, 0.02));
+    border-color: rgba(107, 95, 191, 0.25);
+}
+
+/* Trust badges */
+html[data-theme="light"] .trust-badge-icon {
+    background: rgba(107, 95, 191, 0.08);
+}
+
+/* Stats */
+html[data-theme="light"] .stat-number {
+    color: #9a7209;
+}
+
+/* Form */
+html[data-theme="light"] .form-group input,
+html[data-theme="light"] .form-group select,
+html[data-theme="light"] .form-group textarea {
+    background: rgba(0, 0, 0, 0.03);
+    color: var(--starlight);
+    border-color: rgba(0, 0, 0, 0.12);
+}
+
+html[data-theme="light"] .form-group input::placeholder,
+html[data-theme="light"] .form-group textarea::placeholder {
+    color: rgba(74, 74, 106, 0.5);
+}
+
+html[data-theme="light"] .form-group select option {
+    background: #f5f5f8;
+    color: #1a1a2e;
+}
+
+/* Addon highlight */
+html[data-theme="light"] .addon-card.highlight {
+    background: linear-gradient(135deg, rgba(184, 134, 11, 0.06), rgba(0, 0, 0, 0.02));
+    border-color: rgba(184, 134, 11, 0.15);
+}
+
+/* Area tags */
+html[data-theme="light"] .area-tag:hover {
+    background: rgba(107, 95, 191, 0.06);
+}
+
+html[data-theme="light"] .area-tag.primary {
+    background: rgba(107, 95, 191, 0.08);
+    border-color: var(--shutter-accent);
+}
+
+/* Showreel */
+html[data-theme="light"] .showreel {
+    background: linear-gradient(180deg, var(--deep-space) 0%, var(--nebula) 50%, var(--deep-space) 100%);
+}
+
+/* Sections with gradient backgrounds */
+html[data-theme="light"] .trust,
+html[data-theme="light"] .deliverables {
+    background: linear-gradient(180deg, var(--deep-space) 0%, var(--nebula) 50%, var(--deep-space) 100%);
+}
+
+html[data-theme="light"] .areas,
+html[data-theme="light"] .more-work {
+    background: var(--nebula);
+}
+
+html[data-theme="light"] .cta-section,
+html[data-theme="light"] .faq {
+    background: linear-gradient(180deg, var(--nebula) 0%, var(--deep-space) 100%);
+}
+
+html[data-theme="light"] .addons {
+    background: linear-gradient(180deg, var(--deep-space) 0%, var(--nebula) 100%);
+}
+
+html[data-theme="light"] .cta-banner::before {
+    background: radial-gradient(ellipse at center, rgba(107, 95, 191, 0.05) 0%, transparent 70%);
+}
+
+/* Footer */
+html[data-theme="light"] .footer {
+    background: var(--nebula);
+    border-top-color: rgba(0, 0, 0, 0.08);
+}
+
+/* Page hero (service pages) */
+html[data-theme="light"] .page-hero::before {
+    background:
+        radial-gradient(ellipse at 50% 80%, rgba(107, 95, 191, 0.06) 0%, transparent 60%),
+        radial-gradient(ellipse at 20% 20%, rgba(216, 216, 228, 0.3) 0%, transparent 50%),
+        linear-gradient(180deg, var(--deep-space) 0%, transparent 30%, var(--deep-space) 100%);
+}
+
+html[data-theme="light"] .hero-price-badge {
+    background: rgba(184, 134, 11, 0.08);
+    border-color: rgba(184, 134, 11, 0.2);
+}
+
+/* Video wrapper */
+html[data-theme="light"] .video-wrapper {
+    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(107, 95, 191, 0.08);
+}
+
+/* FAQ */
+html[data-theme="light"] .faq-question {
+    color: var(--starlight);
+}
+
+/* Scroll indicator */
+html[data-theme="light"] .scroll-line {
+    background: linear-gradient(to bottom, var(--star-dim), transparent);
+}
+
+/* ============================================
+   THEME TOGGLE SWITCH
+   ============================================ */
+.theme-toggle {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem 0.75rem;
+    background: var(--glass-white);
+    border: 1px solid var(--glass-border);
+    border-radius: 100px;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.theme-toggle:hover {
+    border-color: var(--shutter-accent);
+}
+
+.theme-toggle-icon {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--star-dim);
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle-track {
+    width: 40px;
+    height: 22px;
+    background: rgba(123, 111, 204, 0.2);
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border: 1px solid rgba(123, 111, 204, 0.15);
+}
+
+.theme-toggle-track:hover {
+    background: rgba(123, 111, 204, 0.3);
+}
+
+.theme-toggle-thumb {
+    width: 16px;
+    height: 16px;
+    background: var(--shutter-accent);
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s cubic-bezier(0.68, -0.15, 0.265, 1.35);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme="dark"] .theme-toggle-thumb {
+    transform: translateX(18px);
+}
+
+/* Smooth transition for all theme changes */
+html.theme-transitioning,
+html.theme-transitioning *,
+html.theme-transitioning *::before,
+html.theme-transitioning *::after {
+    transition-duration: 0.4s !important;
+    transition-timing-function: ease !important;
+}
