@@ -1188,7 +1188,7 @@
             transition-duration: 0.4s !important;
             transition-timing-function: ease !important;
         }
-    .nav-has-dropdown{position:relative}.nav-dropdown{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);padding-top:8px;background:transparent;min-width:220px;list-style:none;z-index:1001}.nav-dropdown::before{content:'';position:absolute;top:8px;left:0;right:0;bottom:0;background:rgba(12,14,26,.97);backdrop-filter:blur(20px);border:1px solid var(--glass-border);border-radius:8px;z-index:-1}.nav-dropdown li{white-space:nowrap}.nav-dropdown a{display:block;padding:.55rem 1.25rem;font-size:.8rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:var(--star-dim);transition:color .2s,background .2s}.nav-dropdown a:hover{color:var(--starlight);background:var(--glass-white)}.nav-dropdown a::after{display:none!important}.nav-has-dropdown>a::after{display:none!important}.nav-has-dropdown:hover .nav-dropdown{display:block}@media(max-width:768px){.nav-has-dropdown .nav-dropdown{display:block;position:static;transform:none;border:none;border-radius:0;background:transparent;backdrop-filter:none;padding:.25rem 0 .25rem 1rem;margin:0}.nav-dropdown a{padding:.35rem .5rem;font-size:.78rem}}.showreel-credit{text-align:center;margin-top:1rem;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--star-dim);opacity:.7;font-style:italic;}</style>
+    .nav-has-dropdown{position:relative}.nav-dropdown{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);padding-top:8px;background:transparent;min-width:220px;list-style:none;z-index:1001}.nav-dropdown::before{content:'';position:absolute;top:8px;left:0;right:0;bottom:0;background:rgba(12,14,26,.97);backdrop-filter:blur(20px);border:1px solid var(--glass-border);border-radius:8px;z-index:-1}.nav-dropdown li{white-space:nowrap}.nav-dropdown a{display:block;padding:.55rem 1.25rem;font-size:.8rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:var(--star-dim);transition:color .2s,background .2s}.nav-dropdown a:hover{color:var(--starlight);background:var(--glass-white)}.nav-dropdown a::after{display:none!important}.nav-has-dropdown>a::after{display:none!important}.nav-has-dropdown:hover .nav-dropdown{display:block}@media(max-width:768px){.nav-has-dropdown .nav-dropdown{display:none;position:static;transform:none;border:none;border-radius:0;background:transparent;backdrop-filter:none;padding:.25rem 0 .25rem 1rem;margin:0}.nav-has-dropdown .nav-dropdown.mobile-open{display:block}.nav-dropdown a{padding:.35rem .5rem;font-size:.78rem}.nav-has-dropdown>a .mob-arrow{display:inline-block;transition:transform .25s}.nav-has-dropdown.mobile-open>a .mob-arrow{transform:rotate(180deg)}}.showreel-credit{text-align:center;margin-top:1rem;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--star-dim);opacity:.7;font-style:italic;}</style>
 </head>
 <body>
 
@@ -1208,7 +1208,7 @@
             </button>
 
             <ul class="nav-links" id="navLinks">
-                <li class="nav-has-dropdown"><a href="#services">Services &#9662;</a><ul class="nav-dropdown"><li><a href="wedding-videography.html">Wedding Videography</a></li><li><a href="real-estate-photography.html">Real Estate</a></li><li><a href="event-commercial-video.html">Events &amp; Commercial</a></li><li><a href="drone-services.html">Drone Aerial</a></li><li><a href="matterport-tours.html">3D Matterport Tours</a></li></ul></li>
+                <li class="nav-has-dropdown"><a href="#services" class="mob-services-toggle">Services <span class="mob-arrow">&#9662;</span></a><ul class="nav-dropdown"><li><a href="wedding-videography.html">Wedding Videography</a></li><li><a href="real-estate-photography.html">Real Estate</a></li><li><a href="event-commercial-video.html">Events &amp; Commercial</a></li><li><a href="drone-services.html">Drone Aerial</a></li><li><a href="matterport-tours.html">3D Matterport Tours</a></li></ul></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="areas-served.html">Areas</a></li>
@@ -1733,5 +1733,17 @@
             });
         }
     </script>
+<script>
+document.querySelectorAll('.mob-services-toggle').forEach(function(link){
+  link.addEventListener('click', function(e){
+    if(window.innerWidth > 768) return;
+    e.preventDefault();
+    var parent = link.closest('.nav-has-dropdown');
+    var dropdown = parent.querySelector('.nav-dropdown');
+    var isOpen = dropdown.classList.toggle('mobile-open');
+    parent.classList.toggle('mobile-open', isOpen);
+  });
+});
+</script>
 </body>
 </html>
