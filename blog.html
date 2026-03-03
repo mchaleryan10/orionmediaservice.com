@@ -1016,7 +1016,7 @@ var st=localStorage.getItem('orion-theme')||'dark';html.setAttribute('data-theme
 
 /* Blog functionality */
 var cards=document.querySelectorAll('.blog-card'),allContent=document.querySelectorAll('.blog-content');
-cards.forEach(function(card){card.addEventListener('click',function(e){e.preventDefault();var href=this.getAttribute('href').substring(1);allContent.forEach(function(content){content.classList.remove('active')});document.getElementById(href).classList.add('active');window.scrollTo({top:0,behavior:'smooth'})})});
+cards.forEach(function(card){card.addEventListener('click',function(e){e.preventDefault();var href=this.getAttribute('href').substring(1);allContent.forEach(function(c){c.classList.remove('active')});var target=document.getElementById(href);target.classList.add('active');setTimeout(function(){var offset=target.getBoundingClientRect().top+window.scrollY-80;window.scrollTo({top:offset,behavior:'smooth'})},50)})});
 
 function closeArticle(){allContent.forEach(function(content){content.classList.remove('active')});window.scrollTo({top:0,behavior:'smooth'})}
 
