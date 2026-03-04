@@ -439,8 +439,8 @@
         .scroll-indicator {
             position: absolute;
             bottom: 2rem;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 0;
+            right: 0;
             z-index: 2;
             display: flex;
             flex-direction: column;
@@ -633,6 +633,7 @@
 
         .service-icon {
             width: 48px; height: 48px;
+            display: block;
             margin-bottom: 1.5rem;
             color: var(--shutter-accent);
         }
@@ -673,6 +674,7 @@
         /* Featured cards (wedding + real estate) */
         .service-card.featured {
             grid-column: span 1;
+            text-align: left;
             background: linear-gradient(135deg, rgba(123, 111, 204, 0.1), var(--glass-white));
             border-color: rgba(123, 111, 204, 0.2);
         }
