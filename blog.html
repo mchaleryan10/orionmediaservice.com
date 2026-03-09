@@ -65,6 +65,50 @@ main{position:relative;z-index:1;max-width:1400px;margin:0 auto;padding:0 20px}
 .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:translateY(0)}
 html[data-theme="light"]{--deep-space:#f5f3f9;--nebula:#ede9f7;--constellation:#ddd5eb;--starlight:#1a1a2e;--star-dim:#666;--star-glow:#7b6fcc;--shutter-accent:#6b5fb8;--warm-highlight:#d4a574}html[data-theme="light"] .nav{background:linear-gradient(180deg,rgba(237,233,247,.95) 0%,rgba(237,233,247,.85) 100%)}html[data-theme="light"] .nav-dropdown{background:var(--nebula)}html[data-theme="light"] .theme-toggle-track{background:var(--constellation);border-color:var(--star-dim)}html[data-theme="light"] .blog-card{background:rgba(123,111,204,.05)}html[data-theme="light"] .blog-card:hover{background:linear-gradient(135deg,rgba(123,111,204,.1),rgba(201,184,255,.08))}html[data-theme="light"] .footer{background:var(--nebula)}
 </style>
+
+    <style>
+        .sticky-cta {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .sticky-cta {
+                display: flex;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 9999;
+                box-shadow: 0 -2px 20px rgba(0,0,0,0.4);
+            }
+            .sticky-btn {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                padding: 1rem;
+                font-family: var(--font-body);
+                font-size: 0.95rem;
+                font-weight: 500;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                text-decoration: none;
+                transition: opacity 0.2s;
+            }
+            .sticky-btn:active {
+                opacity: 0.85;
+            }
+            .sticky-call {
+                background: var(--shutter-accent, #7b6fcc);
+                color: #fff;
+            }
+            .sticky-text {
+                background: #2a2d4a;
+                color: #fff;
+                border-left: 1px solid rgba(255,255,255,0.1);
+            }
+        }
+    </style>
 </head>
 <body>
 <div class="stars"></div>
@@ -1056,5 +1100,17 @@ updateThemeIcons();themeTrack.addEventListener('click',updateThemeIcons);
             });
         });
     </script>
+
+    <!-- Sticky Call/Text Bar (Mobile Only) -->
+    <div class="sticky-cta">
+        <a href="tel:+15182229845" class="sticky-btn sticky-call" onclick="gtag('event','phone_call',{'event_category':'sticky_bar','event_label':'call'})">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.69h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.09a16 16 0 0 0 6 6l1.56-1.56a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            Call
+        </a>
+        <a href="sms:+15182229845" class="sticky-btn sticky-text" onclick="gtag('event','sms_click',{'event_category':'sticky_bar','event_label':'text'})">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            Text
+        </a>
+    </div>
 </body>
 </html>
