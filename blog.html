@@ -1032,5 +1032,29 @@ function closeArticle(){allContent.forEach(function(content){content.classList.r
 function updateThemeIcons(){var t=html.getAttribute('data-theme')||'dark';themeIconLight.style.display=t==='dark'?'inline':'none';themeIconDark.style.display=t==='light'?'inline':'none'}
 updateThemeIcons();themeTrack.addEventListener('click',updateThemeIcons);
 </script>
+
+    <!-- GA4 Conversion Tracking -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Track phone number clicks
+            document.querySelectorAll('a[href^="tel:"]').forEach(function(el) {
+                el.addEventListener('click', function() {
+                    gtag('event', 'phone_call', {
+                        'event_category': 'contact',
+                        'event_label': el.href.replace('tel:', '')
+                    });
+                });
+            });
+            // Track email clicks
+            document.querySelectorAll('a[href^="mailto:"]').forEach(function(el) {
+                el.addEventListener('click', function() {
+                    gtag('event', 'email_click', {
+                        'event_category': 'contact',
+                        'event_label': el.href.replace('mailto:', '')
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
