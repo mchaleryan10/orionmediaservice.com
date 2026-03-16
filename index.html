@@ -786,6 +786,51 @@
             font-weight: 300;
         }
 
+        /* ---- Featured In ---- */
+        .featured-logos {
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .featured-logos .section-label {
+            margin-bottom: 2rem;
+        }
+
+        .featured-logos-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .featured-logo-card {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            padding: 1.5rem 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 70px;
+            text-decoration: none;
+            transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+        }
+
+        .featured-logo-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--shutter-accent);
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        .featured-logo-card span {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--starlight);
+            letter-spacing: 0.02em;
+        }
+
         /* ============================================
            AREAS SERVED SECTION
            ============================================ */
@@ -1043,6 +1088,7 @@
             .services-grid { grid-template-columns: repeat(2, 1fr); }
             .trust-content { grid-template-columns: 1fr; gap: 3rem; }
             .footer-inner { grid-template-columns: 1fr 1fr; }
+            .featured-logos-grid { grid-template-columns: repeat(2, 1fr); }
         }
 
         @media (max-width: 768px) {
@@ -1329,7 +1375,7 @@
 
             <div class="showreel-embed reveal">
                 <iframe
-                    src="https://www.youtube.com/embed/d7EEB-siQW0?rel=0&modestbranding=1"
+                    src="https://www.youtube.com/embed/waQv60Vo0-w?rel=0&modestbranding=1"
                     frameborder="0"
                     allowfullscreen
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1503,7 +1549,7 @@
                         </div>
                         <div class="trust-badge-text">
                             <h4>Featured in Local Media</h4>
-                            <p>Recognized by Saratoga TODAY and Homeworthy</p>
+                            <p>Recognized by leading Capital Region businesses and publications</p>
                         </div>
                     </div>
 
@@ -1532,6 +1578,30 @@
                             <p>Based in Cohoes, serving the entire Capital Region</p>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="featured-logos reveal">
+                <p class="section-label" style="text-align:center">As Seen In</p>
+                <div class="featured-logos-grid">
+                    <a class="featured-logo-card" href="https://saratogatodaynewspaper.com/" target="_blank" rel="noopener">
+                        <span>Saratoga Today</span>
+                    </a>
+                    <a class="featured-logo-card" href="https://homeworthy.com/" target="_blank" rel="noopener">
+                        <span>Homeworthy</span>
+                    </a>
+                    <a class="featured-logo-card" href="https://www.bizjournals.com/albany" target="_blank" rel="noopener">
+                        <span>Albany Business Review</span>
+                    </a>
+                    <a class="featured-logo-card" href="https://www.saratogaautomuseum.org/" target="_blank" rel="noopener">
+                        <span>Saratoga Automobile Museum</span>
+                    </a>
+                    <a class="featured-logo-card" href="https://www.porschecliftonpark.com/" target="_blank" rel="noopener">
+                        <span>Porsche Clifton Park</span>
+                    </a>
+                    <a class="featured-logo-card" href="https://www.del-sette.com/" target="_blank" rel="noopener">
+                        <span>Del Sette Capital Management</span>
+                    </a>
                 </div>
             </div>
         </div>
