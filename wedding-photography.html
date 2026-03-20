@@ -328,6 +328,34 @@
             padding: 0 2rem 6rem;
         }
 
+        .featured-gallery .photo-grid:not(.expanded) .photo-grid-item:nth-child(n+9) { display: none; }
+
+        .gallery-toggle-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+            margin: 1.5rem auto 0;
+            padding: .75rem 2rem;
+            background: transparent;
+            border: 1px solid var(--glass-border);
+            color: var(--star-dim);
+            font-family: var(--font-body);
+            font-size: .82rem;
+            font-weight: 500;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all .3s;
+        }
+
+        .gallery-toggle-btn:hover {
+            border-color: rgba(255,255,255,.25);
+            color: var(--starlight);
+            background: var(--glass-white);
+        }
+
         /* ============================================
            SECTION COMMONS
            ============================================ */
@@ -1244,7 +1272,14 @@
                 <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM03025.jpg"><img src="images/portfolio/weddings/RTM03025.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
                 <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM03045.jpg"><img src="images/portfolio/weddings/RTM03045.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
                 <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM03477.jpg"><img src="images/portfolio/weddings/RTM03477.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/Travis%20Wedding_6.jpg"><img src="images/portfolio/weddings/Travis%20Wedding_6.jpg" alt="Lakefront wedding ceremony venue setup" loading="lazy"></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTMF4243.jpg"><img src="images/portfolio/weddings/RTMF4243.jpg" alt="Bride and groom walking down the aisle" loading="lazy"></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTMF4268.png"><img src="images/portfolio/weddings/RTMF4268.png" alt="Couple portrait by the lake" loading="lazy"></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/Travis%20Wedding_29.jpg"><img src="images/portfolio/weddings/Travis%20Wedding_29.jpg" alt="Wedding ceremony moment in black and white" loading="lazy"></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/Travis%20Wedding_21.jpg"><img src="images/portfolio/weddings/Travis%20Wedding_21.jpg" alt="Bridal party walking on the lawn" loading="lazy"></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/Travis%20Wedding_71.jpg"><img src="images/portfolio/weddings/Travis%20Wedding_71.jpg" alt="Wedding group photo by the lake" loading="lazy"></div>
             </div>
+            <div style="text-align:center"><button class="gallery-toggle-btn" onclick="var g=this.closest('.container').querySelector('.photo-grid');var ex=g.classList.toggle('expanded');this.textContent=ex?'Show Less ▴':'View More Photos ▾'">View More Photos ▾</button></div>
         </div>
     </section>
 
