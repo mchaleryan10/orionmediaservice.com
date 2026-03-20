@@ -23,21 +23,21 @@
         })();
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Videography | Capital Region NY | Orion Media</title>
-    <meta name="description" content="Cinematic wedding videography in the Capital Region of New York. Highlight films, full ceremony coverage, drone aerials, and the famous Drunk Advice Booth. Packages starting at $2,500. Serving Albany, Saratoga Springs, Troy, and beyond.">
-    <meta name="keywords" content="wedding videographer Capital Region NY, wedding videography Albany, wedding video Saratoga Springs, cinematic wedding film Troy NY, wedding videographer near me, Orion Media wedding">
+    <title>Wedding Photography | Capital Region NY | Orion Media</title>
+    <meta name="description" content="Professional wedding photography in the Capital Region of New York. Timeless portraits, candid moments, drone aerials, and same-week sneak peeks. Packages starting at $2,000. Serving Albany, Saratoga Springs, Troy, and beyond.">
+    <meta name="keywords" content="wedding photographer Capital Region NY, wedding photography Albany, wedding photographer Saratoga Springs, wedding photos Troy NY, Orion Media wedding photography">
     <meta name="author" content="Orion Media Service">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph -->
-    <link rel="canonical" href="https://orionmediaservice.com/wedding-videography.html">
+    <link rel="canonical" href="https://orionmediaservice.com/wedding-photography.html">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Wedding Videography | Capital Region NY | Orion Media">
-<meta name="twitter:description" content="Cinematic wedding videography in the Capital Region. Highlight films, full ceremonies, and reception coverage.">
-<meta property="og:title" content="Wedding Videography | Orion Media | Capital Region NY">
-    <meta property="og:description" content="Cinematic wedding videography starting at $2,500. Highlight films, drone aerials, and the famous Drunk Advice Booth.">
+<meta name="twitter:title" content="Wedding Photography | Capital Region NY | Orion Media">
+<meta name="twitter:description" content="Professional wedding photography in the Capital Region. Timeless portraits, candid moments, and same-week sneak peeks.">
+<meta property="og:title" content="Wedding Photography | Orion Media | Capital Region NY">
+    <meta property="og:description" content="Professional wedding photography starting at $2,000. Timeless portraits, candid moments, drone aerials, and same-week sneak peeks.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://orionmediaservice.com/wedding-videography">
+    <meta property="og:url" content="https://orionmediaservice.com/wedding-photography.html">
     <meta property="og:image" content="https://orionmediaservice.com/images/og-image.jpg">
     <meta name="twitter:image" content="https://orionmediaservice.com/images/og-image.jpg">
 
@@ -46,7 +46,7 @@
     {
         "@context": "https://schema.org",
         "@type": "Service",
-        "serviceType": "Wedding Videography",
+        "serviceType": "Wedding Photography",
         "provider": {
             "@type": "LocalBusiness",
             "name": "Orion Media Service",
@@ -65,8 +65,8 @@
         ],
         "offers": {
             "@type": "AggregateOffer",
-            "lowPrice": "2500",
-            "highPrice": "5500",
+            "lowPrice": "2000",
+            "highPrice": "5000",
             "priceCurrency": "USD"
         }
     }
@@ -320,59 +320,12 @@
         }
 
         /* ============================================
-           FEATURED VIDEO
+           FEATURED GALLERY
            ============================================ */
-        .featured-video {
+        .featured-gallery {
             position: relative;
             z-index: 1;
             padding: 0 2rem 6rem;
-        }
-
-        .video-wrapper {
-            max-width: 1000px;
-            margin: 0 auto;
-            position: relative;
-            border-radius: 16px;
-            overflow: hidden;
-            border: 1px solid var(--glass-border);
-            box-shadow: 0 20px 80px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(123, 111, 204, 0.1);
-        }
-
-        .video-wrapper::before {
-            content: '';
-            position: absolute;
-            inset: -1px;
-            border-radius: 17px;
-            padding: 1px;
-            background: linear-gradient(135deg, rgba(123, 111, 204, 0.3), transparent 50%, rgba(201, 184, 255, 0.1));
-            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-            -webkit-mask-composite: xor;
-            mask-composite: exclude;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .video-responsive {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-        }
-
-        .video-responsive iframe {
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            border: 0;
-        }
-
-        .video-caption {
-            text-align: center;
-            margin-top: 1rem;
-            font-size: 0.8rem;
-            color: var(--star-dim);
-            font-weight: 300;
-            letter-spacing: 0.05em;
         }
 
         /* ============================================
@@ -712,36 +665,43 @@
         }
 
         /* ============================================
-           MORE WORK (video gallery)
+           MORE WORK (photo gallery)
            ============================================ */
         .more-work {
             background: var(--nebula);
         }
 
-        .video-gallery {
+        .photo-gallery {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 1.5rem;
             margin-top: 3rem;
-            max-width: 1000px;
+            max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
         }
 
-        .gallery-video {
+        .gallery-photo {
             border-radius: 12px;
             overflow: hidden;
             border: 1px solid var(--glass-border);
             transition: all 0.3s ease;
+            aspect-ratio: 4/3;
+            cursor: pointer;
         }
 
-        .gallery-video:hover {
+        .gallery-photo:hover {
             border-color: rgba(255, 255, 255, 0.2);
             transform: translateY(-2px);
             box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
         }
 
-        .gallery-video .video-responsive { border-radius: 0; }
+        .gallery-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
 
         /* ============================================
            FAQ
@@ -1012,6 +972,7 @@
             .price-card.popular { transform: none; }
             .price-card.popular:hover { transform: translateY(-4px); }
             .deliverables-grid { grid-template-columns: repeat(2, 1fr); }
+            .photo-gallery { grid-template-columns: repeat(2, 1fr); }
             .footer-inner { grid-template-columns: 1fr 1fr; }
         }
 
@@ -1034,10 +995,10 @@
             .nav-phone { display: none; }
             .section-pad { padding: 4rem 1.5rem; }
             .page-hero { padding: 8rem 1.5rem 3rem; }
-            .featured-video { padding: 0 1.5rem 4rem; }
+            .featured-gallery { padding: 0 1.5rem 4rem; }
             .deliverables-grid { grid-template-columns: 1fr; }
             .addons-grid { grid-template-columns: 1fr; }
-            .video-gallery { grid-template-columns: 1fr; }
+            .photo-gallery { grid-template-columns: 1fr; }
             .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
             .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
         }
@@ -1095,7 +1056,6 @@
             border-color: rgba(184, 134, 11, 0.15);
         }
 
-        html[data-theme="light"] .video-wrapper { box-shadow: 0 20px 80px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(107, 95, 191, 0.08); }
         html[data-theme="light"] .faq-question { color: var(--starlight); }
 
         /* ============================================
@@ -1148,31 +1108,29 @@
             transition-duration: 0.4s !important;
             transition-timing-function: ease !important;
         }
-    
-/* Photo grid */
-.photo-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;margin-top:2rem}
-.photo-grid-item{flex:0 0 calc(25% - .5625rem);aspect-ratio:4/3;border-radius:10px;overflow:hidden;cursor:pointer;position:relative;border:1px solid var(--glass-border);transition:all .3s}
-.photo-grid-item:hover{border-color:rgba(255,255,255,.2);transform:scale(1.02)}
-.photo-grid-item img{width:100%;height:100%;object-fit:cover;display:block}
-.video-section{margin-top:3rem}
-.video-section h3{font-family:var(--font-display);font-size:1.4rem;font-weight:400;text-align:center;margin-bottom:1.25rem}
-.video-grid-service{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}.video-grid-service>*:last-child:nth-child(2n+1){grid-column:1/-1;max-width:calc(50% - .625rem);justify-self:center}
-/* Lightbox */
-.lightbox{display:none;position:fixed;inset:0;z-index:10000;background:rgba(0,0,0,.92);backdrop-filter:blur(10px);align-items:center;justify-content:center}
-.lightbox.open{display:flex}
-.lightbox-content{position:relative;max-width:90vw;max-height:85vh;display:flex;align-items:center;justify-content:center}
-.lightbox-content img{max-width:90vw;max-height:85vh;border-radius:8px;object-fit:contain}
-.lightbox-close{position:fixed;top:1.5rem;right:1.5rem;width:44px;height:44px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#fff;font-size:1.2rem;transition:all .3s;z-index:10001}
-.lightbox-close:hover{background:rgba(255,255,255,.2)}
-.lightbox-nav{position:fixed;top:50%;transform:translateY(-50%);width:44px;height:44px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#fff;font-size:1.1rem;transition:all .3s;z-index:10001}
-.lightbox-nav:hover{background:rgba(255,255,255,.2)}
-.lightbox-prev{left:1.5rem}.lightbox-next{right:1.5rem}
-.lightbox-counter{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);font-size:.8rem;color:rgba(255,255,255,.5);z-index:10001}
-@media(max-width:768px){.photo-grid-item{flex:0 0 calc(33.333% - .5rem)}.video-grid-service{grid-template-columns:1fr}}
-@media(max-width:480px){.photo-grid-item{flex:0 0 calc(50% - .375rem)}}
 
-.photo-grid:not(.expanded) .photo-grid-item:nth-child(n+9){display:none}.gallery-toggle-btn{display:flex;align-items:center;justify-content:center;gap:.5rem;margin:1.5rem auto 0;padding:.75rem 2rem;background:transparent;border:1px solid var(--glass-border);color:var(--star-dim);font-family:var(--font-body);font-size:.82rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;border-radius:4px;cursor:pointer;transition:all .3s}.gallery-toggle-btn:hover{border-color:rgba(255,255,255,.25);color:var(--starlight);background:var(--glass-white)}.video-grid-single{grid-template-columns:minmax(0,1fr)!important;max-width:720px;margin-left:auto!important;margin-right:auto!important}.page-hero.has-photo{background-size:cover;background-position:center;background-repeat:no-repeat}.page-hero.has-photo::before{background:linear-gradient(180deg,rgba(12,14,26,.82) 0%,rgba(12,14,26,.45) 45%,rgba(12,14,26,.72) 100%),radial-gradient(ellipse at 50% 60%,rgba(123,111,204,.08) 0%,transparent 60%)!important}
-.nav-has-dropdown{position:relative}.nav-dropdown{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);padding-top:8px;background:transparent;min-width:220px;list-style:none;z-index:1001}.nav-dropdown::before{content:'';position:absolute;top:8px;left:0;right:0;bottom:0;background:rgba(12,14,26,.97);backdrop-filter:blur(20px);border:1px solid var(--glass-border);border-radius:8px;z-index:-1}.nav-dropdown li{white-space:nowrap}.nav-dropdown a{display:block;padding:.55rem 1.25rem;font-size:.8rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:var(--star-dim);transition:color .2s,background .2s}.nav-dropdown a:hover{color:var(--starlight);background:var(--glass-white)}.nav-dropdown a::after{display:none!important}.nav-has-dropdown>a::after{display:none!important}.nav-has-dropdown:hover .nav-dropdown{display:block}@media(max-width:768px){.nav-has-dropdown .nav-dropdown{display:none;position:static;transform:none;border:none;border-radius:0;background:transparent;backdrop-filter:none;padding:.25rem 0 .25rem 1rem;margin:0}.nav-has-dropdown .nav-dropdown.mobile-open{display:block}.nav-dropdown a{padding:.35rem .5rem;font-size:.78rem}.nav-has-dropdown>a .mob-arrow{display:inline-block;transition:transform .25s}.nav-has-dropdown.mobile-open>a .mob-arrow{transform:rotate(180deg)}}</style>
+        /* Photo grid */
+        .photo-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;margin-top:2rem}
+        .photo-grid-item{flex:0 0 calc(25% - .5625rem);aspect-ratio:4/3;border-radius:10px;overflow:hidden;cursor:pointer;position:relative;border:1px solid var(--glass-border);transition:all .3s}
+        .photo-grid-item:hover{border-color:rgba(255,255,255,.2);transform:scale(1.02)}
+        .photo-grid-item img{width:100%;height:100%;object-fit:cover;display:block}
+
+        /* Lightbox */
+        .lightbox{display:none;position:fixed;inset:0;z-index:10000;background:rgba(0,0,0,.92);backdrop-filter:blur(10px);align-items:center;justify-content:center}
+        .lightbox.open{display:flex}
+        .lightbox-content{position:relative;max-width:90vw;max-height:85vh;display:flex;align-items:center;justify-content:center}
+        .lightbox-content img{max-width:90vw;max-height:85vh;border-radius:8px;object-fit:contain}
+        .lightbox-close{position:fixed;top:1.5rem;right:1.5rem;width:44px;height:44px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#fff;font-size:1.2rem;transition:all .3s;z-index:10001}
+        .lightbox-close:hover{background:rgba(255,255,255,.2)}
+        .lightbox-nav{position:fixed;top:50%;transform:translateY(-50%);width:44px;height:44px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#fff;font-size:1.1rem;transition:all .3s;z-index:10001}
+        .lightbox-nav:hover{background:rgba(255,255,255,.2)}
+        .lightbox-prev{left:1.5rem}.lightbox-next{right:1.5rem}
+        .lightbox-counter{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);font-size:.8rem;color:rgba(255,255,255,.5);z-index:10001}
+        @media(max-width:768px){.photo-grid-item{flex:0 0 calc(33.333% - .5rem)}}
+        @media(max-width:480px){.photo-grid-item{flex:0 0 calc(50% - .375rem)}}
+
+        .nav-has-dropdown{position:relative}.nav-dropdown{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);padding-top:8px;background:transparent;min-width:220px;list-style:none;z-index:1001}.nav-dropdown::before{content:'';position:absolute;top:8px;left:0;right:0;bottom:0;background:rgba(12,14,26,.97);backdrop-filter:blur(20px);border:1px solid var(--glass-border);border-radius:8px;z-index:-1}.nav-dropdown li{white-space:nowrap}.nav-dropdown a{display:block;padding:.55rem 1.25rem;font-size:.8rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:var(--star-dim);transition:color .2s,background .2s}.nav-dropdown a:hover{color:var(--starlight);background:var(--glass-white)}.nav-dropdown a::after{display:none!important}.nav-has-dropdown>a::after{display:none!important}.nav-has-dropdown:hover .nav-dropdown{display:block}@media(max-width:768px){.nav-has-dropdown .nav-dropdown{display:none;position:static;transform:none;border:none;border-radius:0;background:transparent;backdrop-filter:none;padding:.25rem 0 .25rem 1rem;margin:0}.nav-has-dropdown .nav-dropdown.mobile-open{display:block}.nav-dropdown a{padding:.35rem .5rem;font-size:.78rem}.nav-has-dropdown>a .mob-arrow{display:inline-block;transition:transform .25s}.nav-has-dropdown.mobile-open>a .mob-arrow{transform:rotate(180deg)}}
+    </style>
 
     <style>
         .sticky-cta {
@@ -1252,41 +1210,42 @@
     </nav>
 
     <!-- ========== PAGE HERO ========== -->
-    <section class="page-hero has-photo" style="background-image:url('images/heroes/wedding-hero.jpg')">
+    <section class="page-hero has-photo" style="background-image:url('images/heroes/wedding-hero.png')">
         <div class="page-hero-content">
             <div class="breadcrumb">
                 <a href="index.html">Home</a>
                 <span class="sep">/</span>
                 <a href="index.html#services">Services</a>
                 <span class="sep">/</span>
-                Wedding Videography
+                Wedding Photography
             </div>
 
-            <h1>Wedding Videography<br>That Feels <em>Cinematic</em></h1>
+            <h1>Wedding Photography<br>That Feels <em>Timeless</em></h1>
 
             <p class="page-hero-sub">
-                Your wedding day moves fast. We capture every moment — the vows, the laughter, the tears, the dance floor — and turn it into a film you'll watch over and over.
+                Your wedding day deserves more than snapshots. We capture the real moments — the stolen glances, the happy tears, the unscripted joy — and turn them into images you'll treasure for a lifetime.
             </p>
 
             <div class="hero-price-badge">
-                Packages starting at $2,500
+                Packages starting at $2,000
             </div>
         </div>
     </section>
 
-    <!-- ========== FEATURED VIDEO ========== -->
-    <section class="featured-video">
-        <div class="video-wrapper reveal">
-            <div class="video-responsive">
-                <iframe
-                    src="https://www.youtube.com/embed/mPcOwHvE8C4?rel=0&modestbranding=1"
-                    title="Orion Media — Wedding Videography Highlight Film"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+    <!-- ========== FEATURED GALLERY ========== -->
+    <section class="featured-gallery">
+        <div class="container reveal">
+            <div class="photo-grid" data-gallery="featured">
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM01909.jpg"><img src="images/portfolio/weddings/RTM01909.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM02195.jpg"><img src="images/portfolio/weddings/RTM02195.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM02449.jpg"><img src="images/portfolio/weddings/RTM02449.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM02711.jpg"><img src="images/portfolio/weddings/RTM02711.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM02935.jpg"><img src="images/portfolio/weddings/RTM02935.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM03025.jpg"><img src="images/portfolio/weddings/RTM03025.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM03045.jpg"><img src="images/portfolio/weddings/RTM03045.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM03477.jpg"><img src="images/portfolio/weddings/RTM03477.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
             </div>
         </div>
-        <p class="video-caption reveal">Featured Wedding Film — Shot & Edited by Orion Media</p>
     </section>
 
     <!-- ========== WHAT YOU GET ========== -->
@@ -1294,9 +1253,9 @@
         <div class="container">
             <div class="section-center reveal">
                 <p class="section-label">What You Get</p>
-                <h2 class="section-title">Every Detail, Beautifully Captured</h2>
+                <h2 class="section-title">Every Moment, Beautifully Preserved</h2>
                 <p class="section-desc">
-                    More than just a videographer — we're storytellers who craft cinematic films from your real moments.
+                    More than just a photographer — we're artists who craft timeless images from your real moments.
                 </p>
             </div>
 
@@ -1304,22 +1263,24 @@
                 <div class="deliverable-card reveal">
                     <div class="deliverable-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <polygon points="5,3 19,12 5,21"/>
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <path d="M21 15l-5-5L5 21"/>
                         </svg>
                     </div>
-                    <h3>Highlight Film</h3>
-                    <p>A 3–5 minute cinematic edit that captures the best moments of your day — perfect for sharing and reliving.</p>
+                    <h3>Edited Gallery</h3>
+                    <p>Every image is hand-edited with professional color grading, retouching, and a consistent cinematic look that matches your style.</p>
                 </div>
 
                 <div class="deliverable-card reveal">
                     <div class="deliverable-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <rect x="2" y="3" width="20" height="18" rx="2"/>
-                            <path d="M8 21V3M16 21V3M2 12h20"/>
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
                         </svg>
                     </div>
-                    <h3>Extended Film</h3>
-                    <p>A 20-minute feature-length edit with full ceremony coverage, speeches, and the moments in between.</p>
+                    <h3>Engagement Session</h3>
+                    <p>A pre-wedding portrait session so we can get to know each other, test lighting and locations, and capture your love story before the big day.</p>
                 </div>
 
                 <div class="deliverable-card reveal">
@@ -1331,7 +1292,7 @@
                         </svg>
                     </div>
                     <h3>Drone Aerials</h3>
-                    <p>Sweeping aerial shots of your venue and surroundings that add a breathtaking cinematic scale to your film.</p>
+                    <p>FAA-certified drone photography of your venue and surroundings — breathtaking aerial perspectives that make your photos truly stand out.</p>
                 </div>
 
                 <div class="deliverable-card reveal">
@@ -1341,8 +1302,8 @@
                             <polyline points="12 6 12 12 16 14"/>
                         </svg>
                     </div>
-                    <h3>Full-Day Coverage</h3>
-                    <p>From getting ready to the last dance — 8 to 10+ hours of seamless, unobtrusive coverage.</p>
+                    <h3>Same-Week Sneak Peeks</h3>
+                    <p>Can't wait to post? You'll receive 15–20 fully edited highlights within 48 hours of your wedding — perfect for social media.</p>
                 </div>
             </div>
         </div>
@@ -1355,7 +1316,7 @@
                 <p class="section-label">Packages</p>
                 <h2 class="section-title">Simple, Transparent Pricing</h2>
                 <p class="section-desc">
-                    Three tiers designed to match your day. Every package includes professional editing, color grading, and licensed music.
+                    Three tiers designed to match your day. Every package includes professional editing, color grading, and copyright releases.
                 </p>
             </div>
 
@@ -1363,26 +1324,22 @@
                 <!-- ESSENTIAL -->
                 <div class="price-card reveal">
                     <div class="price-card-name">Essential</div>
-                    <p class="price-card-tagline">Beautiful coverage for couples who want the highlights captured perfectly.</p>
-                    <div class="price-amount"><span class="dollar">$</span>2,500</div>
+                    <p class="price-card-tagline">Beautiful coverage for couples who want timeless portraits and candid moments.</p>
+                    <div class="price-amount"><span class="dollar">$</span>2,000</div>
                     <p class="price-note">One-time investment</p>
                     <div class="price-divider"></div>
                     <ul class="price-features">
                         <li>
                             <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
-                            8-hour single videographer
+                            6-hour single photographer
                         </li>
                         <li>
                             <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
-                            3–5 min cinematic highlight film
+                            300+ professionally edited images
                         </li>
                         <li>
                             <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
-                            Full ceremony edit
-                        </li>
-                        <li>
-                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
-                            Online delivery of final films
+                            Online gallery with downloads
                         </li>
                         <li>
                             <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
@@ -1390,44 +1347,48 @@
                         </li>
                         <li>
                             <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
-                            Licensed music soundtrack
+                            Print-ready high resolution files
+                        </li>
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            Copyright release included
                         </li>
                     </ul>
-                    <a href="contact.html?service=wedding-video&pkg=I%27m+interested+in+the+Wedding+Essential+video+package+%28%242%2C500%29." class="price-cta price-cta-outline">Get Started</a>
+                    <a href="contact.html?service=wedding-photo&pkg=I%27m+interested+in+the+Wedding+Essential+photography+package+%28%242%2C000%29." class="price-cta price-cta-outline">Get Started</a>
                 </div>
 
-                <!-- CINEMATIC (POPULAR) -->
+                <!-- SIGNATURE (POPULAR) -->
                 <div class="price-card popular reveal">
                     <div class="popular-tag">Most Popular</div>
-                    <div class="price-card-name">Cinematic</div>
-                    <p class="price-card-tagline">The full experience — extended coverage, extended film, and stunning aerials.</p>
-                    <div class="price-amount"><span class="dollar">$</span>4,000</div>
+                    <div class="price-card-name">Signature</div>
+                    <p class="price-card-tagline">The full experience — dual coverage, engagement session, and same-week sneak peeks.</p>
+                    <div class="price-amount"><span class="dollar">$</span>3,500</div>
                     <p class="price-note">One-time investment</p>
                     <div class="price-divider"></div>
                     <ul class="price-features">
                         <li>
                             <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
-                            10+ hour single videographer
+                            8+ hour coverage
                         </li>
                         <li>
                             <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
-                            3–5 min cinematic highlight film
+                            500+ professionally edited images
                         </li>
                         <li>
                             <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
-                            20-min extended feature film
+                            Engagement portrait session
                         </li>
                         <li>
                             <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
-                            Full ceremony edit
+                            Second photographer
                         </li>
                         <li>
                             <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
-                            Drone aerial footage
+                            Same-week sneak peeks (15–20 images)
                         </li>
                         <li>
                             <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
-                            Raw footage included
+                            Online gallery with downloads
                         </li>
                         <li>
                             <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
@@ -1435,42 +1396,58 @@
                         </li>
                         <li>
                             <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
-                            Licensed music soundtrack
+                            Print-ready high resolution files
+                        </li>
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            Copyright release included
                         </li>
                     </ul>
-                    <a href="contact.html?service=wedding-video&pkg=I%27m+interested+in+the+Wedding+Cinematic+package+%28%244%2C000%29+%E2%80%94+full-day+coverage%2C+cinematic+highlight+film%2C+and+raw+footage." class="price-cta price-cta-fill">Book Cinematic</a>
+                    <a href="contact.html?service=wedding-photo&pkg=I%27m+interested+in+the+Wedding+Signature+photography+package+%28%243%2C500%29+%E2%80%94+engagement+session%2C+second+photographer%2C+and+sneak+peeks." class="price-cta price-cta-fill">Book Signature</a>
                 </div>
 
-                <!-- ULTIMATE -->
+                <!-- CINEMATIC COLLECTION -->
                 <div class="price-card reveal">
-                    <div class="price-card-name">Ultimate</div>
-                    <p class="price-card-tagline">The complete Orion experience — two videographers, bonus sessions, and a same-week teaser.</p>
-                    <div class="price-amount"><span class="dollar">$</span>5,500</div>
+                    <div class="price-card-name">Cinematic Collection</div>
+                    <p class="price-card-tagline">The ultimate wedding photography experience — full-day coverage, drone aerials, and priority editing.</p>
+                    <div class="price-amount"><span class="dollar">$</span>5,000</div>
                     <p class="price-note">One-time investment</p>
                     <div class="price-divider"></div>
                     <ul class="price-features">
                         <li>
                             <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
-                            Everything in Cinematic, plus:
+                            Everything in Signature, plus:
                         </li>
                         <li>
                             <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
-                            Second videographer for full coverage
+                            10+ hour full-day coverage
                         </li>
                         <li>
                             <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
-                            Same-week :30 teaser for social media
+                            700+ professionally edited images
                         </li>
                         <li>
                             <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
-                            Pre-wedding / engagement shoot
+                            Bridal portrait session
                         </li>
                         <li>
                             <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
-                            Anniversary session
+                            FAA-certified drone aerials
+                        </li>
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            $200 album credit
+                        </li>
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            Social media vertical edits
+                        </li>
+                        <li>
+                            <span class="check"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span>
+                            Priority editing (4-week delivery)
                         </li>
                     </ul>
-                    <a href="contact.html?service=wedding-video&pkg=I%27m+interested+in+the+Wedding+Ultimate+package+%28%245%2C500%29+%E2%80%94+full-day+multi-camera+coverage%2C+highlight+film%2C+raw+footage%2C+and+drone." class="price-cta price-cta-outline">Book Ultimate</a>
+                    <a href="contact.html?service=wedding-photo&pkg=I%27m+interested+in+the+Wedding+Cinematic+Collection+%28%245%2C000%29+%E2%80%94+full-day+coverage%2C+drone+aerials%2C+album+credit%2C+and+priority+editing." class="price-cta price-cta-outline">Book Collection</a>
                 </div>
             </div>
         </div>
@@ -1489,33 +1466,33 @@
 
             <div class="addons-grid">
                 <div class="addon-card highlight reveal">
-                    <div class="addon-price">$350</div>
-                    <div class="addon-info">
-                        <h4>Drunk Advice Booth <span class="addon-badge">Fan Favorite</span></h4>
-                        <p>We set up a camera and interview your guests after they've had a few — the results are hilarious and heartfelt advice for the newlyweds.</p>
-                    </div>
-                </div>
-
-                <div class="addon-card reveal">
                     <div class="addon-price">+$2,000</div>
                     <div class="addon-info">
-                        <h4>Photography Bundle</h4>
-                        <p>Add a professional photographer to capture your full day alongside the video team.</p>
+                        <h4>Videography Bundle <span class="addon-badge">Fan Favorite</span></h4>
+                        <p>Add cinematic wedding videography to your photography package — one team, seamless coverage, zero competing for angles.</p>
                     </div>
                 </div>
 
                 <div class="addon-card reveal">
-                    <div class="addon-price">+$1,000</div>
+                    <div class="addon-price">+$800</div>
                     <div class="addon-info">
                         <h4>Second Photographer</h4>
-                        <p>Dual-angle photo coverage for larger weddings and venues.</p>
+                        <p>Dual coverage for larger weddings — two perspectives, twice the candid moments, nothing missed.</p>
                     </div>
                 </div>
 
                 <div class="addon-card reveal">
-                    <div class="addon-price">$300/hr</div>
+                    <div class="addon-price">From $500</div>
                     <div class="addon-info">
-                        <h4>Extra Videography Hours</h4>
+                        <h4>Photo Album</h4>
+                        <p>A beautifully crafted flush-mount album — choose from 8x10, 10x10, or 12x12 options.</p>
+                    </div>
+                </div>
+
+                <div class="addon-card reveal">
+                    <div class="addon-price">$250/hr</div>
+                    <div class="addon-info">
+                        <h4>Extra Hours</h4>
                         <p>Need more time? Add hours to any package at our hourly rate.</p>
                     </div>
                 </div>
@@ -1544,11 +1521,11 @@
 
                 <div class="faq-item reveal">
                     <button class="faq-question">
-                        How long until I receive my wedding video?
+                        How long until I receive my photos?
                         <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="2" x2="8" y2="14"/><line x1="2" y1="8" x2="14" y2="8"/></svg></span>
                     </button>
                     <div class="faq-answer">
-                        <p class="faq-answer-inner">Typical turnaround is 8–12 weeks for your complete film package. If you booked the Ultimate package, your :30 social media teaser will be delivered within the same week as your wedding. We'll keep you updated throughout the editing process.</p>
+                        <p class="faq-answer-inner">Standard turnaround is 6–8 weeks for your complete edited gallery. If you booked the Signature or Cinematic Collection package, your same-week sneak peeks (15–20 images) will be delivered within 48 hours of your wedding. We'll keep you updated throughout the editing process.</p>
                     </div>
                 </div>
 
@@ -1564,21 +1541,21 @@
 
                 <div class="faq-item reveal">
                     <button class="faq-question">
-                        What is the Drunk Advice Booth?
+                        Do I get the rights to my photos?
                         <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="2" x2="8" y2="14"/><line x1="2" y1="8" x2="14" y2="8"/></svg></span>
                     </button>
                     <div class="faq-answer">
-                        <p class="faq-answer-inner">It's one of our most popular add-ons! We set up a camera station at your reception and invite guests to sit down and give their best marriage advice to the newlyweds. After everyone's had some time to celebrate (and enjoy the open bar), the results are absolutely priceless — equal parts hilarious and heartfelt. You'll get a fully edited compilation video that's guaranteed to make you laugh and cry.</p>
+                        <p class="faq-answer-inner">Yes! Every package includes a full copyright release — you can print, share, post, and use your photos however you'd like with no restrictions or watermarks.</p>
                     </div>
                 </div>
 
                 <div class="faq-item reveal">
                     <button class="faq-question">
-                        Can I combine video and photography?
+                        Can I combine photo and video?
                         <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="2" x2="8" y2="14"/><line x1="2" y1="8" x2="14" y2="8"/></svg></span>
                     </button>
                     <div class="faq-answer">
-                        <p class="faq-answer-inner">Yes! We offer a Photography Bundle add-on that pairs a professional photographer with your videographer. This way everything is coordinated seamlessly under one team — no competing for angles or missing moments. You can add this to any package tier.</p>
+                        <p class="faq-answer-inner">Absolutely! Our Videography Bundle add-on pairs cinematic wedding videography with your photography package. Because everything is coordinated under one team, there's no competing for angles or missing moments — just seamless, stress-free coverage.</p>
                     </div>
                 </div>
 
@@ -1599,9 +1576,9 @@
     <section class="cta-banner section-pad">
         <div class="cta-banner-inner reveal">
             <p class="section-label">Ready?</p>
-            <h2 class="section-title">Let's Tell Your Love Story</h2>
+            <h2 class="section-title">Let's Capture Your Story</h2>
             <p class="section-desc">
-                Every wedding is unique. Reach out and let's talk about how we can capture yours.
+                Every wedding is unique. Reach out and let's talk about how we can preserve yours in stunning detail.
             </p>
             <div class="cta-buttons">
                 <a href="index.html#contact" class="btn-primary">Get a Free Quote</a>
@@ -1611,37 +1588,7 @@
     </section>
 
     <!-- ========== FOOTER ========== -->
-    
-<!-- GALLERY -->
-<section class="section-pad" style="background:linear-gradient(180deg,var(--deep-space) 0%,var(--nebula) 100%)" id="gallery">
-<div class="container">
-<div class="section-center reveal"><p class="section-label">Our Films</p><h2 class="section-title">Weddings We've Captured</h2><p class="section-desc">Every couple's story is unique — here's a glimpse of the moments we've preserved.</p></div>
-<div class="video-section reveal">
-<h3>Highlight Film</h3>
-<div class="video-grid-service" style="grid-template-columns:repeat(2,1fr);gap:1.25rem;max-width:1000px;margin:0 auto">
-<div class="video-embed" style="aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000;border:1px solid var(--glass-border)"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/mPcOwHvE8C4?rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:block"></iframe></div>
-<div class="video-embed" style="aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000;border:1px solid var(--glass-border)"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/dj9sBMF_9cs?rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:block"></iframe></div>
-<div class="video-embed" style="aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000;border:1px solid var(--glass-border)"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/WlEv9Ltxhws?rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:block"></iframe></div>
-<div class="video-embed" style="aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000;border:1px solid var(--glass-border)"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/YZnWSFwEDls?rel=0&modestbranding=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:block"></iframe></div>
-</div>
-<div class="photo-grid" data-gallery="main" style="margin-top:2rem">
-<div class="photo-grid-item" data-src="images/portfolio/weddings/RTM01909.jpg"><img src="images/portfolio/weddings/RTM01909.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
-<div class="photo-grid-item" data-src="images/portfolio/weddings/RTM02195.jpg"><img src="images/portfolio/weddings/RTM02195.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
-<div class="photo-grid-item" data-src="images/portfolio/weddings/RTM02449.jpg"><img src="images/portfolio/weddings/RTM02449.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
-<div class="photo-grid-item" data-src="images/portfolio/weddings/RTM02711.jpg"><img src="images/portfolio/weddings/RTM02711.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
-<div class="photo-grid-item" data-src="images/portfolio/weddings/RTM02935.jpg"><img src="images/portfolio/weddings/RTM02935.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
-<div class="photo-grid-item" data-src="images/portfolio/weddings/RTM03025.jpg"><img src="images/portfolio/weddings/RTM03025.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
-<div class="photo-grid-item" data-src="images/portfolio/weddings/RTM03045.jpg"><img src="images/portfolio/weddings/RTM03045.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
-<div class="photo-grid-item" data-src="images/portfolio/weddings/RTM03477.jpg"><img src="images/portfolio/weddings/RTM03477.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
-<div class="photo-grid-item" data-src="images/portfolio/weddings/RTM03485.jpg"><img src="images/portfolio/weddings/RTM03485.jpg" alt="Wedding photography by Orion Media, Capital Region NY" loading="lazy"></div>
-<div class="photo-grid-item" data-src="images/portfolio/weddings/drunk%20advice.jpg"><img src="images/portfolio/weddings/drunk%20advice.jpg" alt="Fun wedding reception moment" loading="lazy"></div>
-</div>
-<div style="text-align:center"><button class="gallery-toggle-btn" onclick="var c=this.parentNode;while(c&&!c.querySelector('.photo-grid'))c=c.parentNode;var g=c&&c.querySelector('.photo-grid');if(g){var ex=g.classList.toggle('expanded');this.textContent=ex?'Show Less ▴':'View More Photos ▾'}">View More Photos ▾</button></div>
-
-</div>
-</div>
-</section>
-<footer class="footer">
+    <footer class="footer">
         <div class="footer-inner">
             <div class="footer-brand">
                 <a href="index.html" class="nav-logo">
@@ -1668,11 +1615,11 @@
                 <ul class="footer-links">
                     <li><a href="wedding-videography.html">Wedding Video</a></li>
                     <li><a href="wedding-photography.html">Wedding Photo</a></li>
+                    <li><a href="wedding-photography.html">Wedding Photography</a></li>
                     <li><a href="event-commercial-video.html">Event Recaps</a></li>
                     <li><a href="real-estate-photography.html">Real Estate</a></li>
                     <li><a href="drone-services.html">Drone / Aerial</a></li>
                     <li><a href="matterport-tours.html">3D Tours</a></li>
-                    <li><a href="event-commercial-video.html">Commercial</a></li>
                 </ul>
             </div>
 
@@ -1700,7 +1647,7 @@
 
         <div class="footer-bottom">
             <span>&copy; 2026 Orion Media Service. All rights reserved.</span>
-            <span>Wedding Videography — Capital Region NY</span>
+            <span>Wedding Photography — Capital Region NY</span>
         </div>
     </footer>
 
@@ -1759,48 +1706,47 @@
             document.getElementById('themeIconLight').addEventListener('click', function() { applyTheme('light', true); });
             document.getElementById('themeIconDark').addEventListener('click', function() { applyTheme('dark', true); });
         })();
-    
 
-/* Lightbox */
-(function(){var lb=document.getElementById('lightbox');if(!lb)return;var lbImg=document.getElementById('lbImg');var lbCounter=document.getElementById('lbCounter');var items=[];var idx=0;var startX=0;
-function openLB(grid,i){items=Array.from(grid.querySelectorAll('.photo-grid-item'));idx=i;showSlide();lb.classList.add('open');document.body.style.overflow='hidden'}
-function closeLB(){lb.classList.remove('open');document.body.style.overflow=''}
-function showSlide(){var item=items[idx];var src=item.getAttribute('data-src');lbImg.src=src;lbImg.style.display='block';lbCounter.textContent=(idx+1)+' / '+items.length}
-function next(){idx=(idx+1)%items.length;showSlide()}
-function prev(){idx=(idx-1+items.length)%items.length;showSlide()}
-document.querySelectorAll('.photo-grid').forEach(function(grid){grid.querySelectorAll('.photo-grid-item').forEach(function(item,i){item.addEventListener('click',function(){openLB(grid,i)})})});
-document.getElementById('lbClose').addEventListener('click',closeLB);
-document.getElementById('lbNext').addEventListener('click',next);
-document.getElementById('lbPrev').addEventListener('click',prev);
-lb.addEventListener('click',function(e){if(e.target===lb)closeLB()});
-document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')closeLB();if(e.key==='ArrowRight')next();if(e.key==='ArrowLeft')prev()});
-lb.addEventListener('touchstart',function(e){startX=e.changedTouches[0].screenX},{passive:true});
-lb.addEventListener('touchend',function(e){var diff=e.changedTouches[0].screenX-startX;if(Math.abs(diff)>50){if(diff<0)next();else prev()}},{passive:true});
-})();
-</script>
+        /* Lightbox */
+        (function(){var lb=document.getElementById('lightbox');if(!lb)return;var lbImg=document.getElementById('lbImg');var lbCounter=document.getElementById('lbCounter');var items=[];var idx=0;var startX=0;
+        function openLB(grid,i){items=Array.from(grid.querySelectorAll('.photo-grid-item'));idx=i;showSlide();lb.classList.add('open');document.body.style.overflow='hidden'}
+        function closeLB(){lb.classList.remove('open');document.body.style.overflow=''}
+        function showSlide(){var item=items[idx];var src=item.getAttribute('data-src');lbImg.src=src;lbImg.style.display='block';lbCounter.textContent=(idx+1)+' / '+items.length}
+        function next(){idx=(idx+1)%items.length;showSlide()}
+        function prev(){idx=(idx-1+items.length)%items.length;showSlide()}
+        document.querySelectorAll('.photo-grid').forEach(function(grid){grid.querySelectorAll('.photo-grid-item').forEach(function(item,i){item.addEventListener('click',function(){openLB(grid,i)})})});
+        document.getElementById('lbClose').addEventListener('click',closeLB);
+        document.getElementById('lbNext').addEventListener('click',next);
+        document.getElementById('lbPrev').addEventListener('click',prev);
+        lb.addEventListener('click',function(e){if(e.target===lb)closeLB()});
+        document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')closeLB();if(e.key==='ArrowRight')next();if(e.key==='ArrowLeft')prev()});
+        lb.addEventListener('touchstart',function(e){startX=e.changedTouches[0].screenX},{passive:true});
+        lb.addEventListener('touchend',function(e){var diff=e.changedTouches[0].screenX-startX;if(Math.abs(diff)>50){if(diff<0)next();else prev()}},{passive:true});
+        })();
+    </script>
 
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox">
-<button class="lightbox-close" id="lbClose">&times;</button>
-<button class="lightbox-nav lightbox-prev" id="lbPrev">&#8249;</button>
-<button class="lightbox-nav lightbox-next" id="lbNext">&#8250;</button>
-<div class="lightbox-content"><img id="lbImg" src="" alt=""></div>
-<div class="lightbox-counter" id="lbCounter"></div>
-</div>
-<script>
-// Mobile Services dropdown toggle
-document.querySelectorAll('.mob-services-toggle').forEach(function(link){
-  link.addEventListener('click', function(e){
-    var isMobile = window.innerWidth <= 768;
-    if(!isMobile) return;
-    e.preventDefault();
-    var parent = link.closest('.nav-has-dropdown');
-    var dropdown = parent.querySelector('.nav-dropdown');
-    var isOpen = dropdown.classList.toggle('mobile-open');
-    parent.classList.toggle('mobile-open', isOpen);
-  });
-});
-</script>
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lbClose">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lbPrev">&#8249;</button>
+        <button class="lightbox-nav lightbox-next" id="lbNext">&#8250;</button>
+        <div class="lightbox-content"><img id="lbImg" src="" alt=""></div>
+        <div class="lightbox-counter" id="lbCounter"></div>
+    </div>
+    <script>
+        // Mobile Services dropdown toggle
+        document.querySelectorAll('.mob-services-toggle').forEach(function(link){
+          link.addEventListener('click', function(e){
+            var isMobile = window.innerWidth <= 768;
+            if(!isMobile) return;
+            e.preventDefault();
+            var parent = link.closest('.nav-has-dropdown');
+            var dropdown = parent.querySelector('.nav-dropdown');
+            var isOpen = dropdown.classList.toggle('mobile-open');
+            parent.classList.toggle('mobile-open', isOpen);
+          });
+        });
+    </script>
 
     <!-- GA4 Conversion Tracking -->
     <script>
