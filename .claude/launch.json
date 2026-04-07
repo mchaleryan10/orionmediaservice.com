@@ -1,0 +1,15 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "orion-media",
+      "runtimeExecutable": "cmd.exe",
+      "runtimeArgs": [
+        "/c",
+        "powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"C:\\Users\\yanke\\Desktop\\Claude Files\\orion-media\\serve.ps1\""
+      ],
+      "port": 3000,
+      "autoPort": false
+    }
+  ]
+}
