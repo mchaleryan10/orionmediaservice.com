@@ -75,31 +75,91 @@
   <!-- City Landing Pages -->
   <url>
     <loc>https://orionmediaservice.com/real-estate/albany-ny.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://orionmediaservice.com/real-estate/saratoga-springs-ny.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://orionmediaservice.com/real-estate/troy-ny.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://orionmediaservice.com/real-estate/clifton-park-ny.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://orionmediaservice.com/real-estate/schenectady-ny.html</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://orionmediaservice.com/real-estate/cohoes-ny.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://orionmediaservice.com/real-estate/colonie-ny.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://orionmediaservice.com/real-estate/ballston-spa-ny.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://orionmediaservice.com/real-estate/guilderland-ny.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://orionmediaservice.com/real-estate/malta-ny.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://orionmediaservice.com/real-estate/rensselaer-ny.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://orionmediaservice.com/real-estate/lake-george-ny.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://orionmediaservice.com/real-estate/bethlehem-ny.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://orionmediaservice.com/real-estate/niskayuna-ny.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://orionmediaservice.com/real-estate/latham-ny.html</loc>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -138,6 +198,42 @@
     <loc>https://orionmediaservice.com/blog/benefits-local-videographer-capital-region.html</loc>
     <lastmod>2026-04-07</lastmod>
     <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orionmediaservice.com/blog/how-much-does-wedding-videographer-cost-upstate-ny.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orionmediaservice.com/blog/lake-george-adirondack-wedding-videography-guide.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orionmediaservice.com/blog/wedding-photo-and-video-guide-capital-region.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orionmediaservice.com/blog/home-seller-prep-checklist-real-estate-photography.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orionmediaservice.com/blog/video-walkthrough-vs-matterport-virtual-tour.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://orionmediaservice.com/blog/corporate-event-videography-guide-capital-region.html</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 </urlset>

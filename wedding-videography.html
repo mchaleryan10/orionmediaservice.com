@@ -379,11 +379,13 @@
             overflow: hidden;
         }
 
-        .video-responsive iframe {
+        .video-responsive iframe,
+        .video-responsive img {
             position: absolute;
             top: 0; left: 0;
             width: 100%; height: 100%;
             border: 0;
+            object-fit: cover;
         }
 
         .video-caption {
@@ -1418,8 +1420,8 @@
     <!-- ========== FEATURED VIDEO ========== -->
     <section class="featured-video">
         <div class="video-wrapper reveal">
-            <div class="video-responsive video-facade" data-video-id="mPcOwHvE8C4" style="position:relative;cursor:pointer">
-    <img src="https://i.ytimg.com/vi/mPcOwHvE8C4/hqdefault.jpg" width="480" height="360" alt="Featured Wedding Film" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;">
+            <div class="video-responsive video-facade" data-video-id="mPcOwHvE8C4" style="position:relative;cursor:pointer;width:100%">
+    <img src="https://i.ytimg.com/vi/mPcOwHvE8C4/maxresdefault.jpg" width="1280" height="720" alt="Featured Wedding Film" loading="eager" decoding="async" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;">
     <button class="facade-play-btn" aria-label="Play Featured Video">
         <svg width="24" height="24" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
     </button>

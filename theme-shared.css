@@ -130,14 +130,14 @@ html[data-theme="light"] .nav {
 }
 
 .nav-logo-text {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
+  font-weight: 300;
   font-size: 1.25rem;
-  font-weight: 400;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 
 .nav-logo-text span {
-  color: var(--star-glow);
   font-weight: 600;
 }
 
