@@ -25,7 +25,7 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orion Media | Videography & Photography | Capital Region NY</title>
-    <meta name="description" content="Orion Media — the Capital Region's premier videography and photography studio. Wedding videography, event recaps, real estate photography, drone services, and more serving Albany, Saratoga Springs, Troy, and all of Upstate NY.">
+    <meta name="description" content="Premier Capital Region videography & photography studio based in Cohoes, NY. Weddings, real estate, drone aerials & video. 5.0 Google rated.">
     <meta name="keywords" content="videography Capital Region NY, wedding videographer Albany, real estate photography Saratoga Springs, drone photography upstate NY, event video recaps, Orion Media Service">
     <meta name="author" content="Orion Media Service">
     <meta name="robots" content="index, follow">
@@ -50,6 +50,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="theme-shared.css">
     <style>
         /* ============================================
            CSS VARIABLES — ORION MEDIA BRAND
@@ -1071,7 +1072,7 @@
             .featured-logos-grid { grid-template-columns: repeat(2, 1fr); }
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1080px) {
             .nav-links { display: none; }
             .nav-toggle { display: flex; }
 
@@ -1088,7 +1089,9 @@
             }
 
             .nav-phone { display: none; }
+        }
 
+        @media (max-width: 768px) {
             .services-grid { grid-template-columns: 1fr; }
             .form-grid { grid-template-columns: 1fr; }
             .section-pad { padding: 5rem 1.5rem; }
@@ -1224,7 +1227,60 @@
             transition-duration: 0.4s !important;
             transition-timing-function: ease !important;
         }
-    .nav-has-dropdown{position:relative}.nav-dropdown{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);padding-top:8px;background:transparent;min-width:220px;list-style:none;z-index:1001}.nav-dropdown::before{content:'';position:absolute;top:8px;left:0;right:0;bottom:0;background:rgba(12,14,26,.97);backdrop-filter:blur(20px);border:1px solid var(--glass-border);border-radius:8px;z-index:-1}.nav-dropdown li{white-space:nowrap}.nav-dropdown a{display:block;padding:.55rem 1.25rem;font-size:.8rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:var(--star-dim);transition:color .2s,background .2s}.nav-dropdown a:hover{color:var(--starlight);background:var(--glass-white)}.nav-dropdown a::after{display:none!important}.nav-has-dropdown>a::after{display:none!important}.nav-has-dropdown:hover .nav-dropdown{display:block}@media(max-width:768px){.nav-has-dropdown .nav-dropdown{display:none;position:static;transform:none;border:none;border-radius:0;background:transparent;backdrop-filter:none;padding:.25rem 0 .25rem 1rem;margin:0}.nav-has-dropdown .nav-dropdown.mobile-open{display:block}.nav-dropdown a{padding:.35rem .5rem;font-size:.78rem}.nav-has-dropdown>a .mob-arrow{display:inline-block;transition:transform .25s}.nav-has-dropdown.mobile-open>a .mob-arrow{transform:rotate(180deg)}}.showreel-credit{text-align:center;margin-top:1rem;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--star-dim);opacity:.7;font-style:italic;}</style>
+    .nav-has-dropdown{position:relative}.nav-dropdown{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);padding-top:8px;background:transparent;min-width:220px;list-style:none;z-index:1001}.nav-dropdown::before{content:'';position:absolute;top:8px;left:0;right:0;bottom:0;background:rgba(12,14,26,.97);backdrop-filter:blur(20px);border:1px solid var(--glass-border);border-radius:8px;z-index:-1}.nav-dropdown li{white-space:nowrap}.nav-dropdown a{display:block;padding:.55rem 1.25rem;font-size:.8rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:var(--star-dim);transition:color .2s,background .2s}.nav-dropdown a:hover{color:var(--starlight);background:var(--glass-white)}.nav-dropdown a::after{display:none!important}.nav-has-dropdown>a::after{display:none!important}.nav-has-dropdown:hover .nav-dropdown{display:block}@media(max-width:1080px){.nav-has-dropdown .nav-dropdown{display:none;position:static;transform:none;border:none;border-radius:0;background:transparent;backdrop-filter:none;padding:.25rem 0 .25rem 1rem;margin:0}.nav-has-dropdown .nav-dropdown.mobile-open{display:block}.nav-dropdown a{padding:.35rem .5rem;font-size:.78rem}.nav-has-dropdown>a .mob-arrow{display:inline-block;transition:transform .25s}.nav-has-dropdown.mobile-open>a .mob-arrow{transform:rotate(180deg)}}.showreel-credit{text-align:center;margin-top:1rem;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--star-dim);opacity:.7;font-style:italic;}
+/* Video facade */
+.video-facade{position:relative;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000;border:1px solid var(--glass-border);cursor:pointer}
+.video-facade img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+.video-facade:hover img{transform:scale(1.03)}
+.video-facade .facade-play-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:68px;height:48px;background:rgba(123,111,204,.9);border:none;border-radius:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .25s ease;box-shadow:0 4px 20px rgba(0,0,0,.5);z-index:2}
+.video-facade:hover .facade-play-btn{background:#6a5dbb;transform:translate(-50%,-50%) scale(1.1);box-shadow:0 6px 24px rgba(123,111,204,.6)}
+.video-facade .facade-play-btn svg{width:26px;height:26px;fill:#fff;margin-left:3px}
+.photo-grid-item picture{width:100%;height:100%;display:block}
+
+
+        .hero-trust-line {
+            margin-top: 1.5rem;
+            font-size: 0.88rem;
+            color: var(--star-dim);
+            letter-spacing: 0.04em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.35rem;
+        }
+        .hero-trust-line .trust-stars {
+            color: #f5a623;
+            letter-spacing: 2px;
+        }
+        .hero-trust-line strong {
+            color: var(--starlight);
+            font-weight: 600;
+        }
+        .service-card-image {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 1.25rem;
+            border: 1px solid var(--glass-border);
+        }
+        .service-card-image picture {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .service-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+        .service-card:hover .service-card-image img {
+            transform: scale(1.05);
+        }
+
+    </style>
 
     <style>
         .sticky-cta {
@@ -1282,6 +1338,48 @@
   "email": "Ryan@OrionMediaService.com",
   "image": "https://orionmediaservice.com/images/orion-logo.png",
   "logo": "https://orionmediaservice.com/images/orion-logo.png",
+    "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "6",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Don Toscano" },
+      "datePublished": "2023-06-15",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "I was very impressed with Orion Media and Ryan McHale and the drone photography work he did for me. He was on time for our appointment and listened to what type of shots I needed as he was covering a 121 acre, 31 lot property. He went above and beyond and exceeded my expectations and the photos were top-notch. I plan on referring him to other real estate agents and having him handle more work for me in the future."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "C Batto" },
+      "datePublished": "2024-07-20",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "My July wedding was amazing with the drone footage.... Incredible job... also recommended audio for the ceremony ... so glad we did this !!!!"
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Spencer Lewis" },
+      "datePublished": "2022-09-10",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": "Orion Media is my go-to company for professional photos, drone videos, and 3D tours. It is great to work with a company that takes such pride in their work. Whether you are looking for a simple portrait shot, or something more complex like a full 3D virtual tour, Orion Media has the equipment and expertise to get it done right. Professional quality services from a company that is always willing to go the extra mile for their clients. I highly recommend their services!"
+    }
+  ],
   "priceRange": "$$",
   "currenciesAccepted": "USD",
   "paymentAccepted": "Cash, Credit Card, Check",
@@ -1413,8 +1511,80 @@
   ]
 }
 </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Orion Media \u2014 Capital Region Video & Photography Showreel",
+  "description": "Showreel showcasing cinematic wedding films, drone aerials, real estate tours, and event videography across Albany, Saratoga Springs, and Troy, NY by Orion Media.",
+  "thumbnailUrl": "https://i.ytimg.com/vi/waQv60Vo0-w/hqdefault.jpg",
+  "uploadDate": "2024-02-01T12:00:00-05:00",
+  "contentUrl": "https://www.youtube.com/watch?v=waQv60Vo0-w",
+  "embedUrl": "https://www.youtube.com/embed/waQv60Vo0-w",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Orion Media Service",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://orionmediaservice.com/images/orion-logo.png"
+    }
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What areas of the Capital Region do you serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Orion Media is centrally located in Cohoes, NY. We provide full photography and videography coverage across Albany, Saratoga Springs, Troy, Schenectady, Clifton Park, Colonie, Latham, Guilderland, and surrounding communities with zero travel fees."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the turnaround time for completed projects?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Real estate photography and 3D Matterport tours are delivered within 24 to 48 hours. Wedding videography and photography sneak peeks are delivered within 3 to 5 days, with full highlight films delivered in 4 to 6 weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are your drone operations licensed and insured?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Founder Ryan McHale is an FAA Part 107 certified commercial drone pilot with a $2,000,000 aviation liability insurance policy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can we bundle multiple services together?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Real estate agents frequently bundle HDR photos, drone aerials, and 3D Matterport walkthroughs. Wedding couples often bundle photo, video, and aerial coverage for significant savings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do we reserve our date and book?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fill out our online contact form or call/text (518) 222-9845. Dates are confirmed upon receipt of a digital agreement and initial deposit."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
+
 
     <!-- Star field -->
     <div class="stars"></div>
@@ -1423,7 +1593,7 @@
     <nav class="nav" id="nav">
         <div class="nav-inner">
             <a href="/" class="nav-logo">
-                <img src="images/orion-logo.png" alt="Orion Media Logo">
+                <img src="images/orion-logo.webp" alt="Orion Media Logo" width="40" height="40">
                 <div class="nav-logo-text"><span>Orion</span> Media</div>
             </a>
 
@@ -1447,6 +1617,7 @@
             </ul>
         </div>
     </nav>
+<main id="main">
 
     <!-- ========== HERO ========== -->
     <section class="hero" id="home">
@@ -1471,12 +1642,15 @@
                 real estate, and commercial projects across the Capital Region and beyond.
             </p>
 
-            <div class="hero-buttons">
+                        <div class="hero-buttons">
                 <a href="#contact" class="btn-primary">Get a Free Quote</a>
                 <a href="#showreel" class="btn-secondary">
                     <span class="play-icon"></span>
                     Watch Our Reel
                 </a>
+            </div>
+            <div class="hero-trust-line">
+                <span class="trust-stars">★★★★★</span> <strong>5.0</strong> on Google &nbsp;·&nbsp; <strong>A+</strong> BBB &nbsp;·&nbsp; <strong>FAA Part 107</strong> Certified
             </div>
         </div>
 
@@ -1497,15 +1671,13 @@
                 </p>
             </div>
 
-            <div class="showreel-embed reveal">
-                <iframe
-                    src="https://www.youtube.com/embed/waQv60Vo0-w?rel=0&modestbranding=1"
-                    frameborder="0"
-                    allowfullscreen
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    style="position:absolute;inset:0;width:100%;height:100%;border:0;display:block;">
-                </iframe>
-            </div>
+            <div class="showreel-embed reveal video-facade" data-video-id="waQv60Vo0-w">
+    <img src="https://i.ytimg.com/vi/waQv60Vo0-w/hqdefault.jpg" width="480" height="360" alt="Orion Media Showreel" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block;">
+    <div class="showreel-placeholder" style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;background:rgba(12,14,26,0.35);">
+        <div class="big-play"></div>
+        <span>Watch Showreel</span>
+    </div>
+</div>
             <p class="showreel-credit reveal">All footage captured by Orion Media</p>
         </div>
     </section>
@@ -1525,12 +1697,12 @@
                 <!-- Wedding Videography — FEATURED -->
                 <div class="service-card featured reveal">
                     <div class="service-badge">Most Popular</div>
-                    <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <rect x="4" y="10" width="40" height="28" rx="3"/>
-                        <circle cx="24" cy="24" r="8"/>
-                        <circle cx="24" cy="24" r="3"/>
-                        <circle cx="38" cy="15" r="2" fill="currentColor"/>
-                    </svg>
+                    <div class="service-card-image">
+                        <picture>
+                            <source srcset="images/portfolio/weddings/RTM01909-thumb.webp" type="image/webp">
+                            <img src="images/portfolio/weddings/RTM01909.jpg" alt="Cinematic wedding photography & videography by Orion Media" width="600" height="400" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
                     <h3>Wedding Videography & Photography</h3>
                     <p>Cinematic films and timeless photos that capture every emotion of your day — from prep to last dance.</p>
                     <a href="wedding-videography.html" class="service-link">
@@ -1542,12 +1714,12 @@
                 <!-- Real Estate — FEATURED -->
                 <div class="service-card featured reveal">
                     <div class="service-badge">High Volume</div>
-                    <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M6 22L24 8l18 14v20H6z"/>
-                        <rect x="18" y="28" width="12" height="14"/>
-                        <rect x="12" y="18" width="6" height="6"/>
-                        <rect x="30" y="18" width="6" height="6"/>
-                    </svg>
+                    <div class="service-card-image">
+                        <picture>
+                            <source srcset="images/portfolio/real-estate/15-dahlia-dr-015-thumb.webp" type="image/webp">
+                            <img src="images/portfolio/real-estate/15-dahlia-dr-015.jpg" alt="Modern interior real estate photography by Orion Media" width="600" height="400" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
                     <h3>Real Estate Photography</h3>
                     <p>HDR photography, video walkthroughs, and aerial shots that help listings sell faster across the Capital Region.</p>
                     <a href="real-estate-photography.html" class="service-link">
@@ -1558,11 +1730,12 @@
 
                 <!-- Event Video Recaps -->
                 <div class="service-card reveal">
-                    <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <rect x="4" y="12" width="30" height="24" rx="2"/>
-                        <path d="M34 20l10-6v20l-10-6z"/>
-                        <circle cx="19" cy="24" r="5"/>
-                    </svg>
+                    <div class="service-card-image">
+                        <picture>
+                            <source srcset="images/portfolio/events/005-thumb.webp" type="image/webp">
+                            <img src="images/portfolio/events/005.jpg" alt="Dynamic event videography & photography by Orion Media" width="600" height="400" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
                     <h3>Event Video Recaps</h3>
                     <p>Dynamic highlight reels for corporate events, galas, conferences, and celebrations that are made to share.</p>
                     <a href="event-commercial-video.html" class="service-link">
@@ -1573,12 +1746,12 @@
 
                 <!-- Drone -->
                 <div class="service-card reveal">
-                    <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <ellipse cx="24" cy="24" rx="6" ry="4"/>
-                        <path d="M6 18l12 4M30 22l12-4M6 30l12-4M30 26l12 4"/>
-                        <circle cx="6" cy="18" r="3"/><circle cx="42" cy="18" r="3"/>
-                        <circle cx="6" cy="30" r="3"/><circle cx="42" cy="30" r="3"/>
-                    </svg>
+                    <div class="service-card-image">
+                        <picture>
+                            <source srcset="images/portfolio/drone/116-hemlock-drone-5-thumb.webp" type="image/webp">
+                            <img src="images/portfolio/drone/116-hemlock-drone-5.jpg" alt="FAA-certified drone aerial photography by Orion Media" width="600" height="400" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
                     <h3>Drone Aerial Services</h3>
                     <p>FAA-compliant aerial video and photography for real estate, events, construction, and marketing content.</p>
                     <a href="drone-services.html" class="service-link">
@@ -1589,11 +1762,12 @@
 
                 <!-- 3D Matterport -->
                 <div class="service-card reveal">
-                    <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M24 4L4 16v16l20 12 20-12V16z"/>
-                        <path d="M4 16l20 12 20-12"/>
-                        <path d="M24 28v16"/>
-                    </svg>
+                    <div class="service-card-image">
+                        <picture>
+                            <source srcset="images/heroes/matterport-hero-thumb.webp" type="image/webp">
+                            <img src="images/heroes/matterport-hero.jpg" alt="3D Matterport virtual property tour by Orion Media" width="600" height="400" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
                     <h3>3D Matterport Tours</h3>
                     <p>Immersive virtual walkthroughs that let buyers and clients explore spaces from anywhere in the world.</p>
                     <a href="matterport-tours.html" class="service-link">
@@ -1604,11 +1778,12 @@
 
                 <!-- Commercial / Promo Video -->
                 <div class="service-card reveal">
-                    <svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <rect x="6" y="6" width="36" height="36" rx="4"/>
-                        <polygon points="20,16 34,24 20,32" fill="currentColor" opacity="0.3"/>
-                        <polygon points="20,16 34,24 20,32"/>
-                    </svg>
+                    <div class="service-card-image">
+                        <picture>
+                            <source srcset="images/portfolio/artistic/Aaron-McKenzie-56-thumb.webp" type="image/webp">
+                            <img src="images/portfolio/artistic/Aaron-McKenzie-56.jpg" alt="Commercial video production and brand storytelling by Orion Media" width="600" height="400" loading="lazy" decoding="async">
+                        </picture>
+                    </div>
                     <h3>Commercial & Promo Video</h3>
                     <p>Brand films, social content, and promotional videos that tell your business story and drive engagement.</p>
                     <a href="event-commercial-video.html" class="service-link">
@@ -1659,7 +1834,7 @@
                             </svg>
                         </div>
                         <div class="trust-badge-text">
-                            <h4>Full-Service Production</h4>
+                            <h3>Full-Service Production</h3>
                             <p>Video, photo, drone, 3D tours — all under one roof</p>
                         </div>
                     </div>
@@ -1672,7 +1847,7 @@
                             </svg>
                         </div>
                         <div class="trust-badge-text">
-                            <h4>Featured in Local Media</h4>
+                            <h3>Featured in Local Media</h3>
                             <p>Recognized by leading Capital Region businesses and publications</p>
                         </div>
                     </div>
@@ -1685,7 +1860,7 @@
                             </svg>
                         </div>
                         <div class="trust-badge-text">
-                            <h4>Fast Turnaround</h4>
+                            <h3>Fast Turnaround</h3>
                             <p>Real estate photos delivered within 24 hours</p>
                         </div>
                     </div>
@@ -1698,7 +1873,7 @@
                             </svg>
                         </div>
                         <div class="trust-badge-text">
-                            <h4>Locally Owned</h4>
+                            <h3>Locally Owned</h3>
                             <p>Based in Cohoes, serving the entire Capital Region</p>
                         </div>
                     </div>
@@ -1730,6 +1905,53 @@
             </div>
         </div>
     </section>
+    <!-- ========== WHY ORION MEDIA ========== -->
+    <section class="why-orion section-pad" id="why-orion" style="background: var(--deep-space);">
+        <div class="container">
+            <div class="section-center reveal" style="text-align: center; margin-bottom: 3.5rem;">
+                <p class="section-label">Why Choose Orion</p>
+                <h2 class="section-title">Built for Quality, Speed &amp; Trust</h2>
+                <p class="section-desc" style="max-width: 680px; margin: 0 auto;">
+                    We combine high-end cinema craftsmanship with reliable, business-friendly delivery for clients throughout Upstate New York.
+                </p>
+            </div>
+
+            <div class="why-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.75rem; max-width: 1200px; margin: 0 auto;">
+                <div class="why-card reveal" style="background: var(--glass-white); border: 1px solid var(--glass-border); border-radius: 12px; padding: 2rem;">
+                    <div style="font-size: 1.8rem; margin-bottom: 1rem; color: var(--star-glow);">✈️</div>
+                    <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem; color: var(--starlight); font-family: var(--font-display);">FAA Part 107 Certified &amp; Insured</h3>
+                    <p style="font-size: 0.9rem; color: var(--star-dim); line-height: 1.6;">
+                        Every aerial drone operation is conducted by an FAA Part 107 licensed remote pilot backed by comprehensive $2,000,000 commercial liability insurance. We handle airspace authorizations, safety checklists, and legal compliance so you can book with complete peace of mind.
+                    </p>
+                </div>
+
+                <div class="why-card reveal" style="background: var(--glass-white); border: 1px solid var(--glass-border); border-radius: 12px; padding: 2rem;">
+                    <div style="font-size: 1.8rem; margin-bottom: 1rem; color: var(--star-glow);">⚡</div>
+                    <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem; color: var(--starlight); font-family: var(--font-display);">Fast 24-to-48 Hour Turnaround</h3>
+                    <p style="font-size: 0.9rem; color: var(--star-dim); line-height: 1.6;">
+                        In competitive real estate markets like Saratoga Springs and Albany, speed is crucial. We deliver edited MLS-ready HDR photography, Matterport 3D walkthroughs, and social video reels within 24 to 48 hours guaranteed, keeping your listing momentum strong.
+                    </p>
+                </div>
+
+                <div class="why-card reveal" style="background: var(--glass-white); border: 1px solid var(--glass-border); border-radius: 12px; padding: 2rem;">
+                    <div style="font-size: 1.8rem; margin-bottom: 1rem; color: var(--star-glow);">🎬</div>
+                    <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem; color: var(--starlight); font-family: var(--font-display);">Cinema-Grade 4K &amp; Pro Audio</h3>
+                    <p style="font-size: 0.9rem; color: var(--star-dim); line-height: 1.6;">
+                        We shoot on professional 4K 10-bit cinema cameras paired with prime lenses, multi-source wireless audio recorders, and motorized gimbals. From intimate vows during a ceremony to crystal-clear speech capture at a corporate gala, your audio and visuals will be pristine.
+                    </p>
+                </div>
+
+                <div class="why-card reveal" style="background: var(--glass-white); border: 1px solid var(--glass-border); border-radius: 12px; padding: 2rem;">
+                    <div style="font-size: 1.8rem; margin-bottom: 1rem; color: var(--star-glow);">📍</div>
+                    <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem; color: var(--starlight); font-family: var(--font-display);">Zero Travel Fees Across Capital Region</h3>
+                    <p style="font-size: 0.9rem; color: var(--star-dim); line-height: 1.6;">
+                        Centrally based in Cohoes, NY, we never charge travel surcharges within Albany, Saratoga, Schenectady, or Rensselaer counties. Transparent, published package pricing means no unexpected invoice surprises on shoot day.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- ========== AREAS SERVED ========== -->
     <section class="areas section-pad" id="areas">
@@ -1760,6 +1982,157 @@
                 <a href="#contact" class="area-tag" data-area="Catskills">Catskills</a>
                 <a href="#contact" class="area-tag" data-area="Hudson Valley">Hudson Valley</a>
                 <a href="#contact" class="area-tag" data-area="+ Travel Available">+ Travel Available</a>
+            </div>
+        </div>
+    </section>
+
+        <!-- ========== CLIENT REVIEWS ========== -->
+    <section class="reviews-preview section-pad" id="reviews" style="background: linear-gradient(180deg, var(--deep-space) 0%, var(--nebula) 100%);">
+        <div class="container">
+            <div class="section-center reveal" style="text-align: center; margin-bottom: 3rem;">
+                <p class="section-label">Client Reviews</p>
+                <h2 class="section-title">What Capital Region Clients Say</h2>
+                <p class="section-desc" style="max-width: 600px; margin: 0 auto;">
+                    Rated 5.0 on Google · Real feedback from Realtors, couples, and local businesses.
+                </p>
+            </div>
+
+            <div class="reviews-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; max-width: 1200px; margin: 0 auto;">
+                <!-- Review 1: Don Toscano -->
+                <div class="review-card reveal" style="background: var(--glass-white); border: 1px solid var(--glass-border); border-radius: 12px; padding: 2rem; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div class="review-stars" style="color: #f5a623; margin-bottom: 1rem; font-size: 1.1rem; letter-spacing: 2px;">★★★★★</div>
+                        <p class="review-text" style="font-size: 0.92rem; line-height: 1.6; color: var(--star-dim); font-style: italic; margin-bottom: 1.5rem;">
+                            "I was very impressed with Orion Media and Ryan McHale and the drone photography work he did for me. He was on time for our appointment and listened to what type of shots I needed as he was covering a 121 acre, 31 lot property. He went above and beyond and exceeded my expectations and the photos were top-notch. I plan on referring him to other real estate agents and having him handle more work for me in the future."
+                        </p>
+                    </div>
+                    <div>
+                        <div class="review-author" style="font-weight: 600; color: var(--starlight);">Don Toscano</div>
+                        <div class="review-role" style="font-size: 0.8rem; color: var(--star-dim);">Licensed Real Estate Agent</div>
+                        <div class="review-google" style="margin-top: 0.5rem; font-size: 0.75rem;">
+                            <a href="https://maps.app.goo.gl/3kdZdWwJ65prHYmx7" target="_blank" rel="noopener" style="color: var(--star-glow); display: inline-flex; align-items: center; gap: 0.35rem;">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg> Verified Google Review
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2: C Batto -->
+                <div class="review-card reveal" style="background: var(--glass-white); border: 1px solid var(--glass-border); border-radius: 12px; padding: 2rem; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div class="review-stars" style="color: #f5a623; margin-bottom: 1rem; font-size: 1.1rem; letter-spacing: 2px;">★★★★★</div>
+                        <p class="review-text" style="font-size: 0.92rem; line-height: 1.6; color: var(--star-dim); font-style: italic; margin-bottom: 1.5rem;">
+                            "My July wedding was amazing with the drone footage.... Incredible job... also recommended audio for the ceremony ... so glad we did this !!!!"
+                        </p>
+                    </div>
+                    <div>
+                        <div class="review-author" style="font-weight: 600; color: var(--starlight);">C Batto</div>
+                        <div class="review-role" style="font-size: 0.8rem; color: var(--star-dim);">Wedding Client</div>
+                        <div class="review-google" style="margin-top: 0.5rem; font-size: 0.75rem;">
+                            <a href="https://maps.app.goo.gl/QsyWiuz2SbcG8p6X9" target="_blank" rel="noopener" style="color: var(--star-glow); display: inline-flex; align-items: center; gap: 0.35rem;">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg> Verified Google Review
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3: Spencer Lewis -->
+                <div class="review-card reveal" style="background: var(--glass-white); border: 1px solid var(--glass-border); border-radius: 12px; padding: 2rem; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div class="review-stars" style="color: #f5a623; margin-bottom: 1rem; font-size: 1.1rem; letter-spacing: 2px;">★★★★★</div>
+                        <p class="review-text" style="font-size: 0.92rem; line-height: 1.6; color: var(--star-dim); font-style: italic; margin-bottom: 1.5rem;">
+                            "Orion Media is my go-to company for professional photos, drone videos, and 3D tours. It is great to work with a company that takes such pride in their work. Whether you are looking for a simple portrait shot, or something more complex like a full 3D virtual tour, Orion Media has the equipment and expertise to get it done right. Professional quality services from a company that is always willing to go the extra mile for their clients. I highly recommend their services!"
+                        </p>
+                    </div>
+                    <div>
+                        <div class="review-author" style="font-weight: 600; color: var(--starlight);">Spencer Lewis</div>
+                        <div class="review-role" style="font-size: 0.8rem; color: var(--star-dim);">Repeat Commercial Client</div>
+                        <div class="review-google" style="margin-top: 0.5rem; font-size: 0.75rem;">
+                            <a href="https://maps.app.goo.gl/95PuLk9zCRF34ig67" target="_blank" rel="noopener" style="color: var(--star-glow); display: inline-flex; align-items: center; gap: 0.35rem;">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg> Verified Google Review
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2.5rem;">
+                <a href="about.html#reviews" class="btn-secondary" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.75rem; border-radius: 4px; border: 1px solid var(--glass-border); color: var(--starlight); font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase;">
+                    Read All Google Reviews &rarr;
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- ========== LEAD MAGNET ========== -->
+    <section class="lead-magnet section-pad" id="guide" style="background: linear-gradient(135deg, rgba(123,111,204,0.15) 0%, rgba(26,29,58,0.6) 100%); border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);">
+        <div class="container" style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <div class="reveal">
+                <span style="display: inline-block; padding: 0.35rem 1rem; background: rgba(123,111,204,0.25); border: 1px solid var(--shutter-accent); border-radius: 20px; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--star-glow); margin-bottom: 1.25rem;">Free Digital Download</span>
+                <h2 style="font-size: 2.2rem; font-family: var(--font-display); margin-bottom: 1rem; color: var(--starlight);">The 2026 Capital Region Wedding &amp; Media Guide</h2>
+                <p style="font-size: 1.05rem; color: var(--star-dim); line-height: 1.7; max-width: 680px; margin: 0 auto 2rem;">
+                    Planning a wedding or listing a property in Upstate NY? Download our complete 16-page guide featuring top photo locations across Albany and Saratoga, wedding video timelines, drone permit rules, and agent shoot-prep checklists.
+                </p>
+
+                <form action="https://formspree.io/f/xqedvayw" method="POST" style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; max-width: 540px; margin: 0 auto;">
+                    <input type="hidden" name="_subject" value="Lead Magnet Download Request — Capital Region Guide">
+                    <input type="email" name="email" placeholder="Enter your email address" required style="flex: 1 1 280px; padding: 0.85rem 1.25rem; border-radius: 6px; border: 1px solid var(--glass-border); background: var(--deep-space); color: var(--starlight); font-size: 0.95rem;">
+                    <button type="submit" class="btn-primary" style="padding: 0.85rem 1.75rem; border-radius: 6px; border: none; background: var(--shutter-accent); color: #fff; font-weight: 600; cursor: pointer; transition: background 0.3s;">
+                        Get Free Guide &rarr;
+                    </button>
+                </form>
+                <p style="font-size: 0.75rem; color: var(--star-dim); margin-top: 0.75rem;">Instant PDF delivery · No spam · Unsubscribe anytime.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========== HOMEPAGE FAQ ========== -->
+    <section class="home-faq section-pad" id="faq" style="background: var(--deep-space);">
+        <div class="container" style="max-width: 900px; margin: 0 auto;">
+            <div class="section-center reveal" style="text-align: center; margin-bottom: 3.5rem;">
+                <p class="section-label">Got Questions?</p>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-desc" style="max-width: 600px; margin: 0 auto;">
+                    Everything you need to know about booking videography, photography, and drone services with Orion Media.
+                </p>
+            </div>
+
+            <div class="faq-list reveal" style="display: flex; flex-direction: column; gap: 1.25rem;">
+                <div class="faq-item" style="background: var(--glass-white); border: 1px solid var(--glass-border); border-radius: 10px; padding: 1.75rem;">
+                    <h3 style="font-size: 1.15rem; color: var(--starlight); margin-bottom: 0.75rem; font-family: var(--font-display);">What areas of the Capital Region do you serve?</h3>
+                    <p style="font-size: 0.92rem; color: var(--star-dim); line-height: 1.6;">
+                        Orion Media is centrally located in Cohoes, NY. We provide full photography and videography coverage across Albany, Saratoga Springs, Troy, Schenectady, Clifton Park, Colonie, Latham, Guilderland, and surrounding communities with zero travel fees. We also regularly travel to Lake George, the Adirondacks, and the Hudson Valley.
+                    </p>
+                </div>
+
+                <div class="faq-item" style="background: var(--glass-white); border: 1px solid var(--glass-border); border-radius: 10px; padding: 1.75rem;">
+                    <h3 style="font-size: 1.15rem; color: var(--starlight); margin-bottom: 0.75rem; font-family: var(--font-display);">What is the turnaround time for completed projects?</h3>
+                    <p style="font-size: 0.92rem; color: var(--star-dim); line-height: 1.6;">
+                        Real estate photography and 3D Matterport tours are delivered within 24 to 48 hours so agents can launch listings immediately. For wedding videography and photography, sneak peek galleries and teasers are delivered within 3 to 5 days, while fully edited highlight films and master galleries are delivered in 4 to 6 weeks.
+                    </p>
+                </div>
+
+                <div class="faq-item" style="background: var(--glass-white); border: 1px solid var(--glass-border); border-radius: 10px; padding: 1.75rem;">
+                    <h3 style="font-size: 1.15rem; color: var(--starlight); margin-bottom: 0.75rem; font-family: var(--font-display);">Are your drone operations licensed and insured?</h3>
+                    <p style="font-size: 0.92rem; color: var(--star-dim); line-height: 1.6;">
+                        Yes. Founder Ryan McHale is an FAA Part 107 certified commercial drone pilot. We operate fully registered aircraft and carry a $2,000,000 aviation liability insurance policy, ensuring every aerial shoot meets strict federal safety guidelines.
+                    </p>
+                </div>
+
+                <div class="faq-item" style="background: var(--glass-white); border: 1px solid var(--glass-border); border-radius: 10px; padding: 1.75rem;">
+                    <h3 style="font-size: 1.15rem; color: var(--starlight); margin-bottom: 0.75rem; font-family: var(--font-display);">Can we bundle multiple services together?</h3>
+                    <p style="font-size: 0.92rem; color: var(--star-dim); line-height: 1.6;">
+                        Absolutely. Bundling services is our most popular option. Real estate agents frequently bundle HDR photos, drone aerials, and 3D Matterport walkthroughs for maximum savings. Wedding couples often bundle full-day photo coverage, cinematic highlight film, and drone footage.
+                    </p>
+                </div>
+
+                <div class="faq-item" style="background: var(--glass-white); border: 1px solid var(--glass-border); border-radius: 10px; padding: 1.75rem;">
+                    <h3 style="font-size: 1.15rem; color: var(--starlight); margin-bottom: 0.75rem; font-family: var(--font-display);">How do we reserve our date and book?</h3>
+                    <p style="font-size: 0.92rem; color: var(--star-dim); line-height: 1.6;">
+                        Simply fill out our quote form or call/text us directly at (518) 222-9845. We will verify date availability, review your creative requirements, and provide a transparent written proposal. Dates are secured with a simple digital agreement and deposit.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -1820,11 +2193,12 @@
     </section>
 
     <!-- ========== FOOTER ========== -->
-    <footer class="footer">
+    </main>
+<footer class="footer">
         <div class="footer-inner">
             <div class="footer-brand">
                 <a href="/" class="nav-logo">
-                    <img src="images/orion-logo.png" alt="Orion Media Logo" style="height:40px;width:40px;border-radius:50%;">
+                    <img src="images/orion-logo.webp" alt="Orion Media Logo" width="40" height="40" style="height:40px;width:40px;border-radius:50%;">
                     <div class="nav-logo-text"><span>Orion</span> Media</div>
                 </a>
                 <p>Professional videography and photography serving the Capital Region of New York. Weddings, events, real estate, and more.</p>
@@ -1846,7 +2220,7 @@
             </div>
 
             <div>
-                <h5>Services</h5>
+                <div class="footer-heading">Services</div>
                 <ul class="footer-links">
                     <li><a href="wedding-videography.html">Wedding Video</a></li>
                     <li><a href="wedding-photography.html">Wedding Photo</a></li>
@@ -1859,7 +2233,7 @@
             </div>
 
             <div>
-                <h5>Company</h5>
+                <div class="footer-heading">Company</div>
                 <ul class="footer-links">
                     <li><a href="about.html">About</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
@@ -1870,7 +2244,7 @@
             </div>
 
             <div>
-                <h5>Contact</h5>
+                <div class="footer-heading">Contact</div>
                 <ul class="footer-links">
                     <li><a href="tel:+15182229845">(518) 222-9845</a></li>
                     <li><a href="mailto:Ryan@OrionMediaService.com">Ryan@OrionMediaService.com</a></li>
@@ -2032,5 +2406,25 @@ document.querySelectorAll('.mob-services-toggle').forEach(function(link){
             Text
         </a>
     </div>
+<script>
+// Click-to-load YouTube facade
+document.querySelectorAll('.video-facade').forEach(function(facade){
+  facade.addEventListener('click',function(){
+    var vid=facade.getAttribute('data-video-id');
+    if(!vid)return;
+    var iframe=document.createElement('iframe');
+    iframe.src='https://www.youtube.com/embed/'+vid+'?autoplay=1&rel=0&modestbranding=1';
+    iframe.frameBorder='0';
+    iframe.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen=true;
+    iframe.style.width='100%';
+    iframe.style.height='100%';
+    iframe.style.border='0';
+    iframe.style.display='block';
+    facade.innerHTML='';
+    facade.appendChild(iframe);
+  });
+});
+</script>
 </body>
 </html>

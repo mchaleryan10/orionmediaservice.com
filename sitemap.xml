@@ -74,8 +74,32 @@
   </url>
   <!-- City Landing Pages -->
   <url>
+    <loc>https://orionmediaservice.com/real-estate/albany-ny.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://orionmediaservice.com/real-estate/saratoga-springs-ny.html</loc>
-    <lastmod>2026-04-07</lastmod>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://orionmediaservice.com/real-estate/troy-ny.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://orionmediaservice.com/real-estate/clifton-park-ny.html</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://orionmediaservice.com/real-estate/schenectady-ny.html</loc>
+    <lastmod>2026-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

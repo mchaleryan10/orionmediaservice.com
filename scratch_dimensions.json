@@ -1,0 +1,3783 @@
+{
+  "images/portfolio/artistic/009.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 225702
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 18340,
+      "path": "images/portfolio/artistic/009-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 80352,
+      "path": "images/portfolio/artistic/009-full.webp"
+    }
+  },
+  "images/portfolio/artistic/015.jpg": {
+    "orig": {
+      "w": 1333,
+      "h": 2000,
+      "size": 386904
+    },
+    "thumb": {
+      "w": 600,
+      "h": 900,
+      "size": 73596,
+      "path": "images/portfolio/artistic/015-thumb.webp"
+    },
+    "full": {
+      "w": 1333,
+      "h": 2000,
+      "size": 278576,
+      "path": "images/portfolio/artistic/015-full.webp"
+    }
+  },
+  "images/portfolio/artistic/018.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 255330
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 25178,
+      "path": "images/portfolio/artistic/018-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 100138,
+      "path": "images/portfolio/artistic/018-full.webp"
+    }
+  },
+  "images/portfolio/artistic/Aaron-McKenzie-56.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 245211
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 17968,
+      "path": "images/portfolio/artistic/Aaron-McKenzie-56-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 89466,
+      "path": "images/portfolio/artistic/Aaron-McKenzie-56-full.webp"
+    }
+  },
+  "images/portfolio/artistic/BW Surfers-6.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 446749
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 36528,
+      "path": "images/portfolio/artistic/BW Surfers-6-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 222470,
+      "path": "images/portfolio/artistic/BW Surfers-6-full.webp"
+    }
+  },
+  "images/portfolio/artistic/DSC01353.JPG": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 133210
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 11604,
+      "path": "images/portfolio/artistic/DSC01353-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 44210,
+      "path": "images/portfolio/artistic/DSC01353-full.webp"
+    }
+  },
+  "images/portfolio/artistic/DSC01394.JPG": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 402665
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 30984,
+      "path": "images/portfolio/artistic/DSC01394-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 213866,
+      "path": "images/portfolio/artistic/DSC01394-full.webp"
+    }
+  },
+  "images/portfolio/artistic/DSC02935.JPG": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 174840
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 8102,
+      "path": "images/portfolio/artistic/DSC02935-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 37726,
+      "path": "images/portfolio/artistic/DSC02935-full.webp"
+    }
+  },
+  "images/portfolio/artistic/DSC03890.JPG": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 176459
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 12816,
+      "path": "images/portfolio/artistic/DSC03890-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 63628,
+      "path": "images/portfolio/artistic/DSC03890-full.webp"
+    }
+  },
+  "images/portfolio/artistic/Engage-1.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 2000,
+      "size": 801280
+    },
+    "thumb": {
+      "w": 600,
+      "h": 600,
+      "size": 47022,
+      "path": "images/portfolio/artistic/Engage-1-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1600,
+      "size": 446090,
+      "path": "images/portfolio/artistic/Engage-1-full.webp"
+    }
+  },
+  "images/portfolio/artistic/Engage-2.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 2000,
+      "size": 1033390
+    },
+    "thumb": {
+      "w": 600,
+      "h": 600,
+      "size": 67238,
+      "path": "images/portfolio/artistic/Engage-2-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1600,
+      "size": 659530,
+      "path": "images/portfolio/artistic/Engage-2-full.webp"
+    }
+  },
+  "images/portfolio/artistic/Engage-3.jpg": {
+    "orig": {
+      "w": 1333,
+      "h": 2000,
+      "size": 554245
+    },
+    "thumb": {
+      "w": 600,
+      "h": 900,
+      "size": 56316,
+      "path": "images/portfolio/artistic/Engage-3-thumb.webp"
+    },
+    "full": {
+      "w": 1333,
+      "h": 2000,
+      "size": 513444,
+      "path": "images/portfolio/artistic/Engage-3-full.webp"
+    }
+  },
+  "images/portfolio/artistic/Engage-4.jpg": {
+    "orig": {
+      "w": 1333,
+      "h": 2000,
+      "size": 404641
+    },
+    "thumb": {
+      "w": 600,
+      "h": 900,
+      "size": 37862,
+      "path": "images/portfolio/artistic/Engage-4-thumb.webp"
+    },
+    "full": {
+      "w": 1333,
+      "h": 2000,
+      "size": 288388,
+      "path": "images/portfolio/artistic/Engage-4-full.webp"
+    }
+  },
+  "images/portfolio/artistic/Engage.jpg": {
+    "orig": {
+      "w": 1333,
+      "h": 2000,
+      "size": 408474
+    },
+    "thumb": {
+      "w": 600,
+      "h": 900,
+      "size": 37404,
+      "path": "images/portfolio/artistic/Engage-thumb.webp"
+    },
+    "full": {
+      "w": 1333,
+      "h": 2000,
+      "size": 292002,
+      "path": "images/portfolio/artistic/Engage-full.webp"
+    }
+  },
+  "images/portfolio/artistic/Fireworks Enhanced.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 176826
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 9970,
+      "path": "images/portfolio/artistic/Fireworks Enhanced-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 63792,
+      "path": "images/portfolio/artistic/Fireworks Enhanced-full.webp"
+    }
+  },
+  "images/portfolio/artistic/IMG_0179.JPG": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 328385
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 23428,
+      "path": "images/portfolio/artistic/IMG_0179-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 149158,
+      "path": "images/portfolio/artistic/IMG_0179-full.webp"
+    }
+  },
+  "images/portfolio/artistic/IMG_0683.JPG": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 264974
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 22244,
+      "path": "images/portfolio/artistic/IMG_0683-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 96382,
+      "path": "images/portfolio/artistic/IMG_0683-full.webp"
+    }
+  },
+  "images/portfolio/artistic/IMG_2689.JPG": {
+    "orig": {
+      "w": 2000,
+      "h": 2000,
+      "size": 305023
+    },
+    "thumb": {
+      "w": 600,
+      "h": 600,
+      "size": 23362,
+      "path": "images/portfolio/artistic/IMG_2689-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1600,
+      "size": 130270,
+      "path": "images/portfolio/artistic/IMG_2689-full.webp"
+    }
+  },
+  "images/portfolio/artistic/Kaaterskill Falls Enhanced.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 1149022
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 110248,
+      "path": "images/portfolio/artistic/Kaaterskill Falls Enhanced-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 823336,
+      "path": "images/portfolio/artistic/Kaaterskill Falls Enhanced-full.webp"
+    }
+  },
+  "images/portfolio/artistic/mass-10.jpg": {
+    "orig": {
+      "w": 1333,
+      "h": 2000,
+      "size": 646118
+    },
+    "thumb": {
+      "w": 600,
+      "h": 900,
+      "size": 126090,
+      "path": "images/portfolio/artistic/mass-10-thumb.webp"
+    },
+    "full": {
+      "w": 1333,
+      "h": 2000,
+      "size": 584402,
+      "path": "images/portfolio/artistic/mass-10-full.webp"
+    }
+  },
+  "images/portfolio/artistic/mass-3.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 605312
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 27966,
+      "path": "images/portfolio/artistic/mass-3-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 347590,
+      "path": "images/portfolio/artistic/mass-3-full.webp"
+    }
+  },
+  "images/portfolio/artistic/mass-5.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 443019
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 41140,
+      "path": "images/portfolio/artistic/mass-5-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 244368,
+      "path": "images/portfolio/artistic/mass-5-full.webp"
+    }
+  },
+  "images/portfolio/artistic/Niagara_6.jpg": {
+    "orig": {
+      "w": 1333,
+      "h": 1999,
+      "size": 372585
+    },
+    "thumb": {
+      "w": 600,
+      "h": 900,
+      "size": 47076,
+      "path": "images/portfolio/artistic/Niagara_6-thumb.webp"
+    },
+    "full": {
+      "w": 1333,
+      "h": 1999,
+      "size": 255236,
+      "path": "images/portfolio/artistic/Niagara_6-full.webp"
+    }
+  },
+  "images/portfolio/artistic/Niagara_8.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 316787
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 18968,
+      "path": "images/portfolio/artistic/Niagara_8-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 108968,
+      "path": "images/portfolio/artistic/Niagara_8-full.webp"
+    }
+  },
+  "images/portfolio/artistic/Peaked Mountain PRINTABLE.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 796,
+      "size": 316459
+    },
+    "thumb": {
+      "w": 600,
+      "h": 239,
+      "size": 27154,
+      "path": "images/portfolio/artistic/Peaked Mountain PRINTABLE-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 637,
+      "size": 180432,
+      "path": "images/portfolio/artistic/Peaked Mountain PRINTABLE-full.webp"
+    }
+  },
+  "images/portfolio/artistic/Peaked Mountain_1.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 416131
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 32788,
+      "path": "images/portfolio/artistic/Peaked Mountain_1-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 217018,
+      "path": "images/portfolio/artistic/Peaked Mountain_1-full.webp"
+    }
+  },
+  "images/portfolio/artistic/Peaked Mountain_25.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 528839
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 46946,
+      "path": "images/portfolio/artistic/Peaked Mountain_25-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 308516,
+      "path": "images/portfolio/artistic/Peaked Mountain_25-full.webp"
+    }
+  },
+  "images/portfolio/artistic/RTM00443.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 242705
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 18886,
+      "path": "images/portfolio/artistic/RTM00443-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 76716,
+      "path": "images/portfolio/artistic/RTM00443-full.webp"
+    }
+  },
+  "images/portfolio/artistic/RTM03755.JPG": {
+    "orig": {
+      "w": 1333,
+      "h": 2000,
+      "size": 251786
+    },
+    "thumb": {
+      "w": 600,
+      "h": 900,
+      "size": 40078,
+      "path": "images/portfolio/artistic/RTM03755-thumb.webp"
+    },
+    "full": {
+      "w": 1333,
+      "h": 2000,
+      "size": 165432,
+      "path": "images/portfolio/artistic/RTM03755-full.webp"
+    }
+  },
+  "images/portfolio/artistic/RTM03772.jpg": {
+    "orig": {
+      "w": 1333,
+      "h": 2000,
+      "size": 476546
+    },
+    "thumb": {
+      "w": 600,
+      "h": 900,
+      "size": 96106,
+      "path": "images/portfolio/artistic/RTM03772-thumb.webp"
+    },
+    "full": {
+      "w": 1333,
+      "h": 2000,
+      "size": 373858,
+      "path": "images/portfolio/artistic/RTM03772-full.webp"
+    }
+  },
+  "images/portfolio/artistic/RTM03791.jpg": {
+    "orig": {
+      "w": 1333,
+      "h": 2000,
+      "size": 288682
+    },
+    "thumb": {
+      "w": 600,
+      "h": 900,
+      "size": 46434,
+      "path": "images/portfolio/artistic/RTM03791-thumb.webp"
+    },
+    "full": {
+      "w": 1333,
+      "h": 2000,
+      "size": 173930,
+      "path": "images/portfolio/artistic/RTM03791-full.webp"
+    }
+  },
+  "images/portfolio/artistic/RTM03810.JPG": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 310130
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 25032,
+      "path": "images/portfolio/artistic/RTM03810-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 149424,
+      "path": "images/portfolio/artistic/RTM03810-full.webp"
+    }
+  },
+  "images/portfolio/artistic/RTM03836.JPG": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 227772
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 15774,
+      "path": "images/portfolio/artistic/RTM03836-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 100552,
+      "path": "images/portfolio/artistic/RTM03836-full.webp"
+    }
+  },
+  "images/portfolio/artistic/RTM03843.JPG": {
+    "orig": {
+      "w": 1333,
+      "h": 2000,
+      "size": 468378
+    },
+    "thumb": {
+      "w": 600,
+      "h": 900,
+      "size": 80826,
+      "path": "images/portfolio/artistic/RTM03843-thumb.webp"
+    },
+    "full": {
+      "w": 1333,
+      "h": 2000,
+      "size": 331182,
+      "path": "images/portfolio/artistic/RTM03843-full.webp"
+    }
+  },
+  "images/portfolio/artistic/RTM03880.jpg": {
+    "orig": {
+      "w": 1333,
+      "h": 2000,
+      "size": 524644
+    },
+    "thumb": {
+      "w": 600,
+      "h": 900,
+      "size": 87564,
+      "path": "images/portfolio/artistic/RTM03880-thumb.webp"
+    },
+    "full": {
+      "w": 1333,
+      "h": 2000,
+      "size": 403614,
+      "path": "images/portfolio/artistic/RTM03880-full.webp"
+    }
+  },
+  "images/portfolio/artistic/RTM08350.JPG": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 239115
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 17516,
+      "path": "images/portfolio/artistic/RTM08350-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 98898,
+      "path": "images/portfolio/artistic/RTM08350-full.webp"
+    }
+  },
+  "images/portfolio/artistic/RTM09628.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 335218
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 17894,
+      "path": "images/portfolio/artistic/RTM09628-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 126592,
+      "path": "images/portfolio/artistic/RTM09628-full.webp"
+    }
+  },
+  "images/portfolio/artistic/RTMF2043.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 477436
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 47150,
+      "path": "images/portfolio/artistic/RTMF2043-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 251004,
+      "path": "images/portfolio/artistic/RTMF2043-full.webp"
+    }
+  },
+  "images/portfolio/artistic/RTMF2246.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 627864
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 58046,
+      "path": "images/portfolio/artistic/RTMF2246-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 369544,
+      "path": "images/portfolio/artistic/RTMF2246-full.webp"
+    }
+  },
+  "images/portfolio/artistic/RTMF2335.jpg": {
+    "orig": {
+      "w": 1333,
+      "h": 2000,
+      "size": 511215
+    },
+    "thumb": {
+      "w": 600,
+      "h": 900,
+      "size": 91978,
+      "path": "images/portfolio/artistic/RTMF2335-thumb.webp"
+    },
+    "full": {
+      "w": 1333,
+      "h": 2000,
+      "size": 431730,
+      "path": "images/portfolio/artistic/RTMF2335-full.webp"
+    }
+  },
+  "images/portfolio/artistic/RTMF2724-HDR.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 489269
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 43126,
+      "path": "images/portfolio/artistic/RTMF2724-HDR-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 274794,
+      "path": "images/portfolio/artistic/RTMF2724-HDR-full.webp"
+    }
+  },
+  "images/portfolio/artistic/RTMF2766-HDR.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 230971
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 14554,
+      "path": "images/portfolio/artistic/RTMF2766-HDR-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 82300,
+      "path": "images/portfolio/artistic/RTMF2766-HDR-full.webp"
+    }
+  },
+  "images/portfolio/artistic/RTMF3210.jpg": {
+    "orig": {
+      "w": 1333,
+      "h": 2000,
+      "size": 376546
+    },
+    "thumb": {
+      "w": 600,
+      "h": 900,
+      "size": 49202,
+      "path": "images/portfolio/artistic/RTMF3210-thumb.webp"
+    },
+    "full": {
+      "w": 1333,
+      "h": 2000,
+      "size": 249654,
+      "path": "images/portfolio/artistic/RTMF3210-full.webp"
+    }
+  },
+  "images/portfolio/artistic/RTMF4602.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 245124
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 12498,
+      "path": "images/portfolio/artistic/RTMF4602-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 71420,
+      "path": "images/portfolio/artistic/RTMF4602-full.webp"
+    }
+  },
+  "images/portfolio/artistic/Trail.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1522,
+      "size": 892883
+    },
+    "thumb": {
+      "w": 600,
+      "h": 457,
+      "size": 91760,
+      "path": "images/portfolio/artistic/Trail-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1218,
+      "size": 579320,
+      "path": "images/portfolio/artistic/Trail-full.webp"
+    }
+  },
+  "images/portfolio/drone/007.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1499,
+      "size": 896770
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 78096,
+      "path": "images/portfolio/drone/007-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1199,
+      "size": 571706,
+      "path": "images/portfolio/drone/007-full.webp"
+    }
+  },
+  "images/portfolio/drone/015.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1499,
+      "size": 714028
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 59232,
+      "path": "images/portfolio/drone/015-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1199,
+      "size": 424742,
+      "path": "images/portfolio/drone/015-full.webp"
+    }
+  },
+  "images/portfolio/drone/017.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1499,
+      "size": 713448
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 58550,
+      "path": "images/portfolio/drone/017-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1199,
+      "size": 427748,
+      "path": "images/portfolio/drone/017-full.webp"
+    }
+  },
+  "images/portfolio/drone/050.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 789006
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 73232,
+      "path": "images/portfolio/drone/050-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 478894,
+      "path": "images/portfolio/drone/050-full.webp"
+    }
+  },
+  "images/portfolio/drone/056.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 833705
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 81624,
+      "path": "images/portfolio/drone/056-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 524438,
+      "path": "images/portfolio/drone/056-full.webp"
+    }
+  },
+  "images/portfolio/drone/061.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 788511
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 73218,
+      "path": "images/portfolio/drone/061-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 493040,
+      "path": "images/portfolio/drone/061-full.webp"
+    }
+  },
+  "images/portfolio/drone/067.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 511793
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 37318,
+      "path": "images/portfolio/drone/067-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 271326,
+      "path": "images/portfolio/drone/067-full.webp"
+    }
+  },
+  "images/portfolio/drone/072.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 633355
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 55030,
+      "path": "images/portfolio/drone/072-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 358108,
+      "path": "images/portfolio/drone/072-full.webp"
+    }
+  },
+  "images/portfolio/drone/076.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 534345
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 42568,
+      "path": "images/portfolio/drone/076-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 286268,
+      "path": "images/portfolio/drone/076-full.webp"
+    }
+  },
+  "images/portfolio/drone/078.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 680619
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 52356,
+      "path": "images/portfolio/drone/078-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 402808,
+      "path": "images/portfolio/drone/078-full.webp"
+    }
+  },
+  "images/portfolio/drone/083.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 778273
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 64450,
+      "path": "images/portfolio/drone/083-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 491608,
+      "path": "images/portfolio/drone/083-full.webp"
+    }
+  },
+  "images/portfolio/drone/100.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 705385
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 62016,
+      "path": "images/portfolio/drone/100-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 425240,
+      "path": "images/portfolio/drone/100-full.webp"
+    }
+  },
+  "images/portfolio/drone/108.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 730595
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 69844,
+      "path": "images/portfolio/drone/108-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 449350,
+      "path": "images/portfolio/drone/108-full.webp"
+    }
+  },
+  "images/portfolio/drone/112.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 768709
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 70462,
+      "path": "images/portfolio/drone/112-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 481018,
+      "path": "images/portfolio/drone/112-full.webp"
+    }
+  },
+  "images/portfolio/drone/116-hemlock-drone-5.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 534721
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 82180,
+      "path": "images/portfolio/drone/116-hemlock-drone-5-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 510238,
+      "path": "images/portfolio/drone/116-hemlock-drone-5-full.webp"
+    }
+  },
+  "images/portfolio/drone/116.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 747318
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 70080,
+      "path": "images/portfolio/drone/116-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 460826,
+      "path": "images/portfolio/drone/116-full.webp"
+    }
+  },
+  "images/portfolio/drone/508 Cornish Hill Rd13.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 868324
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 84388,
+      "path": "images/portfolio/drone/508 Cornish Hill Rd13-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 585840,
+      "path": "images/portfolio/drone/508 Cornish Hill Rd13-full.webp"
+    }
+  },
+  "images/portfolio/drone/508 Cornish Hill Rd16.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 641505
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 59794,
+      "path": "images/portfolio/drone/508 Cornish Hill Rd16-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 400336,
+      "path": "images/portfolio/drone/508 Cornish Hill Rd16-full.webp"
+    }
+  },
+  "images/portfolio/drone/508 Cornish Hill Rd19.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 829226
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 81332,
+      "path": "images/portfolio/drone/508 Cornish Hill Rd19-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 563596,
+      "path": "images/portfolio/drone/508 Cornish Hill Rd19-full.webp"
+    }
+  },
+  "images/portfolio/drone/508 Cornish Hill Rd23.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 632769
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 56240,
+      "path": "images/portfolio/drone/508 Cornish Hill Rd23-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 397210,
+      "path": "images/portfolio/drone/508 Cornish Hill Rd23-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0122.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 601127
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 48518,
+      "path": "images/portfolio/drone/DJI_0122-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 337428,
+      "path": "images/portfolio/drone/DJI_0122-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0129.JPG": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 684491
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 67442,
+      "path": "images/portfolio/drone/DJI_0129-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 388890,
+      "path": "images/portfolio/drone/DJI_0129-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0132.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 627115
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 58386,
+      "path": "images/portfolio/drone/DJI_0132-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 358466,
+      "path": "images/portfolio/drone/DJI_0132-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0133.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 753211
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 68016,
+      "path": "images/portfolio/drone/DJI_0133-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 452842,
+      "path": "images/portfolio/drone/DJI_0133-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0138.JPG": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 689141
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 74142,
+      "path": "images/portfolio/drone/DJI_0138-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 389736,
+      "path": "images/portfolio/drone/DJI_0138-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0143.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 620731
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 49726,
+      "path": "images/portfolio/drone/DJI_0143-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 358976,
+      "path": "images/portfolio/drone/DJI_0143-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0167.JPG": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 663386
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 67882,
+      "path": "images/portfolio/drone/DJI_0167-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 374182,
+      "path": "images/portfolio/drone/DJI_0167-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0226.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 970488
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 90544,
+      "path": "images/portfolio/drone/DJI_0226-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 647332,
+      "path": "images/portfolio/drone/DJI_0226-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0232, lines.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 999911
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 93788,
+      "path": "images/portfolio/drone/DJI_0232, lines-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 669058,
+      "path": "images/portfolio/drone/DJI_0232, lines-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0234.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 764474
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 67770,
+      "path": "images/portfolio/drone/DJI_0234-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 471618,
+      "path": "images/portfolio/drone/DJI_0234-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0236.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 978131
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 83998,
+      "path": "images/portfolio/drone/DJI_0236-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 658056,
+      "path": "images/portfolio/drone/DJI_0236-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0342.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 1006337
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 88832,
+      "path": "images/portfolio/drone/DJI_0342-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 661698,
+      "path": "images/portfolio/drone/DJI_0342-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0343, property line.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 767839
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 72228,
+      "path": "images/portfolio/drone/DJI_0343, property line-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 477206,
+      "path": "images/portfolio/drone/DJI_0343, property line-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0345, property line.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 745833
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 73346,
+      "path": "images/portfolio/drone/DJI_0345, property line-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 455096,
+      "path": "images/portfolio/drone/DJI_0345, property line-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0352.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 655622
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 53204,
+      "path": "images/portfolio/drone/DJI_0352-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 382870,
+      "path": "images/portfolio/drone/DJI_0352-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0353-Pano.jpg": {
+    "orig": {
+      "w": 1540,
+      "h": 2000,
+      "size": 653431
+    },
+    "thumb": {
+      "w": 600,
+      "h": 779,
+      "size": 82024,
+      "path": "images/portfolio/drone/DJI_0353-Pano-thumb.webp"
+    },
+    "full": {
+      "w": 1540,
+      "h": 2000,
+      "size": 578758,
+      "path": "images/portfolio/drone/DJI_0353-Pano-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0354.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 750174
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 66016,
+      "path": "images/portfolio/drone/DJI_0354-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 444510,
+      "path": "images/portfolio/drone/DJI_0354-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0463.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 676244
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 61912,
+      "path": "images/portfolio/drone/DJI_0463-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 402602,
+      "path": "images/portfolio/drone/DJI_0463-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0470.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 704876
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 60452,
+      "path": "images/portfolio/drone/DJI_0470-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 416962,
+      "path": "images/portfolio/drone/DJI_0470-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0478.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 866262
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 73834,
+      "path": "images/portfolio/drone/DJI_0478-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 565384,
+      "path": "images/portfolio/drone/DJI_0478-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0480.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 820882
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 79318,
+      "path": "images/portfolio/drone/DJI_0480-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 505034,
+      "path": "images/portfolio/drone/DJI_0480-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0575.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 802,
+      "size": 326895
+    },
+    "thumb": {
+      "w": 600,
+      "h": 241,
+      "size": 25576,
+      "path": "images/portfolio/drone/DJI_0575-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 642,
+      "size": 181832,
+      "path": "images/portfolio/drone/DJI_0575-full.webp"
+    }
+  },
+  "images/portfolio/drone/DJI_0642.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 640903
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 57784,
+      "path": "images/portfolio/drone/DJI_0642-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 373808,
+      "path": "images/portfolio/drone/DJI_0642-full.webp"
+    }
+  },
+  "images/portfolio/drone/drone_10.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 517994
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 44118,
+      "path": "images/portfolio/drone/drone_10-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 251116,
+      "path": "images/portfolio/drone/drone_10-full.webp"
+    }
+  },
+  "images/portfolio/drone/drone_5.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 679927
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 67590,
+      "path": "images/portfolio/drone/drone_5-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 374714,
+      "path": "images/portfolio/drone/drone_5-full.webp"
+    }
+  },
+  "images/portfolio/drone/drone_8.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 711925
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 72808,
+      "path": "images/portfolio/drone/drone_8-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 401422,
+      "path": "images/portfolio/drone/drone_8-full.webp"
+    }
+  },
+  "images/portfolio/drone/Untitled-1.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1499,
+      "size": 1016848
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 91550,
+      "path": "images/portfolio/drone/Untitled-1-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1199,
+      "size": 699894,
+      "path": "images/portfolio/drone/Untitled-1-full.webp"
+    }
+  },
+  "images/portfolio/drone/Untitled-2.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1499,
+      "size": 845347
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 59482,
+      "path": "images/portfolio/drone/Untitled-2-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1199,
+      "size": 530026,
+      "path": "images/portfolio/drone/Untitled-2-full.webp"
+    }
+  },
+  "images/portfolio/events/004.jpg": {
+    "orig": {
+      "w": 1999,
+      "h": 1333,
+      "size": 299102
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 24322,
+      "path": "images/portfolio/events/004-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1067,
+      "size": 110530,
+      "path": "images/portfolio/events/004-full.webp"
+    }
+  },
+  "images/portfolio/events/005.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 321182
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 28878,
+      "path": "images/portfolio/events/005-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 118268,
+      "path": "images/portfolio/events/005-full.webp"
+    }
+  },
+  "images/portfolio/events/007.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1125,
+      "size": 395821
+    },
+    "thumb": {
+      "w": 600,
+      "h": 338,
+      "size": 38042,
+      "path": "images/portfolio/events/007-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 900,
+      "size": 184712,
+      "path": "images/portfolio/events/007-full.webp"
+    }
+  },
+  "images/portfolio/events/009.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 443356
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 40104,
+      "path": "images/portfolio/events/009-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 201618,
+      "path": "images/portfolio/events/009-full.webp"
+    }
+  },
+  "images/portfolio/events/010.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 393165
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 33500,
+      "path": "images/portfolio/events/010-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 166804,
+      "path": "images/portfolio/events/010-full.webp"
+    }
+  },
+  "images/portfolio/events/011.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 402200
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 37522,
+      "path": "images/portfolio/events/011-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 167008,
+      "path": "images/portfolio/events/011-full.webp"
+    }
+  },
+  "images/portfolio/events/017.jpg": {
+    "orig": {
+      "w": 1999,
+      "h": 1333,
+      "size": 323600
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 23520,
+      "path": "images/portfolio/events/017-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1067,
+      "size": 118190,
+      "path": "images/portfolio/events/017-full.webp"
+    }
+  },
+  "images/portfolio/events/025.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 325107
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 24146,
+      "path": "images/portfolio/events/025-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 122714,
+      "path": "images/portfolio/events/025-full.webp"
+    }
+  },
+  "images/portfolio/events/040.jpg": {
+    "orig": {
+      "w": 1333,
+      "h": 1999,
+      "size": 383814
+    },
+    "thumb": {
+      "w": 600,
+      "h": 900,
+      "size": 39118,
+      "path": "images/portfolio/events/040-thumb.webp"
+    },
+    "full": {
+      "w": 1333,
+      "h": 1999,
+      "size": 258176,
+      "path": "images/portfolio/events/040-full.webp"
+    }
+  },
+  "images/portfolio/events/060.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 266248
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 18402,
+      "path": "images/portfolio/events/060-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 87594,
+      "path": "images/portfolio/events/060-full.webp"
+    }
+  },
+  "images/portfolio/events/DJI_0430.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 1010796
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 100542,
+      "path": "images/portfolio/events/DJI_0430-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 687730,
+      "path": "images/portfolio/events/DJI_0430-full.webp"
+    }
+  },
+  "images/portfolio/events/DJI_0460.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 816694
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 82506,
+      "path": "images/portfolio/events/DJI_0460-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 510736,
+      "path": "images/portfolio/events/DJI_0460-full.webp"
+    }
+  },
+  "images/portfolio/events/Kathy 70th-009.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 398428
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 20158,
+      "path": "images/portfolio/events/Kathy 70th-009-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 172444,
+      "path": "images/portfolio/events/Kathy 70th-009-full.webp"
+    }
+  },
+  "images/portfolio/events/Kathy 70th-092.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 381528
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 22424,
+      "path": "images/portfolio/events/Kathy 70th-092-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 150958,
+      "path": "images/portfolio/events/Kathy 70th-092-full.webp"
+    }
+  },
+  "images/portfolio/events/Kathy 70th-143.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 534612
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 44806,
+      "path": "images/portfolio/events/Kathy 70th-143-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 266144,
+      "path": "images/portfolio/events/Kathy 70th-143-full.webp"
+    }
+  },
+  "images/portfolio/events/Kathy 70th-162.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 454788
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 41332,
+      "path": "images/portfolio/events/Kathy 70th-162-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 201116,
+      "path": "images/portfolio/events/Kathy 70th-162-full.webp"
+    }
+  },
+  "images/portfolio/events/RTM00142.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 317071
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 27934,
+      "path": "images/portfolio/events/RTM00142-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 112126,
+      "path": "images/portfolio/events/RTM00142-full.webp"
+    }
+  },
+  "images/portfolio/events/RTM00209.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 323885
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 30588,
+      "path": "images/portfolio/events/RTM00209-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 133772,
+      "path": "images/portfolio/events/RTM00209-full.webp"
+    }
+  },
+  "images/portfolio/events/RTM00513.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 348775
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 32178,
+      "path": "images/portfolio/events/RTM00513-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 150660,
+      "path": "images/portfolio/events/RTM00513-full.webp"
+    }
+  },
+  "images/portfolio/events/RTM00555.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 332712
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 32750,
+      "path": "images/portfolio/events/RTM00555-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 147868,
+      "path": "images/portfolio/events/RTM00555-full.webp"
+    }
+  },
+  "images/portfolio/events/RTM06730.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 450049
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 52440,
+      "path": "images/portfolio/events/RTM06730-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 231234,
+      "path": "images/portfolio/events/RTM06730-full.webp"
+    }
+  },
+  "images/portfolio/events/RTM06733.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 528975
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 53968,
+      "path": "images/portfolio/events/RTM06733-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 291086,
+      "path": "images/portfolio/events/RTM06733-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/001.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1306,
+      "size": 378077
+    },
+    "thumb": {
+      "w": 600,
+      "h": 392,
+      "size": 30458,
+      "path": "images/portfolio/real-estate/001-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1045,
+      "size": 154958,
+      "path": "images/portfolio/real-estate/001-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/002.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1309,
+      "size": 339743
+    },
+    "thumb": {
+      "w": 600,
+      "h": 393,
+      "size": 29802,
+      "path": "images/portfolio/real-estate/002-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1047,
+      "size": 134850,
+      "path": "images/portfolio/real-estate/002-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/003.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1303,
+      "size": 311419
+    },
+    "thumb": {
+      "w": 600,
+      "h": 391,
+      "size": 24792,
+      "path": "images/portfolio/real-estate/003-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1042,
+      "size": 126688,
+      "path": "images/portfolio/real-estate/003-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/003a.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 224734
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 17056,
+      "path": "images/portfolio/real-estate/003a-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 79386,
+      "path": "images/portfolio/real-estate/003a-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/005.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1308,
+      "size": 292773
+    },
+    "thumb": {
+      "w": 600,
+      "h": 392,
+      "size": 23198,
+      "path": "images/portfolio/real-estate/005-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1046,
+      "size": 114248,
+      "path": "images/portfolio/real-estate/005-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/007.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1304,
+      "size": 258083
+    },
+    "thumb": {
+      "w": 600,
+      "h": 391,
+      "size": 16852,
+      "path": "images/portfolio/real-estate/007-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1043,
+      "size": 94366,
+      "path": "images/portfolio/real-estate/007-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/012.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1308,
+      "size": 358876
+    },
+    "thumb": {
+      "w": 600,
+      "h": 392,
+      "size": 27778,
+      "path": "images/portfolio/real-estate/012-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1046,
+      "size": 144672,
+      "path": "images/portfolio/real-estate/012-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/014n.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 217095
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 19972,
+      "path": "images/portfolio/real-estate/014n-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 84428,
+      "path": "images/portfolio/real-estate/014n-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/015.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1301,
+      "size": 310981
+    },
+    "thumb": {
+      "w": 600,
+      "h": 390,
+      "size": 24324,
+      "path": "images/portfolio/real-estate/015-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1041,
+      "size": 118586,
+      "path": "images/portfolio/real-estate/015-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/016p.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 247448
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 22606,
+      "path": "images/portfolio/real-estate/016p-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 97964,
+      "path": "images/portfolio/real-estate/016p-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/017 - Copy.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1296,
+      "size": 299808
+    },
+    "thumb": {
+      "w": 600,
+      "h": 389,
+      "size": 27048,
+      "path": "images/portfolio/real-estate/017 - Copy-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1037,
+      "size": 114274,
+      "path": "images/portfolio/real-estate/017 - Copy-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/017.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1303,
+      "size": 342785
+    },
+    "thumb": {
+      "w": 600,
+      "h": 391,
+      "size": 29752,
+      "path": "images/portfolio/real-estate/017-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1042,
+      "size": 138634,
+      "path": "images/portfolio/real-estate/017-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/017o.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 252296
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 18758,
+      "path": "images/portfolio/real-estate/017o-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 95108,
+      "path": "images/portfolio/real-estate/017o-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/018.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1306,
+      "size": 349111
+    },
+    "thumb": {
+      "w": 600,
+      "h": 392,
+      "size": 24862,
+      "path": "images/portfolio/real-estate/018-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1045,
+      "size": 151802,
+      "path": "images/portfolio/real-estate/018-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/022v.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 319897
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 28420,
+      "path": "images/portfolio/real-estate/022v-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 136512,
+      "path": "images/portfolio/real-estate/022v-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/033 (1).jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 366042
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 34102,
+      "path": "images/portfolio/real-estate/033 (1)-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 176268,
+      "path": "images/portfolio/real-estate/033 (1)-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/042.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 462419
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 44968,
+      "path": "images/portfolio/real-estate/042-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 225208,
+      "path": "images/portfolio/real-estate/042-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/051.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1300,
+      "size": 638469
+    },
+    "thumb": {
+      "w": 600,
+      "h": 390,
+      "size": 60042,
+      "path": "images/portfolio/real-estate/051-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1040,
+      "size": 376136,
+      "path": "images/portfolio/real-estate/051-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/054.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1304,
+      "size": 572641
+    },
+    "thumb": {
+      "w": 600,
+      "h": 391,
+      "size": 52224,
+      "path": "images/portfolio/real-estate/054-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1043,
+      "size": 333460,
+      "path": "images/portfolio/real-estate/054-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/106 Jamie Ln_034.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1307,
+      "size": 315495
+    },
+    "thumb": {
+      "w": 600,
+      "h": 392,
+      "size": 25646,
+      "path": "images/portfolio/real-estate/106 Jamie Ln_034-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1046,
+      "size": 117136,
+      "path": "images/portfolio/real-estate/106 Jamie Ln_034-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/106 Jamie Ln_035.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1304,
+      "size": 279258
+    },
+    "thumb": {
+      "w": 600,
+      "h": 391,
+      "size": 22034,
+      "path": "images/portfolio/real-estate/106 Jamie Ln_035-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1043,
+      "size": 102706,
+      "path": "images/portfolio/real-estate/106 Jamie Ln_035-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/106 Jamie Ln_049.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1306,
+      "size": 287169
+    },
+    "thumb": {
+      "w": 600,
+      "h": 392,
+      "size": 24230,
+      "path": "images/portfolio/real-estate/106 Jamie Ln_049-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1045,
+      "size": 113908,
+      "path": "images/portfolio/real-estate/106 Jamie Ln_049-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/116-hemlock-drone-5.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 534721
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 82180,
+      "path": "images/portfolio/real-estate/116-hemlock-drone-5-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 510238,
+      "path": "images/portfolio/real-estate/116-hemlock-drone-5-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/116-hemlock-exterior-11.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1307,
+      "size": 353996
+    },
+    "thumb": {
+      "w": 600,
+      "h": 392,
+      "size": 46014,
+      "path": "images/portfolio/real-estate/116-hemlock-exterior-11-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1046,
+      "size": 270974,
+      "path": "images/portfolio/real-estate/116-hemlock-exterior-11-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/116-hemlock-interior-1.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 402987
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 59928,
+      "path": "images/portfolio/real-estate/116-hemlock-interior-1-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 346724,
+      "path": "images/portfolio/real-estate/116-hemlock-interior-1-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/116-hemlock-interior-14.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 357101
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 57290,
+      "path": "images/portfolio/real-estate/116-hemlock-interior-14-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 293128,
+      "path": "images/portfolio/real-estate/116-hemlock-interior-14-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/116-hemlock-interior-2.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1334,
+      "size": 438154
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 62712,
+      "path": "images/portfolio/real-estate/116-hemlock-interior-2-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1067,
+      "size": 376798,
+      "path": "images/portfolio/real-estate/116-hemlock-interior-2-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/116-hemlock-interior-4.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1330,
+      "size": 363791
+    },
+    "thumb": {
+      "w": 600,
+      "h": 399,
+      "size": 53124,
+      "path": "images/portfolio/real-estate/116-hemlock-interior-4-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1064,
+      "size": 297890,
+      "path": "images/portfolio/real-estate/116-hemlock-interior-4-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/116-hemlock-interior-7.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 340703
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 53214,
+      "path": "images/portfolio/real-estate/116-hemlock-interior-7-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 275572,
+      "path": "images/portfolio/real-estate/116-hemlock-interior-7-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/15-dahlia-dr-001.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 238072
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 15542,
+      "path": "images/portfolio/real-estate/15-dahlia-dr-001-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 86148,
+      "path": "images/portfolio/real-estate/15-dahlia-dr-001-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/15-dahlia-dr-013.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1331,
+      "size": 138480
+    },
+    "thumb": {
+      "w": 600,
+      "h": 399,
+      "size": 7432,
+      "path": "images/portfolio/real-estate/15-dahlia-dr-013-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1065,
+      "size": 41772,
+      "path": "images/portfolio/real-estate/15-dahlia-dr-013-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/15-dahlia-dr-015.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 301357
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 20090,
+      "path": "images/portfolio/real-estate/15-dahlia-dr-015-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 106816,
+      "path": "images/portfolio/real-estate/15-dahlia-dr-015-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/15-dahlia-dr-017.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1330,
+      "size": 262122
+    },
+    "thumb": {
+      "w": 600,
+      "h": 399,
+      "size": 15050,
+      "path": "images/portfolio/real-estate/15-dahlia-dr-017-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1064,
+      "size": 85092,
+      "path": "images/portfolio/real-estate/15-dahlia-dr-017-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/15-dahlia-dr-019.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1334,
+      "size": 229203
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 14112,
+      "path": "images/portfolio/real-estate/15-dahlia-dr-019-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1067,
+      "size": 71192,
+      "path": "images/portfolio/real-estate/15-dahlia-dr-019-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/15-dahlia-dr-024.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 310858
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 23778,
+      "path": "images/portfolio/real-estate/15-dahlia-dr-024-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 110856,
+      "path": "images/portfolio/real-estate/15-dahlia-dr-024-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/15-dahlia-dr-034.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 217331
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 13026,
+      "path": "images/portfolio/real-estate/15-dahlia-dr-034-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 75844,
+      "path": "images/portfolio/real-estate/15-dahlia-dr-034-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/15-dahlia-dr-037.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1334,
+      "size": 200584
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 11964,
+      "path": "images/portfolio/real-estate/15-dahlia-dr-037-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1067,
+      "size": 56800,
+      "path": "images/portfolio/real-estate/15-dahlia-dr-037-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/15-dahlia-dr-046.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1331,
+      "size": 301307
+    },
+    "thumb": {
+      "w": 600,
+      "h": 399,
+      "size": 23116,
+      "path": "images/portfolio/real-estate/15-dahlia-dr-046-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1065,
+      "size": 112034,
+      "path": "images/portfolio/real-estate/15-dahlia-dr-046-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/15-dahlia-dr-054.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 258736
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 22462,
+      "path": "images/portfolio/real-estate/15-dahlia-dr-054-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 96606,
+      "path": "images/portfolio/real-estate/15-dahlia-dr-054-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/17 copy 1.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1328,
+      "size": 277012
+    },
+    "thumb": {
+      "w": 600,
+      "h": 398,
+      "size": 21746,
+      "path": "images/portfolio/real-estate/17 copy 1-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1062,
+      "size": 98944,
+      "path": "images/portfolio/real-estate/17 copy 1-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/RTM06826_27_28_29_30Interior Custom Settings.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1332,
+      "size": 336429
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 29634,
+      "path": "images/portfolio/real-estate/RTM06826_27_28_29_30Interior Custom Settings-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 132574,
+      "path": "images/portfolio/real-estate/RTM06826_27_28_29_30Interior Custom Settings-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/RTM06916_17_18_19_20Interior Custom Settings.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1330,
+      "size": 337142
+    },
+    "thumb": {
+      "w": 600,
+      "h": 399,
+      "size": 32854,
+      "path": "images/portfolio/real-estate/RTM06916_17_18_19_20Interior Custom Settings-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1064,
+      "size": 153724,
+      "path": "images/portfolio/real-estate/RTM06916_17_18_19_20Interior Custom Settings-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/RTM06926_27_28_29_30Interior Custom Settings.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1328,
+      "size": 463690
+    },
+    "thumb": {
+      "w": 600,
+      "h": 398,
+      "size": 48160,
+      "path": "images/portfolio/real-estate/RTM06926_27_28_29_30Interior Custom Settings-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1062,
+      "size": 235374,
+      "path": "images/portfolio/real-estate/RTM06926_27_28_29_30Interior Custom Settings-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/RTM06956_57_58_59_60Interior Custom Settings.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1329,
+      "size": 448060
+    },
+    "thumb": {
+      "w": 600,
+      "h": 399,
+      "size": 45344,
+      "path": "images/portfolio/real-estate/RTM06956_57_58_59_60Interior Custom Settings-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1063,
+      "size": 218312,
+      "path": "images/portfolio/real-estate/RTM06956_57_58_59_60Interior Custom Settings-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/RTM06971_2_3_4_5Interior Custom Settings.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1332,
+      "size": 421012
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 44474,
+      "path": "images/portfolio/real-estate/RTM06971_2_3_4_5Interior Custom Settings-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 201122,
+      "path": "images/portfolio/real-estate/RTM06971_2_3_4_5Interior Custom Settings-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/RTM07190_1_2Interior Custom Settings.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 488461
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 50642,
+      "path": "images/portfolio/real-estate/RTM07190_1_2Interior Custom Settings-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 260672,
+      "path": "images/portfolio/real-estate/RTM07190_1_2Interior Custom Settings-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/RTM07205_6_7Optimizer Custom Settings.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1330,
+      "size": 696473
+    },
+    "thumb": {
+      "w": 600,
+      "h": 399,
+      "size": 77256,
+      "path": "images/portfolio/real-estate/RTM07205_6_7Optimizer Custom Settings-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1064,
+      "size": 443130,
+      "path": "images/portfolio/real-estate/RTM07205_6_7Optimizer Custom Settings-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/RTM07239-HDR.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 521805
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 54030,
+      "path": "images/portfolio/real-estate/RTM07239-HDR-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 282824,
+      "path": "images/portfolio/real-estate/RTM07239-HDR-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/RTM07398.jpg": {
+    "orig": {
+      "w": 1333,
+      "h": 2000,
+      "size": 191893
+    },
+    "thumb": {
+      "w": 600,
+      "h": 900,
+      "size": 23118,
+      "path": "images/portfolio/real-estate/RTM07398-thumb.webp"
+    },
+    "full": {
+      "w": 1333,
+      "h": 2000,
+      "size": 75950,
+      "path": "images/portfolio/real-estate/RTM07398-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/RTM07422.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 270986
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 13028,
+      "path": "images/portfolio/real-estate/RTM07422-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 67294,
+      "path": "images/portfolio/real-estate/RTM07422-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/RTM07554.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 226822
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 14274,
+      "path": "images/portfolio/real-estate/RTM07554-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 55846,
+      "path": "images/portfolio/real-estate/RTM07554-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/RTM07584.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 285915
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 17092,
+      "path": "images/portfolio/real-estate/RTM07584-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 92470,
+      "path": "images/portfolio/real-estate/RTM07584-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/RTM07587.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 455134
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 25900,
+      "path": "images/portfolio/real-estate/RTM07587-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 212214,
+      "path": "images/portfolio/real-estate/RTM07587-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/RTM07610.jpg": {
+    "orig": {
+      "w": 1333,
+      "h": 2000,
+      "size": 178371
+    },
+    "thumb": {
+      "w": 600,
+      "h": 900,
+      "size": 25894,
+      "path": "images/portfolio/real-estate/RTM07610-thumb.webp"
+    },
+    "full": {
+      "w": 1333,
+      "h": 2000,
+      "size": 82674,
+      "path": "images/portfolio/real-estate/RTM07610-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/RTM07617.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 225820
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 16728,
+      "path": "images/portfolio/real-estate/RTM07617-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 86536,
+      "path": "images/portfolio/real-estate/RTM07617-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/RTM08882_3_4_5_6Optimizer Custom Settings.jpg": {
+    "orig": {
+      "w": 1999,
+      "h": 1307,
+      "size": 488580
+    },
+    "thumb": {
+      "w": 600,
+      "h": 392,
+      "size": 49208,
+      "path": "images/portfolio/real-estate/RTM08882_3_4_5_6Optimizer Custom Settings-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1046,
+      "size": 260674,
+      "path": "images/portfolio/real-estate/RTM08882_3_4_5_6Optimizer Custom Settings-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/RTM09017_18_19_20_21Optimizer Custom Settings.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1307,
+      "size": 508824
+    },
+    "thumb": {
+      "w": 600,
+      "h": 392,
+      "size": 53484,
+      "path": "images/portfolio/real-estate/RTM09017_18_19_20_21Optimizer Custom Settings-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1046,
+      "size": 269256,
+      "path": "images/portfolio/real-estate/RTM09017_18_19_20_21Optimizer Custom Settings-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/RTM09147_8_9Optimizer Custom Settings.jpg": {
+    "orig": {
+      "w": 1999,
+      "h": 1307,
+      "size": 799450
+    },
+    "thumb": {
+      "w": 600,
+      "h": 392,
+      "size": 83072,
+      "path": "images/portfolio/real-estate/RTM09147_8_9Optimizer Custom Settings-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1046,
+      "size": 528542,
+      "path": "images/portfolio/real-estate/RTM09147_8_9Optimizer Custom Settings-full.webp"
+    }
+  },
+  "images/portfolio/real-estate/RTM09227_8_9Optimizer Custom Settings.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1309,
+      "size": 613484
+    },
+    "thumb": {
+      "w": 600,
+      "h": 393,
+      "size": 55008,
+      "path": "images/portfolio/real-estate/RTM09227_8_9Optimizer Custom Settings-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1047,
+      "size": 367650,
+      "path": "images/portfolio/real-estate/RTM09227_8_9Optimizer Custom Settings-full.webp"
+    }
+  },
+  "images/portfolio/weddings/drunk advice.jpg": {
+    "orig": {
+      "w": 1070,
+      "h": 598,
+      "size": 63807
+    },
+    "thumb": {
+      "w": 600,
+      "h": 335,
+      "size": 12816,
+      "path": "images/portfolio/weddings/drunk advice-thumb.webp"
+    },
+    "full": {
+      "w": 1070,
+      "h": 598,
+      "size": 34212,
+      "path": "images/portfolio/weddings/drunk advice-full.webp"
+    }
+  },
+  "images/portfolio/weddings/RTM01909.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 194368
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 16078,
+      "path": "images/portfolio/weddings/RTM01909-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 71240,
+      "path": "images/portfolio/weddings/RTM01909-full.webp"
+    }
+  },
+  "images/portfolio/weddings/RTM02195.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 275903
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 16210,
+      "path": "images/portfolio/weddings/RTM02195-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 84232,
+      "path": "images/portfolio/weddings/RTM02195-full.webp"
+    }
+  },
+  "images/portfolio/weddings/RTM02449.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 404614
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 44496,
+      "path": "images/portfolio/weddings/RTM02449-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 191186,
+      "path": "images/portfolio/weddings/RTM02449-full.webp"
+    }
+  },
+  "images/portfolio/weddings/RTM02711.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 259801
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 25898,
+      "path": "images/portfolio/weddings/RTM02711-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 99800,
+      "path": "images/portfolio/weddings/RTM02711-full.webp"
+    }
+  },
+  "images/portfolio/weddings/RTM02935.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 360517
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 43722,
+      "path": "images/portfolio/weddings/RTM02935-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 164888,
+      "path": "images/portfolio/weddings/RTM02935-full.webp"
+    }
+  },
+  "images/portfolio/weddings/RTM03025.jpg": {
+    "orig": {
+      "w": 1333,
+      "h": 2000,
+      "size": 441449
+    },
+    "thumb": {
+      "w": 600,
+      "h": 900,
+      "size": 95790,
+      "path": "images/portfolio/weddings/RTM03025-thumb.webp"
+    },
+    "full": {
+      "w": 1333,
+      "h": 2000,
+      "size": 301336,
+      "path": "images/portfolio/weddings/RTM03025-full.webp"
+    }
+  },
+  "images/portfolio/weddings/RTM03045.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 267395
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 25362,
+      "path": "images/portfolio/weddings/RTM03045-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 104308,
+      "path": "images/portfolio/weddings/RTM03045-full.webp"
+    }
+  },
+  "images/portfolio/weddings/RTM03477.jpg": {
+    "orig": {
+      "w": 1333,
+      "h": 2000,
+      "size": 296808
+    },
+    "thumb": {
+      "w": 600,
+      "h": 900,
+      "size": 49540,
+      "path": "images/portfolio/weddings/RTM03477-thumb.webp"
+    },
+    "full": {
+      "w": 1333,
+      "h": 2000,
+      "size": 183416,
+      "path": "images/portfolio/weddings/RTM03477-full.webp"
+    }
+  },
+  "images/portfolio/weddings/RTM03485.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 250541
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 13244,
+      "path": "images/portfolio/weddings/RTM03485-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 121126,
+      "path": "images/portfolio/weddings/RTM03485-full.webp"
+    }
+  },
+  "images/portfolio/weddings/RTMF4243.jpg": {
+    "orig": {
+      "w": 1600,
+      "h": 1066,
+      "size": 201263
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 28638,
+      "path": "images/portfolio/weddings/RTMF4243-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 115044,
+      "path": "images/portfolio/weddings/RTMF4243-full.webp"
+    }
+  },
+  "images/portfolio/weddings/RTMF4268.jpg": {
+    "orig": {
+      "w": 1066,
+      "h": 1600,
+      "size": 210761
+    },
+    "thumb": {
+      "w": 600,
+      "h": 901,
+      "size": 52762,
+      "path": "images/portfolio/weddings/RTMF4268-thumb.webp"
+    },
+    "full": {
+      "w": 1066,
+      "h": 1600,
+      "size": 141452,
+      "path": "images/portfolio/weddings/RTMF4268-full.webp"
+    }
+  },
+  "images/portfolio/weddings/Travis Wedding_21.jpg": {
+    "orig": {
+      "w": 1066,
+      "h": 1600,
+      "size": 305060
+    },
+    "thumb": {
+      "w": 600,
+      "h": 901,
+      "size": 78584,
+      "path": "images/portfolio/weddings/Travis Wedding_21-thumb.webp"
+    },
+    "full": {
+      "w": 1066,
+      "h": 1600,
+      "size": 214108,
+      "path": "images/portfolio/weddings/Travis Wedding_21-full.webp"
+    }
+  },
+  "images/portfolio/weddings/Travis Wedding_29.jpg": {
+    "orig": {
+      "w": 1600,
+      "h": 1066,
+      "size": 177618
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 21198,
+      "path": "images/portfolio/weddings/Travis Wedding_29-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 95836,
+      "path": "images/portfolio/weddings/Travis Wedding_29-full.webp"
+    }
+  },
+  "images/portfolio/weddings/Travis Wedding_6.jpg": {
+    "orig": {
+      "w": 1600,
+      "h": 1066,
+      "size": 353988
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 49512,
+      "path": "images/portfolio/weddings/Travis Wedding_6-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 278272,
+      "path": "images/portfolio/weddings/Travis Wedding_6-full.webp"
+    }
+  },
+  "images/portfolio/weddings/Travis Wedding_71.jpg": {
+    "orig": {
+      "w": 1600,
+      "h": 1066,
+      "size": 382300
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 51394,
+      "path": "images/portfolio/weddings/Travis Wedding_71-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 309546,
+      "path": "images/portfolio/weddings/Travis Wedding_71-full.webp"
+    }
+  },
+  "images/heroes/about-hero.jpg": {
+    "orig": {
+      "w": 1540,
+      "h": 2000,
+      "size": 653431
+    },
+    "thumb": {
+      "w": 600,
+      "h": 779,
+      "size": 82024,
+      "path": "images/heroes/about-hero-thumb.webp"
+    },
+    "full": {
+      "w": 1540,
+      "h": 2000,
+      "size": 578758,
+      "path": "images/heroes/about-hero-full.webp"
+    }
+  },
+  "images/heroes/areas-served-hero.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 796,
+      "size": 316047
+    },
+    "thumb": {
+      "w": 600,
+      "h": 239,
+      "size": 26976,
+      "path": "images/heroes/areas-served-hero-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 637,
+      "size": 180206,
+      "path": "images/heroes/areas-served-hero-full.webp"
+    }
+  },
+  "images/heroes/drone-hero.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 648241
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 45606,
+      "path": "images/heroes/drone-hero-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 365246,
+      "path": "images/heroes/drone-hero-full.webp"
+    }
+  },
+  "images/heroes/event-hero.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1500,
+      "size": 816619
+    },
+    "thumb": {
+      "w": 600,
+      "h": 450,
+      "size": 82572,
+      "path": "images/heroes/event-hero-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1200,
+      "size": 510870,
+      "path": "images/heroes/event-hero-full.webp"
+    }
+  },
+  "images/heroes/homepage-hero.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 335060
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 17934,
+      "path": "images/heroes/homepage-hero-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 126480,
+      "path": "images/heroes/homepage-hero-full.webp"
+    }
+  },
+  "images/heroes/matterport-hero.jpg": {
+    "orig": {
+      "w": 1280,
+      "h": 720,
+      "size": 71570
+    },
+    "thumb": {
+      "w": 600,
+      "h": 338,
+      "size": 15474,
+      "path": "images/heroes/matterport-hero-thumb.webp"
+    },
+    "full": {
+      "w": 1280,
+      "h": 720,
+      "size": 49592,
+      "path": "images/heroes/matterport-hero-full.webp"
+    }
+  },
+  "images/heroes/portfolio-hero.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1333,
+      "size": 264855
+    },
+    "thumb": {
+      "w": 600,
+      "h": 400,
+      "size": 22310,
+      "path": "images/heroes/portfolio-hero-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1066,
+      "size": 97946,
+      "path": "images/heroes/portfolio-hero-full.webp"
+    }
+  },
+  "images/heroes/realestate-hero.jpg": {
+    "orig": {
+      "w": 2000,
+      "h": 1329,
+      "size": 447415
+    },
+    "thumb": {
+      "w": 600,
+      "h": 399,
+      "size": 45144,
+      "path": "images/heroes/realestate-hero-thumb.webp"
+    },
+    "full": {
+      "w": 1600,
+      "h": 1063,
+      "size": 217396,
+      "path": "images/heroes/realestate-hero-full.webp"
+    }
+  },
+  "images/heroes/wedding-hero.jpg": {
+    "orig": {
+      "w": 1068,
+      "h": 602,
+      "size": 129835
+    },
+    "thumb": {
+      "w": 600,
+      "h": 338,
+      "size": 40050,
+      "path": "images/heroes/wedding-hero-thumb.webp"
+    },
+    "full": {
+      "w": 1068,
+      "h": 602,
+      "size": 101154,
+      "path": "images/heroes/wedding-hero-full.webp"
+    }
+  }
+}

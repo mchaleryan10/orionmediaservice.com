@@ -23,8 +23,8 @@
         })();
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Photography | Capital Region NY | Orion Media</title>
-    <meta name="description" content="Professional wedding photography in the Capital Region of New York. Timeless portraits, candid moments, drone aerials, and same-week sneak peeks. Packages starting at $2,000. Serving Albany, Saratoga Springs, Troy, and beyond.">
+    <title>Wedding Photography | Capital Region NY | Orion</title>
+    <meta name="description" content="Timeless wedding photography and drone aerials in Albany, Saratoga Springs, and the Adirondacks. Packages from $2,000 with sneak peeks.">>
     <meta name="keywords" content="wedding photographer Capital Region NY, wedding photography Albany, wedding photographer Saratoga Springs, wedding photos Troy NY, Orion Media wedding photography">
     <meta name="author" content="Orion Media Service">
     <meta name="robots" content="index, follow">
@@ -56,8 +56,27 @@
                 "@type": "PostalAddress",
                 "addressLocality": "Cohoes",
                 "addressRegion": "NY",
+                "postalCode": "12047",
                 "addressCountry": "US"
-            }
+            },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "6",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "review": {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "C Batto" },
+            "datePublished": "2024-07-20",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+            },
+            "reviewBody": "My July wedding was amazing with the drone footage.... Incredible job... also recommended audio for the ceremony ... so glad we did this !!!!"
+        }
         },
         "areaServed": [
             "Capital Region NY", "Albany", "Troy", "Saratoga Springs",
@@ -77,6 +96,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="theme-shared.css">
     <style>
         :root {
             --deep-space: #0c0e1a;
@@ -1004,7 +1024,7 @@
             .footer-inner { grid-template-columns: 1fr 1fr; }
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1080px) {
             .nav-links { display: none; }
             .nav-toggle { display: flex; }
 
@@ -1021,6 +1041,9 @@
             }
 
             .nav-phone { display: none; }
+        }
+
+        @media (max-width: 768px) {
             .section-pad { padding: 4rem 1.5rem; }
             .page-hero { padding: 8rem 1.5rem 3rem; }
             .featured-gallery { padding: 0 1.5rem 4rem; }
@@ -1157,8 +1180,10 @@
         @media(max-width:768px){.photo-grid-item{flex:0 0 calc(33.333% - .5rem)}}
         @media(max-width:480px){.photo-grid-item{flex:0 0 calc(50% - .375rem)}}
 
-        .nav-has-dropdown{position:relative}.nav-dropdown{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);padding-top:8px;background:transparent;min-width:220px;list-style:none;z-index:1001}.nav-dropdown::before{content:'';position:absolute;top:8px;left:0;right:0;bottom:0;background:rgba(12,14,26,.97);backdrop-filter:blur(20px);border:1px solid var(--glass-border);border-radius:8px;z-index:-1}.nav-dropdown li{white-space:nowrap}.nav-dropdown a{display:block;padding:.55rem 1.25rem;font-size:.8rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:var(--star-dim);transition:color .2s,background .2s}.nav-dropdown a:hover{color:var(--starlight);background:var(--glass-white)}.nav-dropdown a::after{display:none!important}.nav-has-dropdown>a::after{display:none!important}.nav-has-dropdown:hover .nav-dropdown{display:block}@media(max-width:768px){.nav-has-dropdown .nav-dropdown{display:none;position:static;transform:none;border:none;border-radius:0;background:transparent;backdrop-filter:none;padding:.25rem 0 .25rem 1rem;margin:0}.nav-has-dropdown .nav-dropdown.mobile-open{display:block}.nav-dropdown a{padding:.35rem .5rem;font-size:.78rem}.nav-has-dropdown>a .mob-arrow{display:inline-block;transition:transform .25s}.nav-has-dropdown.mobile-open>a .mob-arrow{transform:rotate(180deg)}}
-    </style>
+        .nav-has-dropdown{position:relative}.nav-dropdown{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);padding-top:8px;background:transparent;min-width:220px;list-style:none;z-index:1001}.nav-dropdown::before{content:'';position:absolute;top:8px;left:0;right:0;bottom:0;background:rgba(12,14,26,.97);backdrop-filter:blur(20px);border:1px solid var(--glass-border);border-radius:8px;z-index:-1}.nav-dropdown li{white-space:nowrap}.nav-dropdown a{display:block;padding:.55rem 1.25rem;font-size:.8rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:var(--star-dim);transition:color .2s,background .2s}.nav-dropdown a:hover{color:var(--starlight);background:var(--glass-white)}.nav-dropdown a::after{display:none!important}.nav-has-dropdown>a::after{display:none!important}.nav-has-dropdown:hover .nav-dropdown{display:block}@media(max-width:1080px){.nav-has-dropdown .nav-dropdown{display:none;position:static;transform:none;border:none;border-radius:0;background:transparent;backdrop-filter:none;padding:.25rem 0 .25rem 1rem;margin:0}.nav-has-dropdown .nav-dropdown.mobile-open{display:block}.nav-dropdown a{padding:.35rem .5rem;font-size:.78rem}.nav-has-dropdown>a .mob-arrow{display:inline-block;transition:transform .25s}.nav-has-dropdown.mobile-open>a .mob-arrow{transform:rotate(180deg)}}
+    
+.photo-grid-item picture{width:100%;height:100%;display:block}
+</style>
 
     <style>
         .sticky-cta {
@@ -1289,6 +1314,8 @@
 </script>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
+
 
     <div class="stars"></div>
 
@@ -1296,7 +1323,7 @@
     <nav class="nav">
         <div class="nav-inner">
             <a href="index.html" class="nav-logo">
-                <img src="images/orion-logo.png" alt="Orion Media Logo">
+                <img src="images/orion-logo.webp" alt="Orion Media Logo" width="40" height="40">
                 <div class="nav-logo-text"><span>Orion</span> Media</div>
             </a>
 
@@ -1320,6 +1347,7 @@
             </ul>
         </div>
     </nav>
+<main id="main">
 
     <!-- ========== PAGE HERO ========== -->
     <section class="page-hero has-photo" style="background-image:url('images/heroes/wedding-hero.png')">
@@ -1348,20 +1376,20 @@
     <section class="featured-gallery">
         <div class="container reveal">
             <div class="photo-grid" data-gallery="featured">
-                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM01909.jpg"><img src="images/portfolio/weddings/RTM01909.jpg" alt="Bride and groom sharing their first kiss at the altar, Capital Region NY" loading="lazy"></div>
-                <div class="photo-grid-item" data-src="images/portfolio/weddings/Travis%20Wedding_6.jpg"><img src="images/portfolio/weddings/Travis%20Wedding_6.jpg" alt="Outdoor lakefront wedding ceremony setup with white floral arch" loading="lazy"></div>
-                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM02195.jpg"><img src="images/portfolio/weddings/RTM02195.jpg" alt="Emotional wedding ceremony moment — couple exchanging vows, Albany NY" loading="lazy"></div>
-                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTMF4243.jpg"><img src="images/portfolio/weddings/RTMF4243.jpg" alt="Bride and groom walking down the aisle together — Capital Region wedding" loading="lazy"></div>
-                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM02449.jpg"><img src="images/portfolio/weddings/RTM02449.jpg" alt="Wedding reception candids and joyful celebration, Capital Region NY" loading="lazy"></div>
-                <div class="photo-grid-item" data-src="images/portfolio/weddings/Travis%20Wedding_29.jpg"><img src="images/portfolio/weddings/Travis%20Wedding_29.jpg" alt="Couple during outdoor wedding ceremony at scenic upstate NY venue" loading="lazy"></div>
-                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM02711.jpg"><img src="images/portfolio/weddings/RTM02711.jpg" alt="Romantic newlywed portrait at sunset, Orion Media wedding photography" loading="lazy"></div>
-                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTMF4268.jpg"><img src="images/portfolio/weddings/RTMF4268.jpg" alt="Romantic lakeside couple portrait on wedding day, Capital Region NY" loading="lazy"></div>
-                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM02935.jpg"><img src="images/portfolio/weddings/RTM02935.jpg" alt="Intimate bridal portrait by Orion Media, Capital Region New York" loading="lazy"></div>
-                <div class="photo-grid-item" data-src="images/portfolio/weddings/Travis%20Wedding_71.jpg"><img src="images/portfolio/weddings/Travis%20Wedding_71.jpg" alt="Newlyweds and wedding party group photo by the lake, Capital Region" loading="lazy"></div>
-                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM03025.jpg"><img src="images/portfolio/weddings/RTM03025.jpg" alt="Guests cheering during wedding reception toasts, Albany NY" loading="lazy"></div>
-                <div class="photo-grid-item" data-src="images/portfolio/weddings/Travis%20Wedding_21.jpg"><img src="images/portfolio/weddings/Travis%20Wedding_21.jpg" alt="Bridal party walking across the lawn at lakeside wedding venue" loading="lazy"></div>
-                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM03045.jpg"><img src="images/portfolio/weddings/RTM03045.jpg" alt="Golden-hour wedding portrait of bride and groom, Capital Region NY" loading="lazy"></div>
-                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM03477.jpg"><img src="images/portfolio/weddings/RTM03477.jpg" alt="Wedding day getting-ready details — rings and floral arrangements" loading="lazy"></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM01909-full.webp"><picture style="width:100%;height:100%;display:block"><source srcset="images/portfolio/weddings/RTM01909-thumb.webp" type="image/webp"><img src="images/portfolio/weddings/RTM01909.jpg" alt="Bride and groom sharing their first kiss at the altar, Capital Region NY" width="600" height="400" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block"></picture></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/Travis Wedding_6-full.webp"><picture style="width:100%;height:100%;display:block"><source srcset="images/portfolio/weddings/Travis Wedding_6-thumb.webp" type="image/webp"><img src="images/portfolio/weddings/Travis Wedding_6.jpg" alt="Outdoor lakefront wedding ceremony setup with white floral arch" width="600" height="400" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block"></picture></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM02195-full.webp"><picture style="width:100%;height:100%;display:block"><source srcset="images/portfolio/weddings/RTM02195-thumb.webp" type="image/webp"><img src="images/portfolio/weddings/RTM02195.jpg" alt="Emotional wedding ceremony moment — couple exchanging vows, Albany NY" width="600" height="400" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block"></picture></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTMF4243-full.webp"><picture style="width:100%;height:100%;display:block"><source srcset="images/portfolio/weddings/RTMF4243-thumb.webp" type="image/webp"><img src="images/portfolio/weddings/RTMF4243.jpg" alt="Bride and groom walking down the aisle together — Capital Region wedding" width="600" height="400" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block"></picture></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM02449-full.webp"><picture style="width:100%;height:100%;display:block"><source srcset="images/portfolio/weddings/RTM02449-thumb.webp" type="image/webp"><img src="images/portfolio/weddings/RTM02449.jpg" alt="Wedding reception candids and joyful celebration, Capital Region NY" width="600" height="400" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block"></picture></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/Travis Wedding_29-full.webp"><picture style="width:100%;height:100%;display:block"><source srcset="images/portfolio/weddings/Travis Wedding_29-thumb.webp" type="image/webp"><img src="images/portfolio/weddings/Travis Wedding_29.jpg" alt="Couple during outdoor wedding ceremony at scenic upstate NY venue" width="600" height="400" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block"></picture></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM02711-full.webp"><picture style="width:100%;height:100%;display:block"><source srcset="images/portfolio/weddings/RTM02711-thumb.webp" type="image/webp"><img src="images/portfolio/weddings/RTM02711.jpg" alt="Romantic newlywed portrait at sunset, Orion Media wedding photography" width="600" height="400" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block"></picture></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTMF4268-full.webp"><picture style="width:100%;height:100%;display:block"><source srcset="images/portfolio/weddings/RTMF4268-thumb.webp" type="image/webp"><img src="images/portfolio/weddings/RTMF4268.jpg" alt="Romantic lakeside couple portrait on wedding day, Capital Region NY" width="600" height="901" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block"></picture></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM02935-full.webp"><picture style="width:100%;height:100%;display:block"><source srcset="images/portfolio/weddings/RTM02935-thumb.webp" type="image/webp"><img src="images/portfolio/weddings/RTM02935.jpg" alt="Intimate bridal portrait by Orion Media, Capital Region New York" width="600" height="400" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block"></picture></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/Travis Wedding_71-full.webp"><picture style="width:100%;height:100%;display:block"><source srcset="images/portfolio/weddings/Travis Wedding_71-thumb.webp" type="image/webp"><img src="images/portfolio/weddings/Travis Wedding_71.jpg" alt="Newlyweds and wedding party group photo by the lake, Capital Region" width="600" height="400" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block"></picture></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM03025-full.webp"><picture style="width:100%;height:100%;display:block"><source srcset="images/portfolio/weddings/RTM03025-thumb.webp" type="image/webp"><img src="images/portfolio/weddings/RTM03025.jpg" alt="Guests cheering during wedding reception toasts, Albany NY" width="600" height="900" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block"></picture></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/Travis Wedding_21-full.webp"><picture style="width:100%;height:100%;display:block"><source srcset="images/portfolio/weddings/Travis Wedding_21-thumb.webp" type="image/webp"><img src="images/portfolio/weddings/Travis Wedding_21.jpg" alt="Bridal party walking across the lawn at lakeside wedding venue" width="600" height="901" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block"></picture></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM03045-full.webp"><picture style="width:100%;height:100%;display:block"><source srcset="images/portfolio/weddings/RTM03045-thumb.webp" type="image/webp"><img src="images/portfolio/weddings/RTM03045.jpg" alt="Golden-hour wedding portrait of bride and groom, Capital Region NY" width="600" height="400" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block"></picture></div>
+                <div class="photo-grid-item" data-src="images/portfolio/weddings/RTM03477-full.webp"><picture style="width:100%;height:100%;display:block"><source srcset="images/portfolio/weddings/RTM03477-thumb.webp" type="image/webp"><img src="images/portfolio/weddings/RTM03477.jpg" alt="Wedding day getting-ready details — rings and floral arrangements" width="600" height="900" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;display:block"></picture></div>
             </div>
             <div style="text-align:center"><button class="gallery-toggle-btn" onclick="var g=this.closest('.container').querySelector('.photo-grid');var ex=g.classList.toggle('expanded');this.textContent=ex?'Show Less ▴':'View More Photos ▾'">View More Photos ▾</button></div>
         </div>
@@ -1587,7 +1615,7 @@
                 <div class="addon-card highlight reveal">
                     <div class="addon-price">+$2,000</div>
                     <div class="addon-info">
-                        <h4>Videography Bundle <span class="addon-badge">Fan Favorite</span></h4>
+                        <h3>Videography Bundle <span class="addon-badge">Fan Favorite</span></h3>
                         <p>Add cinematic wedding videography to your photography package — one team, seamless coverage, zero competing for angles. <a href="wedding-videography.html" style="color:var(--shutter-accent);text-decoration:underline">View wedding videography packages →</a></p>
                     </div>
                 </div>
@@ -1595,7 +1623,7 @@
                 <div class="addon-card reveal">
                     <div class="addon-price">+$800</div>
                     <div class="addon-info">
-                        <h4>Second Photographer</h4>
+                        <h3>Second Photographer</h3>
                         <p>Dual coverage for larger weddings — two perspectives, twice the candid moments, nothing missed.</p>
                     </div>
                 </div>
@@ -1603,7 +1631,7 @@
                 <div class="addon-card reveal">
                     <div class="addon-price">From $500</div>
                     <div class="addon-info">
-                        <h4>Photo Album</h4>
+                        <h3>Photo Album</h3>
                         <p>A beautifully crafted flush-mount album — choose from 8x10, 10x10, or 12x12 options.</p>
                     </div>
                 </div>
@@ -1611,7 +1639,7 @@
                 <div class="addon-card reveal">
                     <div class="addon-price">$250/hr</div>
                     <div class="addon-info">
-                        <h4>Extra Hours</h4>
+                        <h3>Extra Hours</h3>
                         <p>Need more time? Add hours to any package at our hourly rate.</p>
                     </div>
                 </div>
@@ -1692,7 +1720,24 @@
     </section>
 
     <!-- ========== CTA BANNER ========== -->
-    <section class="cta-banner section-pad">
+    
+<!-- CLIENT TESTIMONIAL -->
+<section class="service-testimonial section-pad" style="background:linear-gradient(180deg, var(--deep-space) 0%, var(--nebula) 100%);padding:4rem 2rem;border-top:1px solid var(--glass-border);border-bottom:1px solid var(--glass-border)">
+    <div class="container" style="max-width:850px;margin:0 auto;text-align:center">
+        <div class="reveal">
+            <div style="color:#f5a623;font-size:1.3rem;letter-spacing:3px;margin-bottom:1rem">★★★★★</div>
+            <blockquote style="font-size:1.12rem;line-height:1.7;color:var(--starlight);font-style:italic;margin-bottom:1.5rem">
+                "My July wedding was amazing with the drone footage.... Incredible job... also recommended audio for the ceremony ... so glad we did this !!!!"
+            </blockquote>
+            <div style="font-weight:600;font-size:1rem;color:var(--star-glow)">C Batto</div>
+            <div style="font-size:0.85rem;color:var(--star-dim);margin-bottom:0.75rem">Wedding Client</div>
+            <a href="https://maps.app.goo.gl/QsyWiuz2SbcG8p6X9" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.35rem;font-size:0.8rem;color:var(--star-dim);transition:color .3s">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg> Verified Google Review
+            </a>
+        </div>
+    </div>
+</section>
+<section class="cta-banner section-pad">
         <div class="cta-banner-inner reveal">
             <p class="section-label">Ready?</p>
             <h2 class="section-title">Let's Capture Your Story</h2>
@@ -1707,11 +1752,12 @@
     </section>
 
     <!-- ========== FOOTER ========== -->
-    <footer class="footer">
+    </main>
+<footer class="footer">
         <div class="footer-inner">
             <div class="footer-brand">
                 <a href="index.html" class="nav-logo">
-                    <img src="images/orion-logo.png" alt="Orion Media Logo" style="height:40px;width:40px;border-radius:50%;">
+                    <img src="images/orion-logo.webp" alt="Orion Media Logo" width="40" height="40" style="height:40px;width:40px;border-radius:50%;">
                     <div class="nav-logo-text"><span>Orion</span> Media</div>
                 </a>
                 <p>Professional videography and photography serving the Capital Region of New York. Weddings, events, real estate, and more.</p>
@@ -1730,7 +1776,7 @@
             </div>
 
             <div>
-                <h5>Services</h5>
+                <div class="footer-heading">Services</div>
                 <ul class="footer-links">
                     <li><a href="wedding-videography.html">Wedding Video</a></li>
                     <li><a href="wedding-photography.html">Wedding Photo</a></li>
@@ -1742,7 +1788,7 @@
             </div>
 
             <div>
-                <h5>Company</h5>
+                <div class="footer-heading">Company</div>
                 <ul class="footer-links">
                     <li><a href="about.html">About</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
@@ -1753,7 +1799,7 @@
             </div>
 
             <div>
-                <h5>Contact</h5>
+                <div class="footer-heading">Contact</div>
                 <ul class="footer-links">
                     <li><a href="tel:+15182229845">(518) 222-9845</a></li>
                     <li><a href="mailto:Ryan@OrionMediaService.com">Ryan@OrionMediaService.com</a></li>
