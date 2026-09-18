@@ -135,6 +135,7 @@ html[data-theme="light"] .nav {
   font-size: 1.25rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+  line-height: 1.2;
 }
 
 .nav-logo-text span {
