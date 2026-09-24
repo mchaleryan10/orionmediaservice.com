@@ -2603,23 +2603,21 @@
     }
   },
   "images/portfolio/real-estate/116-hemlock-drone-5.jpg": {
-    "orig": {
-      "w": 2000,
-      "h": 1500,
-      "size": 534721
-    },
-    "thumb": {
-      "w": 600,
-      "h": 450,
-      "size": 82180,
-      "path": "images/portfolio/real-estate/116-hemlock-drone-5-thumb.webp"
-    },
-    "full": {
-      "w": 1600,
-      "h": 1200,
-      "size": 510238,
-      "path": "images/portfolio/real-estate/116-hemlock-drone-5-full.webp"
-    }
+    "width": 1200,
+    "height": 900,
+    "aspect_ratio": 1.3333,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 450,
+        "path": "images/portfolio/real-estate/116-hemlock-drone-5-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1200,
+        "path": "images/portfolio/real-estate/116-hemlock-drone-5-full.webp"
+      }
+    ]
   },
   "images/portfolio/real-estate/116-hemlock-exterior-11.jpg": {
     "orig": {
@@ -2641,42 +2639,38 @@
     }
   },
   "images/portfolio/real-estate/116-hemlock-interior-1.jpg": {
-    "orig": {
-      "w": 2000,
-      "h": 1333,
-      "size": 402987
-    },
-    "thumb": {
-      "w": 600,
-      "h": 400,
-      "size": 59928,
-      "path": "images/portfolio/real-estate/116-hemlock-interior-1-thumb.webp"
-    },
-    "full": {
-      "w": 1600,
-      "h": 1066,
-      "size": 346724,
-      "path": "images/portfolio/real-estate/116-hemlock-interior-1-full.webp"
-    }
+    "width": 1200,
+    "height": 800,
+    "aspect_ratio": 1.5,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "images/portfolio/real-estate/116-hemlock-interior-1-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1066,
+        "path": "images/portfolio/real-estate/116-hemlock-interior-1-full.webp"
+      }
+    ]
   },
   "images/portfolio/real-estate/116-hemlock-interior-14.jpg": {
-    "orig": {
-      "w": 2000,
-      "h": 1333,
-      "size": 357101
-    },
-    "thumb": {
-      "w": 600,
-      "h": 400,
-      "size": 57290,
-      "path": "images/portfolio/real-estate/116-hemlock-interior-14-thumb.webp"
-    },
-    "full": {
-      "w": 1600,
-      "h": 1066,
-      "size": 293128,
-      "path": "images/portfolio/real-estate/116-hemlock-interior-14-full.webp"
-    }
+    "width": 1200,
+    "height": 800,
+    "aspect_ratio": 1.5,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "images/portfolio/real-estate/116-hemlock-interior-14-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1067,
+        "path": "images/portfolio/real-estate/116-hemlock-interior-14-full.webp"
+      }
+    ]
   },
   "images/portfolio/real-estate/116-hemlock-interior-2.jpg": {
     "orig": {
@@ -2698,42 +2692,38 @@
     }
   },
   "images/portfolio/real-estate/116-hemlock-interior-4.jpg": {
-    "orig": {
-      "w": 2000,
-      "h": 1330,
-      "size": 363791
-    },
-    "thumb": {
-      "w": 600,
-      "h": 399,
-      "size": 53124,
-      "path": "images/portfolio/real-estate/116-hemlock-interior-4-thumb.webp"
-    },
-    "full": {
-      "w": 1600,
-      "h": 1064,
-      "size": 297890,
-      "path": "images/portfolio/real-estate/116-hemlock-interior-4-full.webp"
-    }
+    "width": 1200,
+    "height": 798,
+    "aspect_ratio": 1.5038,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 399,
+        "path": "images/portfolio/real-estate/116-hemlock-interior-4-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1064,
+        "path": "images/portfolio/real-estate/116-hemlock-interior-4-full.webp"
+      }
+    ]
   },
   "images/portfolio/real-estate/116-hemlock-interior-7.jpg": {
-    "orig": {
-      "w": 2000,
-      "h": 1333,
-      "size": 340703
-    },
-    "thumb": {
-      "w": 600,
-      "h": 400,
-      "size": 53214,
-      "path": "images/portfolio/real-estate/116-hemlock-interior-7-thumb.webp"
-    },
-    "full": {
-      "w": 1600,
-      "h": 1066,
-      "size": 275572,
-      "path": "images/portfolio/real-estate/116-hemlock-interior-7-full.webp"
-    }
+    "width": 1200,
+    "height": 800,
+    "aspect_ratio": 1.5,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "images/portfolio/real-estate/116-hemlock-interior-7-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1066,
+        "path": "images/portfolio/real-estate/116-hemlock-interior-7-full.webp"
+      }
+    ]
   },
   "images/portfolio/real-estate/15-dahlia-dr-001.jpg": {
     "orig": {
@@ -2774,156 +2764,140 @@
     }
   },
   "images/portfolio/real-estate/15-dahlia-dr-015.jpg": {
-    "orig": {
-      "w": 2000,
-      "h": 1333,
-      "size": 301357
-    },
-    "thumb": {
-      "w": 600,
-      "h": 400,
-      "size": 20090,
-      "path": "images/portfolio/real-estate/15-dahlia-dr-015-thumb.webp"
-    },
-    "full": {
-      "w": 1600,
-      "h": 1066,
-      "size": 106816,
-      "path": "images/portfolio/real-estate/15-dahlia-dr-015-full.webp"
-    }
+    "width": 1200,
+    "height": 800,
+    "aspect_ratio": 1.5,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "images/portfolio/real-estate/15-dahlia-dr-015-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1067,
+        "path": "images/portfolio/real-estate/15-dahlia-dr-015-full.webp"
+      }
+    ]
   },
   "images/portfolio/real-estate/15-dahlia-dr-017.jpg": {
-    "orig": {
-      "w": 2000,
-      "h": 1330,
-      "size": 262122
-    },
-    "thumb": {
-      "w": 600,
-      "h": 399,
-      "size": 15050,
-      "path": "images/portfolio/real-estate/15-dahlia-dr-017-thumb.webp"
-    },
-    "full": {
-      "w": 1600,
-      "h": 1064,
-      "size": 85092,
-      "path": "images/portfolio/real-estate/15-dahlia-dr-017-full.webp"
-    }
+    "width": 1200,
+    "height": 798,
+    "aspect_ratio": 1.5038,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 399,
+        "path": "images/portfolio/real-estate/15-dahlia-dr-017-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1064,
+        "path": "images/portfolio/real-estate/15-dahlia-dr-017-full.webp"
+      }
+    ]
   },
   "images/portfolio/real-estate/15-dahlia-dr-019.jpg": {
-    "orig": {
-      "w": 2000,
-      "h": 1334,
-      "size": 229203
-    },
-    "thumb": {
-      "w": 600,
-      "h": 400,
-      "size": 14112,
-      "path": "images/portfolio/real-estate/15-dahlia-dr-019-thumb.webp"
-    },
-    "full": {
-      "w": 1600,
-      "h": 1067,
-      "size": 71192,
-      "path": "images/portfolio/real-estate/15-dahlia-dr-019-full.webp"
-    }
+    "width": 1200,
+    "height": 800,
+    "aspect_ratio": 1.5,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "images/portfolio/real-estate/15-dahlia-dr-019-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1067,
+        "path": "images/portfolio/real-estate/15-dahlia-dr-019-full.webp"
+      }
+    ]
   },
   "images/portfolio/real-estate/15-dahlia-dr-024.jpg": {
-    "orig": {
-      "w": 2000,
-      "h": 1333,
-      "size": 310858
-    },
-    "thumb": {
-      "w": 600,
-      "h": 400,
-      "size": 23778,
-      "path": "images/portfolio/real-estate/15-dahlia-dr-024-thumb.webp"
-    },
-    "full": {
-      "w": 1600,
-      "h": 1066,
-      "size": 110856,
-      "path": "images/portfolio/real-estate/15-dahlia-dr-024-full.webp"
-    }
+    "width": 1200,
+    "height": 800,
+    "aspect_ratio": 1.5,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "images/portfolio/real-estate/15-dahlia-dr-024-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1067,
+        "path": "images/portfolio/real-estate/15-dahlia-dr-024-full.webp"
+      }
+    ]
   },
   "images/portfolio/real-estate/15-dahlia-dr-034.jpg": {
-    "orig": {
-      "w": 2000,
-      "h": 1333,
-      "size": 217331
-    },
-    "thumb": {
-      "w": 600,
-      "h": 400,
-      "size": 13026,
-      "path": "images/portfolio/real-estate/15-dahlia-dr-034-thumb.webp"
-    },
-    "full": {
-      "w": 1600,
-      "h": 1066,
-      "size": 75844,
-      "path": "images/portfolio/real-estate/15-dahlia-dr-034-full.webp"
-    }
+    "width": 1200,
+    "height": 800,
+    "aspect_ratio": 1.5,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "images/portfolio/real-estate/15-dahlia-dr-034-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1067,
+        "path": "images/portfolio/real-estate/15-dahlia-dr-034-full.webp"
+      }
+    ]
   },
   "images/portfolio/real-estate/15-dahlia-dr-037.jpg": {
-    "orig": {
-      "w": 2000,
-      "h": 1334,
-      "size": 200584
-    },
-    "thumb": {
-      "w": 600,
-      "h": 400,
-      "size": 11964,
-      "path": "images/portfolio/real-estate/15-dahlia-dr-037-thumb.webp"
-    },
-    "full": {
-      "w": 1600,
-      "h": 1067,
-      "size": 56800,
-      "path": "images/portfolio/real-estate/15-dahlia-dr-037-full.webp"
-    }
+    "width": 1200,
+    "height": 800,
+    "aspect_ratio": 1.5,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "images/portfolio/real-estate/15-dahlia-dr-037-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1067,
+        "path": "images/portfolio/real-estate/15-dahlia-dr-037-full.webp"
+      }
+    ]
   },
   "images/portfolio/real-estate/15-dahlia-dr-046.jpg": {
-    "orig": {
-      "w": 2000,
-      "h": 1331,
-      "size": 301307
-    },
-    "thumb": {
-      "w": 600,
-      "h": 399,
-      "size": 23116,
-      "path": "images/portfolio/real-estate/15-dahlia-dr-046-thumb.webp"
-    },
-    "full": {
-      "w": 1600,
-      "h": 1065,
-      "size": 112034,
-      "path": "images/portfolio/real-estate/15-dahlia-dr-046-full.webp"
-    }
+    "width": 1200,
+    "height": 798,
+    "aspect_ratio": 1.5038,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 399,
+        "path": "images/portfolio/real-estate/15-dahlia-dr-046-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1065,
+        "path": "images/portfolio/real-estate/15-dahlia-dr-046-full.webp"
+      }
+    ]
   },
   "images/portfolio/real-estate/15-dahlia-dr-054.jpg": {
-    "orig": {
-      "w": 2000,
-      "h": 1333,
-      "size": 258736
-    },
-    "thumb": {
-      "w": 600,
-      "h": 400,
-      "size": 22462,
-      "path": "images/portfolio/real-estate/15-dahlia-dr-054-thumb.webp"
-    },
-    "full": {
-      "w": 1600,
-      "h": 1066,
-      "size": 96606,
-      "path": "images/portfolio/real-estate/15-dahlia-dr-054-full.webp"
-    }
+    "width": 1200,
+    "height": 800,
+    "aspect_ratio": 1.5,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "images/portfolio/real-estate/15-dahlia-dr-054-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1066,
+        "path": "images/portfolio/real-estate/15-dahlia-dr-054-full.webp"
+      }
+    ]
   },
   "images/portfolio/real-estate/17 copy 1.jpg": {
     "orig": {
@@ -3743,23 +3717,21 @@
     }
   },
   "images/heroes/realestate-hero.jpg": {
-    "orig": {
-      "w": 2000,
-      "h": 1329,
-      "size": 447415
-    },
-    "thumb": {
-      "w": 600,
-      "h": 399,
-      "size": 45144,
-      "path": "images/heroes/realestate-hero-thumb.webp"
-    },
-    "full": {
-      "w": 1600,
-      "h": 1063,
-      "size": 217396,
-      "path": "images/heroes/realestate-hero-full.webp"
-    }
+    "width": 2000,
+    "height": 1332,
+    "aspect_ratio": 1.5015,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "images/heroes/realestate-hero-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1066,
+        "path": "images/heroes/realestate-hero-full.webp"
+      }
+    ]
   },
   "images/heroes/wedding-hero.jpg": {
     "orig": {
@@ -3779,5 +3751,294 @@
       "size": 101154,
       "path": "images/heroes/wedding-hero-full.webp"
     }
+  },
+  "images/portfolio/real-estate/drone-property-line-boundaries.jpg": {
+    "width": 1200,
+    "height": 900,
+    "aspect_ratio": 1.3333,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 450,
+        "path": "images/portfolio/real-estate/drone-property-line-boundaries-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1200,
+        "path": "images/portfolio/real-estate/drone-property-line-boundaries-full.webp"
+      }
+    ]
+  },
+  "images/portfolio/real-estate/1092-merlin-interior-05.jpg": {
+    "width": 1200,
+    "height": 799,
+    "aspect_ratio": 1.5019,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "images/portfolio/real-estate/1092-merlin-interior-05-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1065,
+        "path": "images/portfolio/real-estate/1092-merlin-interior-05-full.webp"
+      }
+    ]
+  },
+  "images/portfolio/real-estate/1092-merlin-drone-5.jpg": {
+    "width": 1200,
+    "height": 900,
+    "aspect_ratio": 1.3333,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 450,
+        "path": "images/portfolio/real-estate/1092-merlin-drone-5-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1200,
+        "path": "images/portfolio/real-estate/1092-merlin-drone-5-full.webp"
+      }
+    ]
+  },
+  "images/portfolio/real-estate/1092-merlin-interior-14.jpg": {
+    "width": 1200,
+    "height": 800,
+    "aspect_ratio": 1.5,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "images/portfolio/real-estate/1092-merlin-interior-14-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1067,
+        "path": "images/portfolio/real-estate/1092-merlin-interior-14-full.webp"
+      }
+    ]
+  },
+  "images/portfolio/real-estate/173-steele-drone-26.jpg": {
+    "width": 1200,
+    "height": 900,
+    "aspect_ratio": 1.3333,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 450,
+        "path": "images/portfolio/real-estate/173-steele-drone-26-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1200,
+        "path": "images/portfolio/real-estate/173-steele-drone-26-full.webp"
+      }
+    ]
+  },
+  "images/portfolio/real-estate/15-dahlia-dr-020.jpg": {
+    "width": 1200,
+    "height": 799,
+    "aspect_ratio": 1.5019,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "images/portfolio/real-estate/15-dahlia-dr-020-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1066,
+        "path": "images/portfolio/real-estate/15-dahlia-dr-020-full.webp"
+      }
+    ]
+  },
+  "images/portfolio/real-estate/1092-merlin-interior-08.jpg": {
+    "width": 1200,
+    "height": 800,
+    "aspect_ratio": 1.5,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "images/portfolio/real-estate/1092-merlin-interior-08-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1067,
+        "path": "images/portfolio/real-estate/1092-merlin-interior-08-full.webp"
+      }
+    ]
+  },
+  "images/portfolio/real-estate/15-dahlia-dr-025.jpg": {
+    "width": 1200,
+    "height": 800,
+    "aspect_ratio": 1.5,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "images/portfolio/real-estate/15-dahlia-dr-025-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1067,
+        "path": "images/portfolio/real-estate/15-dahlia-dr-025-full.webp"
+      }
+    ]
+  },
+  "images/portfolio/real-estate/drone-neighborhood-aerial-overview.jpg": {
+    "width": 1200,
+    "height": 900,
+    "aspect_ratio": 1.3333,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 450,
+        "path": "images/portfolio/real-estate/drone-neighborhood-aerial-overview-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1200,
+        "path": "images/portfolio/real-estate/drone-neighborhood-aerial-overview-full.webp"
+      }
+    ]
+  },
+  "images/portfolio/real-estate/1092-merlin-interior-21.jpg": {
+    "width": 1200,
+    "height": 800,
+    "aspect_ratio": 1.5,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "images/portfolio/real-estate/1092-merlin-interior-21-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1067,
+        "path": "images/portfolio/real-estate/1092-merlin-interior-21-full.webp"
+      }
+    ]
+  },
+  "images/portfolio/real-estate/15-dahlia-dr-030.jpg": {
+    "width": 1200,
+    "height": 800,
+    "aspect_ratio": 1.5,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "images/portfolio/real-estate/15-dahlia-dr-030-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1067,
+        "path": "images/portfolio/real-estate/15-dahlia-dr-030-full.webp"
+      }
+    ]
+  },
+  "images/portfolio/real-estate/173-steele-interior-21.jpg": {
+    "width": 1200,
+    "height": 800,
+    "aspect_ratio": 1.5,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "images/portfolio/real-estate/173-steele-interior-21-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1067,
+        "path": "images/portfolio/real-estate/173-steele-interior-21-full.webp"
+      }
+    ]
+  },
+  "images/portfolio/real-estate/116-hemlock-interior-19.jpg": {
+    "width": 1200,
+    "height": 799,
+    "aspect_ratio": 1.5019,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "images/portfolio/real-estate/116-hemlock-interior-19-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1066,
+        "path": "images/portfolio/real-estate/116-hemlock-interior-19-full.webp"
+      }
+    ]
+  },
+  "images/portfolio/real-estate/1092-merlin-interior-27.jpg": {
+    "width": 1200,
+    "height": 800,
+    "aspect_ratio": 1.5,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "images/portfolio/real-estate/1092-merlin-interior-27-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1067,
+        "path": "images/portfolio/real-estate/1092-merlin-interior-27-full.webp"
+      }
+    ]
+  },
+  "images/portfolio/real-estate/55-spring-interior-20.jpg": {
+    "width": 1200,
+    "height": 798,
+    "aspect_ratio": 1.5038,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 399,
+        "path": "images/portfolio/real-estate/55-spring-interior-20-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1064,
+        "path": "images/portfolio/real-estate/55-spring-interior-20-full.webp"
+      }
+    ]
+  },
+  "images/portfolio/real-estate/173-steele-interior-25.jpg": {
+    "width": 1200,
+    "height": 799,
+    "aspect_ratio": 1.5019,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 399,
+        "path": "images/portfolio/real-estate/173-steele-interior-25-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1065,
+        "path": "images/portfolio/real-estate/173-steele-interior-25-full.webp"
+      }
+    ]
+  },
+  "images/portfolio/real-estate/844-glebe-interior-07.jpg": {
+    "width": 1200,
+    "height": 800,
+    "aspect_ratio": 1.5,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "images/portfolio/real-estate/844-glebe-interior-07-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1067,
+        "path": "images/portfolio/real-estate/844-glebe-interior-07-full.webp"
+      }
+    ]
   }
 }

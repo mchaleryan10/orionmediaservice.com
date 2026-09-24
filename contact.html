@@ -17,7 +17,7 @@
 <script>(function(){var s=localStorage.getItem('orion-theme');if(s==='light'||s==='dark'){document.documentElement.setAttribute('data-theme',s)}else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:light)').matches){document.documentElement.setAttribute('data-theme','light')}})()</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact & Book a Session | Orion Media | NY</title>
-<meta name="description" content="Book wedding, real estate, drone, or commercial video services with Orion Media in Cohoes, NY. Fast responses and custom quotes.">>
+<meta name="description" content="Book wedding, real estate, drone, or commercial video services with Orion Media in Cohoes, NY. Fast responses and custom quotes.">
 <meta name="keywords" content="book photographer Capital Region NY, hire videographer Albany NY, photography inquiry Saratoga Springs, contact Orion Media Service">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -152,6 +152,7 @@ html[data-theme="light"] .form-group select option{background:#eaeaf0}
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     <ul class="nav-links" id="navLinks">
       <li class="nav-has-dropdown"><a href="index.html#services" class="mob-services-toggle">Services <span class="mob-arrow">&#9662;</span></a><ul class="nav-dropdown"><li><a href="wedding-videography.html">Wedding Videography</a></li><li><a href="wedding-photography.html">Wedding Photography</a></li><li><a href="real-estate-photography.html">Real Estate</a></li><li><a href="event-commercial-video.html">Events &amp; Commercial</a></li><li><a href="drone-services.html">Drone Aerial</a></li><li><a href="matterport-tours.html">3D Matterport Tours</a></li></ul></li>
+      
       <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="areas-served.html">Areas</a></li>
@@ -194,6 +195,8 @@ html[data-theme="light"] .form-group select option{background:#eaeaf0}
 
         <div class="inquiry-form">
           <form id="inquiryForm" action="https://formspree.io/f/xqedvayw" method="POST">
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+            <input type="hidden" name="_subject" value="New Inquiry — Orion Media Service (Contact Page)">
 
             <div class="form-row">
               <div class="form-group">
@@ -481,6 +484,7 @@ html[data-theme="light"] .form-group select option{background:#eaeaf0}
       <ul class="footer-links">
         <li><a href="about.html">About</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
+        
         <li><a href="contact.html">Contact</a></li>
         <li><a href="blog.html">Tips &amp; Guides</a></li>
       </ul>

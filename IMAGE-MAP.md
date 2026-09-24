@@ -24,7 +24,7 @@ Recommended image specs:
 |----------|---------|-------|
 | `images/heroes/homepage-hero.jpg` | index.html | Cinematic shot — your best work |
 | `images/heroes/wedding-hero.jpg` | wedding-videography.html | Wedding ceremony or couple shot |
-| `images/heroes/realestate-hero.jpg` | real-estate-photography.html | Stunning property exterior |
+| `images/heroes/realestate-hero.jpg` | real-estate-photography.html | 15 Dahlia Dr vaulted great room with 2-story window wall & window pulls |
 | `images/heroes/drone-hero.jpg` | drone-services.html | Aerial landscape or property |
 | `images/heroes/event-hero.jpg` | event-commercial-video.html | Event crowd or behind-the-scenes |
 | `images/heroes/matterport-hero.jpg` | matterport-tours.html | Interior with 3D tour feel |
