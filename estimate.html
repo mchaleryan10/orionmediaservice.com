@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JR53KRE033"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-JR53KRE033');
+    </script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <meta charset="UTF-8">
+    <script>
+        (function(){
+            var s = localStorage.getItem('orion-theme');
+            if (s === 'light' || s === 'dark') { document.documentElement.setAttribute('data-theme', s); }
+            else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) { document.documentElement.setAttribute('data-theme', 'light'); }
+            else { document.documentElement.setAttribute('data-theme', 'dark'); }
+        })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant Estimate &amp; Package Builder | Orion Media NY</title>
+    <meta name="description" content="Calculate real-time pricing for real estate photography, wedding videography, and drone aerials in the Capital Region NY. Instant transparent quotes.">
+    <meta name="keywords" content="real estate photography pricing Albany NY, wedding videography cost Saratoga, drone aerial rates Capital Region, Orion Media instant quote">
+    <meta name="author" content="Orion Media Service">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <link rel="canonical" href="https://orionmediaservice.com/estimate.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Instant Estimate &amp; Package Builder | Orion Media NY">
+    <meta name="twitter:description" content="Calculate real-time pricing for real estate photography, wedding videography, and drone aerials in the Capital Region NY.">
+    <meta property="og:title" content="Instant Estimate &amp; Package Builder | Orion Media NY">
+    <meta property="og:description" content="Calculate real-time pricing for real estate photography, wedding videography, and drone aerials in the Capital Region NY.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://orionmediaservice.com/estimate.html">
+    <meta property="og:image" content="https://orionmediaservice.com/images/og-image.jpg">
+    <meta name="twitter:image" content="https://orionmediaservice.com/images/og-image.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="theme-shared.css">
+    <link rel="stylesheet" href="calculator.css">
+
+    <style>
+        :root {
+            --deep-space: #0c0e1a;
+            --nebula: #1a1d3a;
+            --constellation: #2d3065;
+            --starlight: #ffffff;
+            --star-dim: #b8bce0;
+            --star-glow: #c9b8ff;
+            --shutter-accent: #7b6fcc;
+            --warm-highlight: #e8c97a;
+            --glass-white: rgba(255, 255, 255, 0.06);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --font-display: 'Playfair Display', Georgia, serif;
+            --font-body: 'Outfit', sans-serif;
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font-body); background: var(--deep-space); color: var(--starlight); line-height: 1.6; overflow-x: hidden; }
+
+        .stars {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0;
+            background:
+                radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,0.4), transparent),
+                radial-gradient(1px 1px at 40% 15%, rgba(255,255,255,0.5), transparent),
+                radial-gradient(1px 1px at 70% 35%, rgba(255,255,255,0.35), transparent),
+                radial-gradient(1px 1px at 85% 60%, rgba(255,255,255,0.4), transparent),
+                radial-gradient(1px 1px at 20% 75%, rgba(255,255,255,0.3), transparent);
+        }
+
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 0 2rem; background: rgba(12,14,26,0.92); backdrop-filter: blur(20px); border-bottom: 1px solid var(--glass-border); }
+        .nav-inner { max-width: 1300px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+        .nav-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: var(--starlight); }
+        .nav-logo img { height: 40px; width: 40px; border-radius: 50%; object-fit: cover; }
+        .nav-logo-text { font-family: var(--font-body); font-weight: 300; font-size: 1.25rem; letter-spacing: .15em; text-transform: uppercase; line-height: 1.2; }
+        .nav-logo-text span { font-weight: 600; }
+        .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
+        .nav-links a { color: var(--star-dim); text-decoration: none; font-size: 0.85rem; font-weight: 400; letter-spacing: .05em; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--starlight); }
+        .nav-phone { font-size: 0.82rem !important; }
+        .nav-cta { background: var(--shutter-accent) !important; color: var(--starlight) !important; padding: 0.5rem 1.25rem; border-radius: 4px; transition: all 0.3s !important; }
+        .nav-cta:hover { background: #6a5dbb !important; transform: translateY(-1px); }
+        .nav-cta.active { background: #6a5dbb !important; }
+        .nav-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 0.25rem; }
+        .nav-toggle span { width: 22px; height: 2px; background: var(--starlight); border-radius: 2px; transition: all 0.3s; }
+        .nav-theme-toggle { display: flex; align-items: center; gap: 0.5rem; padding: 0 0.25rem; }
+        .theme-toggle-icon { width: 18px; height: 18px; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; cursor: pointer; }
+        .theme-toggle-track { width: 36px; height: 20px; background: var(--glass-white); border: 1px solid var(--glass-border); border-radius: 10px; cursor: pointer; position: relative; transition: all 0.3s; }
+        .theme-toggle-thumb { width: 14px; height: 14px; background: var(--star-dim); border-radius: 50%; position: absolute; top: 2px; left: 2px; transition: all 0.3s; }
+        html[data-theme="light"] .theme-toggle-thumb { left: 18px; background: var(--shutter-accent); }
+
+        section { position: relative; z-index: 1; }
+        .section-pad { padding: 5rem 2rem; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .section-label { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--shutter-accent); margin-bottom: 0.75rem; }
+        .section-title { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; line-height: 1.2; margin-bottom: 1.25rem; }
+        .section-desc { font-size: 1.05rem; font-weight: 300; color: var(--star-dim); max-width: 650px; line-height: 1.7; }
+        .section-center { text-align: center; }
+        .section-center .section-desc { margin: 0 auto; }
+
+        .page-hero { position: relative; z-index: 1; padding: 8.5rem 2rem 3.5rem; text-align: center; overflow: hidden; background-size: cover; background-position: center; }
+        .page-hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,14,26,0.88) 0%, rgba(12,14,26,0.55) 45%, rgba(12,14,26,0.85) 100%), radial-gradient(ellipse at 50% 60%, rgba(123,111,204,0.12) 0%, transparent 60%) !important; }
+        .breadcrumb { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 1.25rem; font-size: 0.75rem; color: var(--star-dim); letter-spacing: 0.08em; text-transform: uppercase; }
+        .breadcrumb a { color: var(--star-dim); text-decoration: none; }
+        .breadcrumb a:hover { color: var(--starlight); }
+        .breadcrumb .sep { opacity: 0.4; }
+
+        /* Integrated Form */
+        .estimate-form-section { margin-top: 3.5rem; }
+        .inquiry-form { background: var(--glass-white); border: 1px solid var(--glass-border); border-radius: 20px; padding: 2.5rem; max-width: 860px; margin: 0 auto; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 1.25rem; }
+        .form-row.full { grid-template-columns: 1fr; }
+        .form-group { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0; }
+        .form-group label { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--star-dim); }
+        .form-group input, .form-group select, .form-group textarea { background: rgba(255,255,255,0.04); border: 1px solid var(--glass-border); border-radius: 8px; padding: 0.75rem 1rem; color: var(--starlight); font-family: var(--font-body); font-size: 0.9rem; font-weight: 300; outline: none; transition: border-color 0.3s; -webkit-appearance: none; }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: rgba(123,111,204,0.5); background: rgba(123,111,204,0.05); }
+        .form-group input::placeholder, .form-group textarea::placeholder { color: rgba(184,188,224,0.35); }
+        .form-group select option { background: var(--nebula); color: var(--starlight); }
+        .form-group textarea { resize: vertical; min-height: 120px; line-height: 1.6; }
+        .form-submit { display: flex; align-items: center; justify-content: center; gap: 0.75rem; width: 100%; padding: 1rem 2rem; margin-top: 1.75rem; background: var(--shutter-accent); color: var(--starlight); font-family: var(--font-body); font-size: 0.9rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; border: none; border-radius: 8px; cursor: pointer; transition: all 0.3s; }
+        .form-submit:hover { background: #6a5dbb; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(123,111,204,0.3); }
+        .form-note { font-size: 0.72rem; color: var(--star-dim); font-weight: 300; text-align: center; margin-top: 1rem; opacity: 0.7; }
+
+        /* Footer */
+        .footer { background: var(--deep-space); border-top: 1px solid var(--glass-border); padding: 3rem 2rem 2rem; position: relative; z-index: 1; }
+        .footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--glass-border); }
+        .footer-brand p { font-size: 0.82rem; font-weight: 300; color: var(--star-dim); margin-top: 1rem; line-height: 1.6; max-width: 260px; }
+        .footer h5, .footer-heading { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--star-dim); margin-bottom: 1.25rem; }
+        .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+        .footer-links a { color: var(--star-dim); text-decoration: none; font-size: 0.82rem; font-weight: 300; transition: color 0.3s; }
+        .footer-links a:hover { color: var(--starlight); }
+        .footer-links li { font-size: 0.82rem; font-weight: 300; color: var(--star-dim); }
+        .footer-bottom { max-width: 1200px; margin: 1.5rem auto 0; display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; font-weight: 300; color: var(--star-dim); opacity: 0.6; }
+        .footer-social { display: flex; gap: 1rem; margin-top: 1.25rem; }
+        .footer-social a { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--glass-border); border-radius: 6px; color: var(--star-dim); transition: all 0.3s; }
+        .footer-social a:hover { border-color: var(--star-dim); color: var(--starlight); }
+
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s cubic-bezier(.16,1,.3,1); }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        @media (max-width: 768px) {
+            .form-row { grid-template-columns: 1fr; }
+            .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://orionmediaservice.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Instant Estimate",
+          "item": "https://orionmediaservice.com/estimate.html"
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Orion Media Instant Estimate & Package Builder",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Orion Media Service",
+        "telephone": "+15182229845",
+        "email": "Ryan@OrionMediaService.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Cohoes",
+          "addressRegion": "NY",
+          "postalCode": "12047",
+          "addressCountry": "US"
+        }
+      },
+      "areaServed": "Capital Region, NY",
+      "description": "Interactive instant quote calculator and custom package builder for real estate photography, wedding videography, corporate media, and drone aerial services."
+    }
+    </script>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<div class="stars"></div>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="images/orion-logo.webp" alt="Orion Media Logo" width="40" height="40">
+      <div class="nav-logo-text"><span>Orion</span> Media</div>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li class="nav-has-dropdown"><a href="index.html#services" class="mob-services-toggle">Services <span class="mob-arrow">&#9662;</span></a><ul class="nav-dropdown"><li><a href="wedding-videography.html">Wedding Videography</a></li><li><a href="wedding-photography.html">Wedding Photography</a></li><li><a href="real-estate-photography.html">Real Estate</a></li><li><a href="event-commercial-video.html">Events &amp; Commercial</a></li><li><a href="drone-services.html">Drone Aerial</a></li><li><a href="matterport-tours.html">3D Matterport Tours</a></li></ul></li>
+      <li><a href="estimate.html" class="active" style="color:var(--star-glow)">Pricing</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="areas-served.html">Areas</a></li>
+      <li><a href="blog.html">Tips &amp; Guides</a></li>
+      <li><a href="tel:+15182229845" class="nav-phone">(518) 222-9845</a></li>
+      <li class="nav-theme-toggle">
+        <span class="theme-toggle-icon" id="themeIconLight">☀️</span>
+        <div class="theme-toggle-track" id="themeTrack"><div class="theme-toggle-thumb"></div></div>
+        <span class="theme-toggle-icon" id="themeIconDark">🌙</span>
+      </li>
+      <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="page-hero has-photo" style="background-image:url('images/heroes/homepage-hero.jpg')">
+  <div class="page-hero-content" style="position:relative;z-index:1">
+    <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span>Instant Estimate</div>
+    <h1 style="font-family:var(--font-display);font-size:clamp(2.4rem,5vw,3.8rem);font-weight:400;line-height:1.15;margin-bottom:1.25rem">
+      Instant Estimate &amp;<br><em style="color:var(--star-glow)">Package Builder</em>
+    </h1>
+    <p style="font-size:1.05rem;font-weight:300;color:var(--star-dim);max-width:620px;margin:0 auto">
+      Select your service category, customize square footage and add-on deliverables, and calculate an upfront transparent quote with 1-click booking dispatch.
+    </p>
+  </div>
+</section>
+
+<!-- CALCULATOR SECTION -->
+<section class="section-pad">
+  <div class="container">
+    <div class="calc-wrapper">
+
+      <div class="calc-card reveal visible">
+        <!-- Service Selector Tabs -->
+        <div class="calc-tabs-nav" role="tablist">
+          <button type="button" class="calc-tab-btn active" data-service="realestate" onclick="calcSwitchService('realestate')">🏡 Real Estate</button>
+          <button type="button" class="calc-tab-btn" data-service="weddings" onclick="calcSwitchService('weddings')">💍 Weddings</button>
+          <button type="button" class="calc-tab-btn" data-service="corporate" onclick="calcSwitchService('corporate')">🏢 Corporate</button>
+          <button type="button" class="calc-tab-btn" data-service="drone" onclick="calcSwitchService('drone')">🚁 Drone Aerial</button>
+        </div>
+
+        <!-- TAB 1: REAL ESTATE -->
+        <div class="calc-tab-panel active" id="calc-panel-realestate">
+          <!-- Square Footage Slider -->
+          <div class="calc-slider-box">
+            <div class="calc-slider-header">
+              <div class="calc-step-heading" style="margin:0"><span class="calc-step-badge">1</span> Listing Square Footage</div>
+              <div class="calc-slider-val"><span id="calc-sqft-display">2,400</span> <span>sq ft</span></div>
+            </div>
+            <input type="range" class="calc-slider-input" id="calc-sqft-slider" min="1000" max="6000" step="100" value="2400" oninput="calcUpdateSqFt(this.value)" aria-label="Property square footage">
+            <div class="calc-slider-scale">
+              <span>1,000 sq ft</span>
+              <span>2,500 sq ft (Standard Base)</span>
+              <span>6,000+ sq ft</span>
+            </div>
+            <div style="font-size:0.75rem;color:var(--star-dim);margin-top:0.45rem;">Base packages include up to 2,500 sq ft. Additional footage scales at +$25/500 sq ft (+$50/500 sq ft for Matterport 3D scans).</div>
+          </div>
+
+          <!-- Core Packages -->
+          <div class="calc-step-heading"><span class="calc-step-badge">2</span> Select Media Package</div>
+          <div class="calc-pkg-grid">
+            <div class="calc-pkg-card" id="re-pkg-essential" onclick="calcSelectREPackage('essential', 175, 'Essential Photos')">
+              <div>
+                <div class="calc-pkg-name">Essential</div>
+                <div class="calc-pkg-price"><span class="dollar">$</span>175</div>
+                <p class="calc-pkg-desc">25–35 Magazine-grade HDR interior/exterior photos. Next-day MLS delivery.</p>
+              </div>
+            </div>
+
+            <div class="calc-pkg-card" id="re-pkg-aerial" onclick="calcSelectREPackage('aerial', 275, 'Aerial Pro')">
+              <div>
+                <div class="calc-pkg-name">Aerial Pro</div>
+                <div class="calc-pkg-price"><span class="dollar">$</span>275</div>
+                <p class="calc-pkg-desc">Everything in Essential + FAA Part 107 certified drone aerial photos.</p>
+              </div>
+            </div>
+
+            <div class="calc-pkg-card selected" id="re-pkg-mediapro" onclick="calcSelectREPackage('mediapro', 450, 'Media Pro')">
+              <div class="calc-pkg-badge">Most Popular</div>
+              <div>
+                <div class="calc-pkg-name">Media Pro</div>
+                <div class="calc-pkg-price"><span class="dollar">$</span>450</div>
+                <p class="calc-pkg-desc">Photos + Drone Aerials + <strong>Choice of Video Walkthrough OR Matterport 3D Tour</strong>.</p>
+              </div>
+            </div>
+
+            <div class="calc-pkg-card" id="re-pkg-elite" onclick="calcSelectREPackage('elite', 625, 'Elite Suite')">
+              <div class="calc-pkg-badge" style="background:rgba(123,111,204,0.3);color:var(--star-glow)">Full Suite</div>
+              <div>
+                <div class="calc-pkg-name">Elite</div>
+                <div class="calc-pkg-price"><span class="dollar">$</span>625</div>
+                <p class="calc-pkg-desc">All-inclusive marketing suite: Photos + Drone + Cinematic Video + 3D Matterport.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Media Pro Choice Selector -->
+          <div class="calc-choice-box" id="calc-mediapro-choice-container">
+            <div class="calc-choice-title">🎯 Media Pro Included Feature: Choose Your Walkthrough Format</div>
+            <div class="calc-choice-options">
+              <label class="calc-choice-label">
+                <input type="radio" name="mediapro-choice" value="video" checked onchange="calcRecalculate()">
+                <span>Cinematic 4K Video Walkthrough (with licensed music)</span>
+              </label>
+              <label class="calc-choice-label">
+                <input type="radio" name="mediapro-choice" value="matterport" onchange="calcRecalculate()">
+                <span>Matterport 3D Virtual Tour (with dollhouse view &amp; measurement tool)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Add-Ons -->
+          <div class="calc-step-heading"><span class="calc-step-badge">3</span> Optional Listing Upgrades</div>
+          <div class="calc-addons-grid">
+            <label class="calc-addon-item" id="re-addon-twilight-lbl">
+              <div class="calc-addon-left">
+                <input type="checkbox" id="re-addon-twilight" onchange="calcToggleAddon(this, 're-addon-twilight-lbl')">
+                <span class="calc-addon-name">Golden Hour / Twilight Aerials</span>
+              </div>
+              <span class="calc-addon-price">+$150</span>
+            </label>
+
+            <label class="calc-addon-item" id="re-addon-floorplan-lbl">
+              <div class="calc-addon-left">
+                <input type="checkbox" id="re-addon-floorplan" onchange="calcToggleAddon(this, 're-addon-floorplan-lbl')">
+                <span class="calc-addon-name">2D Schematic Floor Plan</span>
+              </div>
+              <span class="calc-addon-price">+$50</span>
+            </label>
+
+            <label class="calc-addon-item" id="re-addon-rush-lbl">
+              <div class="calc-addon-left">
+                <input type="checkbox" id="re-addon-rush" onchange="calcToggleAddon(this, 're-addon-rush-lbl')">
+                <span class="calc-addon-name">Express 9 AM Rush Delivery</span>
+              </div>
+              <span class="calc-addon-price">+$75</span>
+            </label>
+
+            <label class="calc-addon-item" id="re-addon-staging-lbl">
+              <div class="calc-addon-left">
+                <input type="checkbox" id="re-addon-staging" onchange="calcToggleAddon(this, 're-addon-staging-lbl')">
+                <span class="calc-addon-name">Virtual Staging (2 Key Rooms)</span>
+              </div>
+              <span class="calc-addon-price">+$70</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- TAB 2: WEDDINGS -->
+        <div class="calc-tab-panel" id="calc-panel-weddings">
+          <div class="calc-step-heading"><span class="calc-step-badge">1</span> Select Wedding Film Collection</div>
+          <div class="calc-pkg-grid">
+            <div class="calc-pkg-card" id="wed-pkg-essential" onclick="calcSelectWeddingPackage('essential', 2500, 'Essential Wedding Film')">
+              <div>
+                <div class="calc-pkg-name">Essential</div>
+                <div class="calc-pkg-price"><span class="dollar">$</span>2,500</div>
+                <p class="calc-pkg-desc">8-Hour single videographer coverage. 3–5 min highlight film + full ceremony edit.</p>
+              </div>
+            </div>
+
+            <div class="calc-pkg-card selected" id="wed-pkg-cinematic" onclick="calcSelectWeddingPackage('cinematic', 4000, 'Cinematic Wedding Collection')">
+              <div class="calc-pkg-badge">Most Popular</div>
+              <div>
+                <div class="calc-pkg-name">Cinematic</div>
+                <div class="calc-pkg-price"><span class="dollar">$</span>4,000</div>
+                <p class="calc-pkg-desc">10+ Hours coverage, Highlight film + 20-min feature film, ceremony, drone, and raw footage.</p>
+              </div>
+            </div>
+
+            <div class="calc-pkg-card" id="wed-pkg-ultimate" onclick="calcSelectWeddingPackage('ultimate', 5500, 'Ultimate Wedding Experience')">
+              <div class="calc-pkg-badge" style="background:rgba(123,111,204,0.3);color:var(--star-glow)">Ultimate</div>
+              <div>
+                <div class="calc-pkg-name">Ultimate</div>
+                <div class="calc-pkg-price"><span class="dollar">$</span>5,500</div>
+                <p class="calc-pkg-desc">Full-day 2-videographer team, same-week social teaser, feature film, and rehearsal coverage.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-step-heading"><span class="calc-step-badge">2</span> Wedding Enhancements</div>
+          <div class="calc-addons-grid">
+            <label class="calc-addon-item" id="wed-addon-second-lbl">
+              <div class="calc-addon-left">
+                <input type="checkbox" id="wed-addon-second" onchange="calcToggleAddon(this, 'wed-addon-second-lbl')">
+                <span class="calc-addon-name">Second Cinematic Videographer</span>
+              </div>
+              <span class="calc-addon-price">+$600</span>
+            </label>
+
+            <label class="calc-addon-item" id="wed-addon-raw-lbl">
+              <div class="calc-addon-left">
+                <input type="checkbox" id="wed-addon-raw" onchange="calcToggleAddon(this, 'wed-addon-raw-lbl')">
+                <span class="calc-addon-name">Raw Footage Hard Drive</span>
+              </div>
+              <span class="calc-addon-price">+$350</span>
+            </label>
+
+            <label class="calc-addon-item" id="wed-addon-teaser-lbl">
+              <div class="calc-addon-left">
+                <input type="checkbox" id="wed-addon-teaser" onchange="calcToggleAddon(this, 'wed-addon-teaser-lbl')">
+                <span class="calc-addon-name">60-Second 48-Hour Instagram Teaser</span>
+              </div>
+              <span class="calc-addon-price">+$300</span>
+            </label>
+
+            <label class="calc-addon-item" id="wed-addon-rehearsal-lbl">
+              <div class="calc-addon-left">
+                <input type="checkbox" id="wed-addon-rehearsal" onchange="calcToggleAddon(this, 'wed-addon-rehearsal-lbl')">
+                <span class="calc-addon-name">Rehearsal Dinner / Welcome Party</span>
+              </div>
+              <span class="calc-addon-price">+$500</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- TAB 3: CORPORATE & COMMERCIAL -->
+        <div class="calc-tab-panel" id="calc-panel-corporate">
+          <div class="calc-step-heading"><span class="calc-step-badge">1</span> Commercial Production Scope</div>
+          <div class="calc-pkg-grid">
+            <div class="calc-pkg-card selected" id="corp-pkg-recap" onclick="calcSelectCorporatePackage('recap', 1000, 'Event Recap Video')">
+              <div>
+                <div class="calc-pkg-name">Event Recap</div>
+                <div class="calc-pkg-price"><span class="dollar">$</span>1,000</div>
+                <p class="calc-pkg-desc">30s–2min high-energy video recap for corporate galas, conferences, or fundraisers.</p>
+              </div>
+            </div>
+
+            <div class="calc-pkg-card" id="corp-pkg-promo" onclick="calcSelectCorporatePackage('promo', 1000, 'Brand Commercial Promo')">
+              <div>
+                <div class="calc-pkg-name">Brand Promo</div>
+                <div class="calc-pkg-price"><span class="dollar">$</span>1,000</div>
+                <p class="calc-pkg-desc">Produced commercial content with scripting assistance and web/ad formats.</p>
+              </div>
+            </div>
+
+            <div class="calc-pkg-card" id="corp-pkg-halfday" onclick="calcSelectCorporatePackage('halfday', 1500, 'Half-Day Brand Story')">
+              <div>
+                <div class="calc-pkg-name">Half-Day Story</div>
+                <div class="calc-pkg-price"><span class="dollar">$</span>1,500</div>
+                <p class="calc-pkg-desc">Up to 4 hours on-site. Multi-mic executive interviews + cinema B-roll.</p>
+              </div>
+            </div>
+
+            <div class="calc-pkg-card" id="corp-pkg-fullday" onclick="calcSelectCorporatePackage('fullday', 2500, 'Full-Day Production')">
+              <div>
+                <div class="calc-pkg-name">Full-Day Prod</div>
+                <div class="calc-pkg-price"><span class="dollar">$</span>2,500</div>
+                <p class="calc-pkg-desc">Up to 8 hours multi-location filming, team interviews, and multi-platform cutdowns.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-step-heading"><span class="calc-step-badge">2</span> Commercial Add-Ons</div>
+          <div class="calc-addons-grid">
+            <label class="calc-addon-item" id="corp-addon-drone-lbl">
+              <div class="calc-addon-left">
+                <input type="checkbox" id="corp-addon-drone" onchange="calcToggleAddon(this, 'corp-addon-drone-lbl')">
+                <span class="calc-addon-name">FAA Part 107 Drone Aerials</span>
+              </div>
+              <span class="calc-addon-price">+$150</span>
+            </label>
+
+            <label class="calc-addon-item" id="corp-addon-extended-lbl">
+              <div class="calc-addon-left">
+                <input type="checkbox" id="corp-addon-extended" onchange="calcToggleAddon(this, 'corp-addon-extended-lbl')">
+                <span class="calc-addon-name">Extended 3–5 Minute Cut</span>
+              </div>
+              <span class="calc-addon-price">+$300</span>
+            </label>
+
+            <label class="calc-addon-item" id="corp-addon-social-lbl">
+              <div class="calc-addon-left">
+                <input type="checkbox" id="corp-addon-social" onchange="calcToggleAddon(this, 'corp-addon-social-lbl')">
+                <span class="calc-addon-name">Vertical 9:16 Cuts (Reels/TikTok)</span>
+              </div>
+              <span class="calc-addon-price">+$150</span>
+            </label>
+
+            <label class="calc-addon-item" id="corp-addon-rush-lbl">
+              <div class="calc-addon-left">
+                <input type="checkbox" id="corp-addon-rush" onchange="calcToggleAddon(this, 'corp-addon-rush-lbl')">
+                <span class="calc-addon-name">Same-Week 5-Day Delivery</span>
+              </div>
+              <span class="calc-addon-price">+$200</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- TAB 4: DRONE AERIAL SERVICES -->
+        <div class="calc-tab-panel" id="calc-panel-drone">
+          <div class="calc-step-heading"><span class="calc-step-badge">1</span> Aerial Flight Package</div>
+          <div class="calc-pkg-grid">
+            <div class="calc-pkg-card" id="drone-pkg-photos" onclick="calcSelectDronePackage('photos', 150, 'Aerial Stills (10-15 Photos)')">
+              <div>
+                <div class="calc-pkg-name">Aerial Stills</div>
+                <div class="calc-pkg-price"><span class="dollar">$</span>150</div>
+                <p class="calc-pkg-desc">10–15 Edited high-resolution aerial photos of property, land, or event grounds.</p>
+              </div>
+            </div>
+
+            <div class="calc-pkg-card" id="drone-pkg-video" onclick="calcSelectDronePackage('video', 200, 'Aerial 4K Video Reel')">
+              <div>
+                <div class="calc-pkg-name">Aerial Video</div>
+                <div class="calc-pkg-price"><span class="dollar">$</span>200</div>
+                <p class="calc-pkg-desc">60–90 second edited 4K cinematic aerial highlight video with licensed music.</p>
+              </div>
+            </div>
+
+            <div class="calc-pkg-card selected" id="drone-pkg-bundle" onclick="calcSelectDronePackage('bundle', 275, 'Full Aerial Stills + Video Bundle')">
+              <div class="calc-pkg-badge">Best Value</div>
+              <div>
+                <div class="calc-pkg-name">Full Aerial Bundle</div>
+                <div class="calc-pkg-price"><span class="dollar">$</span>275</div>
+                <p class="calc-pkg-desc">Both Aerial Photos (15+ stills) AND 4K cinematic video reel (saves $75).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-step-heading"><span class="calc-step-badge">2</span> Flight Add-Ons</div>
+          <div class="calc-addons-grid">
+            <label class="calc-addon-item" id="drone-addon-raw-lbl">
+              <div class="calc-addon-left">
+                <input type="checkbox" id="drone-addon-raw" onchange="calcToggleAddon(this, 'drone-addon-raw-lbl')">
+                <span class="calc-addon-name">Uncut 4K D-Log Video Files</span>
+              </div>
+              <span class="calc-addon-price">+$75</span>
+            </label>
+
+            <label class="calc-addon-item" id="drone-addon-twilight-lbl">
+              <div class="calc-addon-left">
+                <input type="checkbox" id="drone-addon-twilight" onchange="calcToggleAddon(this, 'drone-addon-twilight-lbl')">
+                <span class="calc-addon-name">Sunset / Twilight Flight</span>
+              </div>
+              <span class="calc-addon-price">+$100</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Calculator Footer / Dock -->
+        <div class="calc-dock">
+          <div class="calc-summary-left">
+            <div class="calc-total-label">Estimated Investment</div>
+            <div class="calc-total-price">$<span id="calc-display-total">450</span></div>
+            <div class="calc-savings-pill" id="calc-savings-badge">✨ Bundle Savings: Saves $25</div>
+          </div>
+
+          <div class="calc-cta-group">
+            <button type="button" class="calc-cta-btn" onclick="calcApplyEstimate()">
+              Lock In Estimate &amp; Book Below &darr;
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- INTEGRATED FAST BOOKING FORM -->
+    <div class="estimate-form-section" id="bookingFormSection">
+      <div class="section-center" style="margin-bottom:2rem;">
+        <p class="section-label">Reserve Your Date</p>
+        <h2 class="section-title">Lock In Your Estimate</h2>
+        <p class="section-desc">Submit your shoot details and estimated scope. Ryan will review and confirm availability within 24 hours.</p>
+      </div>
+
+      <div class="inquiry-form" id="estimateFormWrap">
+        <!-- Estimate Applied Banner -->
+        <div class="calc-applied-banner" id="calc-applied-banner">
+          <div class="calc-applied-content">
+            <div class="calc-applied-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span>Custom Estimate Attached</span>
+            </div>
+            <p class="calc-applied-desc">Your package breakdown has been pre-filled below. Review your project details and send anytime!</p>
+          </div>
+          <button type="button" class="calc-applied-close" onclick="calcDismissBanner()" aria-label="Dismiss">&times;</button>
+        </div>
+
+        <form id="inquiryForm" action="https://formspree.io/f/xqedvayw" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name *</label>
+              <input type="text" id="fname" name="first_name" placeholder="First name" required>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name *</label>
+              <input type="text" id="lname" name="last_name" placeholder="Last name" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(518) ___-____">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="service">Service Type *</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service…</option>
+                <optgroup label="Real Estate">
+                  <option value="re-essential">Real Estate — Essential (Photos)</option>
+                  <option value="re-aerial">Real Estate — Aerial Pro (Photos + Drone)</option>
+                  <option value="re-media">Real Estate — Media Pro (Photos + Drone + Video or 3D Tour)</option>
+                  <option value="re-elite">Real Estate — Elite (Full Package + Matterport)</option>
+                  <option value="matterport">3D Matterport Tour Only</option>
+                </optgroup>
+                <optgroup label="Wedding &amp; Events">
+                  <option value="wedding-video">Wedding Videography</option>
+                  <option value="event-recap">Event Video Recap</option>
+                </optgroup>
+                <optgroup label="Drone &amp; Aerial">
+                  <option value="drone-re">Drone — Real Estate Add-On</option>
+                  <option value="drone-event">Drone — Event / Commercial</option>
+                  <option value="drone-land">Drone — Land / Survey</option>
+                  <option value="drone-custom">Drone — Custom Project</option>
+                </optgroup>
+                <optgroup label="Commercial">
+                  <option value="commercial-video">Commercial / Promo Video</option>
+                  <option value="brand-content">Brand Content Package</option>
+                </optgroup>
+                <option value="multiple">Multiple Services / Bundle</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="shoot-date">Preferred Date / Timeframe</label>
+              <input type="text" id="shoot-date" name="shoot_date" placeholder="e.g. June 14, 2026 or Next Week">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="location">City / Location</label>
+              <input type="text" id="location" name="location" placeholder="e.g. Albany, Saratoga Springs…">
+            </div>
+            <div class="form-group">
+              <label for="budget">Package / Budget in Mind</label>
+              <select id="budget" name="budget">
+                <option value="" disabled selected>Optional</option>
+                <option value="under-300">Under $300</option>
+                <option value="300-600">$300 – $600</option>
+                <option value="600-1000">$600 – $1,000</option>
+                <option value="1000-2500">$1,000 – $2,500</option>
+                <option value="2500+">$2,500+</option>
+                <option value="unsure">Not sure yet</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row full">
+            <div class="form-group">
+              <label for="message">Project Details &amp; Custom Scope *</label>
+              <textarea id="message" name="message" placeholder="Property address, special requests, or anything else that helps us understand your project." style="min-height:140px" required></textarea>
+            </div>
+          </div>
+
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_subject" value="New Estimate Inquiry — Orion Media Service">
+
+          <button type="submit" class="form-submit">
+            Reserve Date &amp; Submit Inquiry
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="2" y1="8" x2="14" y2="8"/><polyline points="9 3 14 8 9 13"/></svg>
+          </button>
+          <p class="form-note">We respond to all inquiries within 24 hours. No obligation or upfront charge to request date availability.</p>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">
+        <img src="images/orion-logo.webp" alt="Orion Media Logo" width="40" height="40" style="height:40px;width:40px;border-radius:50%;">
+        <div class="nav-logo-text"><span>Orion</span> Media</div>
+      </a>
+      <p>Professional videography and photography serving the Capital Region of New York. Weddings, real estate, drone, and commercial media.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/OrionMediaService" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@OrionMedia-NY" aria-label="YouTube" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <a href="https://share.google/M9tTWiMECg1B1rnOa" aria-label="Google Business Profile" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer-heading">Services</div>
+      <ul class="footer-links">
+        <li><a href="wedding-videography.html">Wedding Video</a></li>
+        <li><a href="wedding-photography.html">Wedding Photo</a></li>
+        <li><a href="real-estate-photography.html">Real Estate Media</a></li>
+        <li><a href="drone-services.html">Drone Aerials</a></li>
+        <li><a href="matterport-tours.html">3D Matterport</a></li>
+        <li><a href="event-commercial-video.html">Event &amp; Commercial</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="footer-heading">Company</div>
+      <ul class="footer-links">
+        <li><a href="about.html">About Ryan</a></li>
+        <li><a href="estimate.html">Instant Estimate</a></li>
+        <li><a href="portfolio.html">Portfolio Reel</a></li>
+        <li><a href="areas-served.html">Areas Served</a></li>
+        <li><a href="blog.html">Tips &amp; Guides</a></li>
+        <li><a href="contact.html">Contact &amp; Book</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="footer-heading">Studio Details</div>
+      <ul class="footer-links">
+        <li>Cohoes, NY</li>
+        <li>Mon–Fri: 9am – 6pm</li>
+        <li>Sat: 10am – 4pm</li>
+        <li>Sun: Closed</li>
+        <li><a href="tel:+15182229845">(518) 222-9845</a></li>
+        <li><a href="mailto:Ryan@OrionMediaService.com">Ryan@OrionMediaService.com</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div>&copy; 2026 Orion Media Service. All rights reserved.</div>
+    <div>Capital Region, New York</div>
+  </div>
+</footer>
+
+<script src="calculator.js" defer></script>
+</body>
+</html>
