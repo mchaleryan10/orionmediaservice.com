@@ -304,7 +304,7 @@
               <div>
                 <div class="calc-pkg-name">Elite</div>
                 <div class="calc-pkg-price"><span class="dollar">$</span>625</div>
-                <p class="calc-pkg-desc">All-inclusive marketing suite: Photos + Drone + Cinematic Video + 3D Matterport.</p>
+                <p class="calc-pkg-desc">All-inclusive marketing suite: Photos + Drone + Cinematic Video + 3D Matterport &amp; 2D Floor Plan.</p>
               </div>
             </div>
           </div>
@@ -319,7 +319,7 @@
               </label>
               <label class="calc-choice-label">
                 <input type="radio" name="mediapro-choice" value="matterport" onchange="calcRecalculate()">
-                <span>Matterport 3D Virtual Tour (with dollhouse view &amp; measurement tool)</span>
+                <span>Matterport 3D Virtual Tour (includes free 2D floor plan &amp; measurement tool)</span>
               </label>
             </div>
           </div>
@@ -339,14 +339,6 @@
               <div class="calc-addon-left">
                 <input type="checkbox" id="re-addon-twilight-ai" onchange="calcToggleTwilight('ai')">
                 <span class="calc-addon-name">AI Virtual Twilight Conversion</span>
-              </div>
-              <span class="calc-addon-price">+$50</span>
-            </label>
-
-            <label class="calc-addon-item" id="re-addon-floorplan-lbl" for="re-addon-floorplan">
-              <div class="calc-addon-left">
-                <input type="checkbox" id="re-addon-floorplan" onchange="calcToggleAddon(this, 're-addon-floorplan-lbl')">
-                <span class="calc-addon-name">2D Schematic Floor Plan</span>
               </div>
               <span class="calc-addon-price">+$50</span>
             </label>
@@ -773,7 +765,7 @@
   </div>
 </footer>
 
-<script src="calculator.js?v=2.2" defer></script>
+<script src="calculator.js?v=2.3" defer></script>
 <script>
 var obs=new IntersectionObserver(function(e){e.forEach(function(en){if(en.isIntersecting)en.target.classList.add('visible')})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el)});
 document.getElementById('navToggle').addEventListener('click',function(){document.getElementById('navLinks').classList.toggle('open')});

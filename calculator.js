@@ -14,7 +14,7 @@
             pkgName: 'Media Pro',
             pkgPrice: 450,
             choice: 'video',
-            addons: { twilightReal: false, twilightAi: false, floorplan: false, rush: false, staging: false }
+            addons: { twilightReal: false, twilightAi: false, rush: false, staging: false }
         },
         weddings: {
             pkg: 'cinematic',
@@ -243,8 +243,6 @@
             if (twReal && twReal.checked) total += 150;
             var twAi = document.getElementById('re-addon-twilight-ai');
             if (twAi && twAi.checked) total += 50;
-            var fl = document.getElementById('re-addon-floorplan');
-            if (fl && fl.checked) total += 50;
             var ru = document.getElementById('re-addon-rush');
             if (ru && ru.checked) total += 75;
             var st = document.getElementById('re-addon-staging');
@@ -328,14 +326,13 @@
             summary.packageName = state.realestate.pkgName;
 
             var choiceRadio = document.querySelector('input[name="mediapro-choice"]:checked');
-            var choiceLabel = (choiceRadio && choiceRadio.value === 'matterport') ? '3D Matterport Tour' : 'Cinematic Video Walkthrough';
+            var choiceLabel = (choiceRadio && choiceRadio.value === 'matterport') ? '3D Matterport Tour (includes 2D Floor Plan)' : 'Cinematic Video Walkthrough';
             if (state.realestate.pkg === 'mediapro') {
                 summary.mediaChoice = choiceLabel;
             }
 
             if (document.getElementById('re-addon-twilight-real') && document.getElementById('re-addon-twilight-real').checked) summary.addons.push('Real Twilight (+$150)');
             if (document.getElementById('re-addon-twilight-ai') && document.getElementById('re-addon-twilight-ai').checked) summary.addons.push('AI Virtual Twilight (+$50)');
-            if (document.getElementById('re-addon-floorplan') && document.getElementById('re-addon-floorplan').checked) summary.addons.push('2D Floor Plan (+$50)');
             if (document.getElementById('re-addon-rush') && document.getElementById('re-addon-rush').checked) summary.addons.push('Express 9 AM Delivery (+$75)');
             if (document.getElementById('re-addon-staging') && document.getElementById('re-addon-staging').checked) summary.addons.push('Virtual Staging (+$70)');
 
