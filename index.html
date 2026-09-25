@@ -604,6 +604,9 @@
             padding: 2.5rem 2rem;
             transition: all 0.4s ease;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
 
         .service-card::before {
@@ -635,7 +638,11 @@
             font-family: var(--font-display);
             font-size: 1.3rem;
             font-weight: 400;
+            line-height: 1.3;
+            min-height: 3.4rem;
             margin-bottom: 0.75rem;
+            display: flex;
+            align-items: flex-start;
         }
 
         .service-card p {
@@ -643,7 +650,8 @@
             font-weight: 300;
             color: var(--star-dim);
             line-height: 1.6;
-            margin-bottom: 1.25rem;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
         }
 
         .service-link {
@@ -655,6 +663,7 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
+            margin-top: auto;
             transition: gap 0.3s ease;
         }
 
@@ -673,16 +682,25 @@
         }
 
         .service-badge {
-            display: inline-block;
-            padding: 0.2rem 0.6rem;
-            background: rgba(123, 111, 204, 0.15);
-            border-radius: 3px;
+            position: absolute;
+            top: 0.75rem;
+            left: 0.75rem;
+            z-index: 2;
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 0.65rem;
+            background: rgba(12, 14, 26, 0.8);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(123, 111, 204, 0.4);
+            border-radius: 4px;
             font-size: 0.65rem;
             font-weight: 600;
             letter-spacing: 0.12em;
             text-transform: uppercase;
             color: var(--star-glow);
-            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+            pointer-events: none;
         }
 
         /* ============================================
@@ -1097,6 +1115,7 @@
 
         @media (max-width: 768px) {
             .services-grid { grid-template-columns: 1fr; }
+            .service-card h3 { min-height: auto; }
             .form-grid { grid-template-columns: 1fr; }
             .section-pad { padding: 5rem 1.5rem; }
 
@@ -1151,6 +1170,12 @@
         html[data-theme="light"] .service-card.featured {
             background: linear-gradient(135deg, rgba(107, 95, 191, 0.06), rgba(0, 0, 0, 0.03));
             border-color: rgba(107, 95, 191, 0.15);
+        }
+        html[data-theme="light"] .service-badge {
+            background: rgba(255, 255, 255, 0.9);
+            border-color: rgba(99, 102, 241, 0.35);
+            color: #4338ca;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         html[data-theme="light"] .trust-badge-icon { background: rgba(107, 95, 191, 0.08); }
@@ -1261,12 +1286,14 @@
             font-weight: 600;
         }
         .service-card-image {
+            position: relative;
             width: 100%;
             aspect-ratio: 16 / 9;
             border-radius: 8px;
             overflow: hidden;
             margin-bottom: 1.25rem;
             border: 1px solid var(--glass-border);
+            flex-shrink: 0;
         }
         .service-card-image picture {
             width: 100%;
@@ -1701,11 +1728,11 @@
             <div class="services-grid stagger">
                 <!-- Wedding Videography — FEATURED -->
                 <div class="service-card featured reveal">
-                    <div class="service-badge">Most Popular</div>
                     <div class="service-card-image">
+                        <div class="service-badge">Most Popular</div>
                         <picture>
                             <source srcset="images/portfolio/weddings/RTM01909-thumb.webp" type="image/webp">
-                            <img src="images/portfolio/weddings/RTM01909.jpg" alt="Cinematic wedding photography & videography by Orion Media" width="600" height="400" loading="lazy" decoding="async">
+                            <img src="images/portfolio/weddings/RTM01909.jpg" alt="Cinematic wedding photography & videography by Orion Media" width="600" height="338" loading="lazy" decoding="async">
                         </picture>
                     </div>
                     <h3>Wedding Videography & Photography</h3>
@@ -1718,11 +1745,11 @@
 
                 <!-- Real Estate — FEATURED -->
                 <div class="service-card featured reveal">
-                    <div class="service-badge">High Volume</div>
                     <div class="service-card-image">
+                        <div class="service-badge">High Volume</div>
                         <picture>
                             <source srcset="images/portfolio/real-estate/15-dahlia-dr-015-thumb.webp" type="image/webp">
-                            <img src="images/portfolio/real-estate/15-dahlia-dr-015.jpg" alt="Modern interior real estate photography by Orion Media" width="600" height="400" loading="lazy" decoding="async">
+                            <img src="images/portfolio/real-estate/15-dahlia-dr-015.jpg" alt="Modern interior real estate photography by Orion Media" width="600" height="338" loading="lazy" decoding="async">
                         </picture>
                     </div>
                     <h3>Real Estate Photography</h3>
@@ -1737,8 +1764,8 @@
                 <div class="service-card reveal">
                     <div class="service-card-image">
                         <picture>
-                            <source srcset="images/portfolio/events/005-thumb.webp" type="image/webp">
-                            <img src="images/portfolio/events/005.jpg" alt="Dynamic event videography & photography by Orion Media" width="600" height="400" loading="lazy" decoding="async">
+                            <source srcset="images/portfolio/events/car-recap-event-thumb.webp" type="image/webp">
+                            <img src="images/portfolio/events/car-recap-event.jpg" alt="Automotive event video recap by Orion Media at Saratoga Motorcar Auction" width="600" height="338" loading="lazy" decoding="async">
                         </picture>
                     </div>
                     <h3>Event Video Recaps</h3>
@@ -1754,7 +1781,7 @@
                     <div class="service-card-image">
                         <picture>
                             <source srcset="images/portfolio/drone/116-hemlock-drone-5-thumb.webp" type="image/webp">
-                            <img src="images/portfolio/drone/116-hemlock-drone-5.jpg" alt="FAA-certified drone aerial photography by Orion Media" width="600" height="400" loading="lazy" decoding="async">
+                            <img src="images/portfolio/drone/116-hemlock-drone-5.jpg" alt="FAA-certified drone aerial photography by Orion Media" width="600" height="338" loading="lazy" decoding="async">
                         </picture>
                     </div>
                     <h3>Drone Aerial Services</h3>
@@ -1770,7 +1797,7 @@
                     <div class="service-card-image">
                         <picture>
                             <source srcset="images/heroes/matterport-hero-thumb.webp" type="image/webp">
-                            <img src="images/heroes/matterport-hero.jpg" alt="3D Matterport virtual property tour by Orion Media" width="600" height="400" loading="lazy" decoding="async">
+                            <img src="images/heroes/matterport-hero.jpg" alt="3D Matterport virtual property tour by Orion Media" width="600" height="338" loading="lazy" decoding="async">
                         </picture>
                     </div>
                     <h3>3D Matterport Tours</h3>
@@ -1785,8 +1812,8 @@
                 <div class="service-card reveal">
                     <div class="service-card-image">
                         <picture>
-                            <source srcset="images/portfolio/artistic/Aaron-McKenzie-56-thumb.webp" type="image/webp">
-                            <img src="images/portfolio/artistic/Aaron-McKenzie-56.jpg" alt="Commercial video production and brand storytelling by Orion Media" width="600" height="400" loading="lazy" decoding="async">
+                            <source srcset="images/portfolio/commercial/promo-retail-makeover-thumb.webp" type="image/webp">
+                            <img src="images/portfolio/commercial/promo-retail-makeover.jpg" alt="Commercial video production and brand storytelling by Orion Media" width="600" height="338" loading="lazy" decoding="async">
                         </picture>
                     </div>
                     <h3>Commercial & Promo Video</h3>
