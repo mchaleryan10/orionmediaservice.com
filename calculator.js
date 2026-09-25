@@ -175,33 +175,48 @@
                 if (aiLbl) aiLbl.classList.remove('selected');
             }
         }
+        if (state.realestate && state.realestate.addons) {
+            state.realestate.addons.twilightReal = realCb ? realCb.checked : false;
+            state.realestate.addons.twilightAi = aiCb ? aiCb.checked : false;
+        }
         calcRecalculate();
     };
 
-    // Smooth Number Animation
+    // Smooth Number Animation with Guaranteed Timer Completion
     function animateValue(start, end, duration) {
         var el = document.getElementById('calc-display-total');
         if (!el) return;
-        if (start === end) {
+
+        var currentText = el.textContent.replace(/,/g, '');
+        var parsed = parseInt(currentText, 10);
+        var actualStart = !isNaN(parsed) ? parsed : start;
+
+        currentDisplayPrice = end;
+        if (actualStart === end) {
             el.textContent = Number(end).toLocaleString();
             return;
         }
 
-        var startTime = null;
-        if (animFrameId) cancelAnimationFrame(animFrameId);
-
-        function step(timestamp) {
-            if (!startTime) startTime = timestamp;
-            var progress = Math.min((timestamp - startTime) / duration, 1);
-            var current = Math.round(start + (end - start) * progress);
-            el.textContent = Number(current).toLocaleString();
-            if (progress < 1) {
-                animFrameId = requestAnimationFrame(step);
-            } else {
-                currentDisplayPrice = end;
-            }
+        if (animFrameId) {
+            clearInterval(animFrameId);
+            animFrameId = null;
         }
-        animFrameId = requestAnimationFrame(step);
+
+        var startTime = Date.now();
+        var dur = duration || 150;
+
+        animFrameId = setInterval(function () {
+            var elapsed = Date.now() - startTime;
+            var progress = Math.min(elapsed / dur, 1);
+            var ease = 1 - Math.pow(1 - progress, 2);
+            var current = Math.round(actualStart + (end - actualStart) * ease);
+            el.textContent = Number(current).toLocaleString();
+            if (progress >= 1) {
+                clearInterval(animFrameId);
+                animFrameId = null;
+                el.textContent = Number(end).toLocaleString();
+            }
+        }, 16);
     }
 
     // Master Recalculate
@@ -278,7 +293,7 @@
             if (state.drone.pkg === 'bundle') savings = 75;
         }
 
-        animateValue(currentDisplayPrice, total, 300);
+        animateValue(currentDisplayPrice, total, 150);
 
         var badge = document.getElementById('calc-savings-badge');
         if (badge) {
