@@ -14,13 +14,13 @@
             pkgName: 'Media Pro',
             pkgPrice: 450,
             choice: 'video',
-            addons: { twilight: false, floorplan: false, rush: false, staging: false }
+            addons: { twilightReal: false, twilightAi: false, floorplan: false, rush: false, staging: false }
         },
         weddings: {
             pkg: 'cinematic',
             pkgName: 'Cinematic',
             pkgPrice: 4000,
-            addons: { second: false, raw: false, teaser: false, rehearsal: false }
+            addons: { second: false, raw: false, teaser: false, rehearsal: false, booth: false }
         },
         corporate: {
             pkg: 'recap',
@@ -144,6 +144,40 @@
         calcRecalculate();
     };
 
+    // Helper to calculate Corporate Rush Delivery price based on package
+    function getCorporateRushPrice() {
+        if (state.corporate.pkg === 'halfday') return 450;
+        if (state.corporate.pkg === 'fullday') return 800;
+        return 200; // recap and promo
+    }
+
+    // Real Estate Twilight Options (Mutually Exclusive Toggle)
+    window.calcToggleTwilight = function (type) {
+        var realCb = document.getElementById('re-addon-twilight-real');
+        var realLbl = document.getElementById('re-addon-twilight-real-lbl');
+        var aiCb = document.getElementById('re-addon-twilight-ai');
+        var aiLbl = document.getElementById('re-addon-twilight-ai-lbl');
+
+        if (type === 'real') {
+            if (realCb && realCb.checked) {
+                if (aiCb) aiCb.checked = false;
+                if (aiLbl) aiLbl.classList.remove('selected');
+                if (realLbl) realLbl.classList.add('selected');
+            } else {
+                if (realLbl) realLbl.classList.remove('selected');
+            }
+        } else if (type === 'ai') {
+            if (aiCb && aiCb.checked) {
+                if (realCb) realCb.checked = false;
+                if (realLbl) realLbl.classList.remove('selected');
+                if (aiLbl) aiLbl.classList.add('selected');
+            } else {
+                if (aiLbl) aiLbl.classList.remove('selected');
+            }
+        }
+        calcRecalculate();
+    };
+
     // Smooth Number Animation
     function animateValue(start, end, duration) {
         var el = document.getElementById('calc-display-total');
@@ -190,8 +224,10 @@
             }
             total = base;
 
-            var tw = document.getElementById('re-addon-twilight');
-            if (tw && tw.checked) total += 150;
+            var twReal = document.getElementById('re-addon-twilight-real');
+            if (twReal && twReal.checked) total += 150;
+            var twAi = document.getElementById('re-addon-twilight-ai');
+            if (twAi && twAi.checked) total += 50;
             var fl = document.getElementById('re-addon-floorplan');
             if (fl && fl.checked) total += 50;
             var ru = document.getElementById('re-addon-rush');
@@ -212,6 +248,8 @@
             if (tea && tea.checked) total += 300;
             var reh = document.getElementById('wed-addon-rehearsal');
             if (reh && reh.checked) total += 500;
+            var bth = document.getElementById('wed-addon-booth');
+            if (bth && bth.checked) total += 350;
 
         } else if (currentService === 'corporate') {
             total = state.corporate.pkgPrice;
@@ -222,7 +260,13 @@
             var soc = document.getElementById('corp-addon-social');
             if (soc && soc.checked) total += 150;
             var cru = document.getElementById('corp-addon-rush');
-            if (cru && cru.checked) total += 200;
+            var rushFee = getCorporateRushPrice();
+            if (cru && cru.checked) total += rushFee;
+
+            var rushPriceSpan = document.getElementById('corp-addon-rush-price');
+            if (rushPriceSpan) {
+                rushPriceSpan.textContent = '+$' + rushFee;
+            }
 
         } else if (currentService === 'drone') {
             total = state.drone.pkgPrice;
@@ -274,7 +318,8 @@
                 summary.mediaChoice = choiceLabel;
             }
 
-            if (document.getElementById('re-addon-twilight') && document.getElementById('re-addon-twilight').checked) summary.addons.push('Twilight Aerials (+$150)');
+            if (document.getElementById('re-addon-twilight-real') && document.getElementById('re-addon-twilight-real').checked) summary.addons.push('Real Twilight (+$150)');
+            if (document.getElementById('re-addon-twilight-ai') && document.getElementById('re-addon-twilight-ai').checked) summary.addons.push('AI Virtual Twilight (+$50)');
             if (document.getElementById('re-addon-floorplan') && document.getElementById('re-addon-floorplan').checked) summary.addons.push('2D Floor Plan (+$50)');
             if (document.getElementById('re-addon-rush') && document.getElementById('re-addon-rush').checked) summary.addons.push('Express 9 AM Delivery (+$75)');
             if (document.getElementById('re-addon-staging') && document.getElementById('re-addon-staging').checked) summary.addons.push('Virtual Staging (+$70)');
@@ -288,16 +333,18 @@
             if (document.getElementById('wed-addon-raw') && document.getElementById('wed-addon-raw').checked) summary.addons.push('Raw Footage Drive (+$350)');
             if (document.getElementById('wed-addon-teaser') && document.getElementById('wed-addon-teaser').checked) summary.addons.push('48-Hr Teaser Reel (+$300)');
             if (document.getElementById('wed-addon-rehearsal') && document.getElementById('wed-addon-rehearsal').checked) summary.addons.push('Rehearsal Dinner (+$500)');
+            if (document.getElementById('wed-addon-booth') && document.getElementById('wed-addon-booth').checked) summary.addons.push('Drunk Advice Booth (+$350)');
 
         } else if (currentService === 'corporate') {
             summary.serviceName = 'Corporate & Commercial Video';
             summary.packageKey = state.corporate.pkg;
             summary.packageName = state.corporate.pkgName;
 
+            var corpRushPrice = getCorporateRushPrice();
             if (document.getElementById('corp-addon-drone') && document.getElementById('corp-addon-drone').checked) summary.addons.push('Drone Aerials (+$150)');
             if (document.getElementById('corp-addon-extended') && document.getElementById('corp-addon-extended').checked) summary.addons.push('Extended 3-5m Cut (+$300)');
             if (document.getElementById('corp-addon-social') && document.getElementById('corp-addon-social').checked) summary.addons.push('Vertical 9:16 Cuts (+$150)');
-            if (document.getElementById('corp-addon-rush') && document.getElementById('corp-addon-rush').checked) summary.addons.push('5-Day Rush Delivery (+$200)');
+            if (document.getElementById('corp-addon-rush') && document.getElementById('corp-addon-rush').checked) summary.addons.push('5-Day Rush Delivery (+$' + corpRushPrice + ')');
 
         } else if (currentService === 'drone') {
             summary.serviceName = 'Drone Aerial Flight';
