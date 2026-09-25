@@ -199,6 +199,10 @@ html[data-theme="light"] .nav {
   padding: 8px;
   background: none;
   border: none;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-toggle span {
@@ -667,4 +671,16 @@ html[data-theme="light"] .footer {
   margin-bottom: 1.25rem;
   color: var(--starlight);
   font-weight: 600;
+}
+
+/* Accessibility & Ease of Use: Prevent iOS auto-zoom on input focus */
+@media (max-width: 768px) {
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+  select,
+  textarea,
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 16px !important;
+  }
 }
