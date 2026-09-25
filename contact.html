@@ -197,6 +197,15 @@ html[data-theme="light"] .form-group select option{background:#eaeaf0}
           <form id="inquiryForm" action="https://formspree.io/f/xqedvayw" method="POST">
             <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
             <input type="hidden" name="_subject" value="New Inquiry — Orion Media Service (Contact Page)">
+            <!-- Hidden Calculator & Estimate Fields for Formspree -->
+            <input type="hidden" name="estimated_service" id="calc-hidden-service" value="General Inquiry">
+            <input type="hidden" name="estimated_package" id="calc-hidden-package" value="Standard Project">
+            <input type="hidden" name="property_sqft" id="calc-hidden-sqft" value="N/A">
+            <input type="hidden" name="included_choice" id="calc-hidden-choice" value="N/A">
+            <input type="hidden" name="selected_addons" id="calc-hidden-addons" value="None">
+            <input type="hidden" name="calculated_total" id="calc-hidden-total" value="">
+            <input type="hidden" name="savings_applied" id="calc-hidden-savings" value="None">
+            <input type="hidden" name="itemized_breakdown" id="calc-hidden-breakdown" value="">
 
             <div class="form-row">
               <div class="form-group">
@@ -282,9 +291,6 @@ html[data-theme="light"] .form-group select option{background:#eaeaf0}
               </div>
             </div>
 
-            <!-- Honeypot spam trap -->
-            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
-            <input type="hidden" name="_subject" value="New Inquiry — Orion Media Service">
 
             <button type="submit" class="form-submit">
               Send Inquiry
@@ -551,35 +557,108 @@ document.getElementById('inquiryForm').addEventListener('submit', function() {
   btn.disabled = true;
 });
 
-// Auto-fill form from URL params (used by Book buttons on service pages)
+// Auto-fill form from URL params (used by Book buttons on service pages and calculator links)
 (function() {
   const params = new URLSearchParams(window.location.search);
   const service = params.get('service');
   const pkg     = params.get('pkg');
+  const pName   = params.get('name') || pkg || '';
+  const total   = params.get('total');
+  const sqft    = params.get('sqft');
+  const choice  = params.get('choice');
+  const delivery= params.get('delivery');
+  const addons  = params.get('addons');
 
+  // Map Service
   if (service) {
     const sel = document.getElementById('service');
     if (sel) {
       if (Array.from(sel.options).some(o => o.value === service)) {
         sel.value = service;
-      } else if (service.startsWith('re-essential')) {
-        sel.value = 're-essential';
-      } else if (service.startsWith('re-aerial')) {
-        sel.value = 're-aerial';
-      } else if (service.startsWith('re-media')) {
-        sel.value = 're-media';
-      } else if (service.startsWith('re-elite')) {
-        sel.value = 're-elite';
+      } else if (service === 'realestate' || service.startsWith('re-')) {
+        if (pkg === 'essential' || service.endsWith('essential')) sel.value = 're-essential';
+        else if (pkg === 'aerial' || service.endsWith('aerial')) sel.value = 're-aerial';
+        else if (pkg === 'mediapro' || service.endsWith('media')) sel.value = 're-media';
+        else if (pkg === 'elite' || service.endsWith('elite')) sel.value = 're-elite';
+        else sel.value = 're-media';
+      } else if (service === 'weddings') {
+        sel.value = 'wedding-video';
+      } else if (service === 'corporate') {
+        if (pkg === 'recap') sel.value = 'event-recap';
+        else if (pkg === 'promo' || pkg === 'halfday') sel.value = 'commercial-video';
+        else if (pkg === 'fullday') sel.value = 'brand-content';
+        else sel.value = 'commercial-video';
+      } else if (service === 'drone') {
+        if (pkg === 'photos') sel.value = 'drone-re';
+        else if (pkg === 'video') sel.value = 'drone-event';
+        else sel.value = 'drone-custom';
       }
-      // Highlight to show it was pre-filled
       sel.style.borderColor = 'rgba(123,111,204,.6)';
       sel.style.background  = 'rgba(123,111,204,.07)';
     }
   }
 
-  if (pkg) {
-    const msg = document.getElementById('message');
-    if (msg) {
+  // Map Budget if total is provided
+  if (total) {
+    const selBudget = document.getElementById('budget');
+    if (selBudget) {
+      const numTotal = parseInt(total.replace(/,/g, ''), 10) || 0;
+      if (numTotal < 300) selBudget.value = 'under-300';
+      else if (numTotal <= 600) selBudget.value = '300-600';
+      else if (numTotal <= 1000) selBudget.value = '600-1000';
+      else if (numTotal <= 2500) selBudget.value = '1000-2500';
+      else selBudget.value = '2500+';
+      selBudget.style.borderColor = 'rgba(123,111,204,.6)';
+      selBudget.style.background  = 'rgba(123,111,204,.07)';
+    }
+  }
+
+  // Populate Hidden Calculator Inputs
+  const hService = document.getElementById('calc-hidden-service');
+  const hPkg = document.getElementById('calc-hidden-package');
+  const hSqft = document.getElementById('calc-hidden-sqft');
+  const hChoice = document.getElementById('calc-hidden-choice');
+  const hAddons = document.getElementById('calc-hidden-addons');
+  const hTotal = document.getElementById('calc-hidden-total');
+  const hBreakdown = document.getElementById('calc-hidden-breakdown');
+
+  if (service && hService) hService.value = service.toUpperCase();
+  if (pName && hPkg) hPkg.value = pName + (total ? ` ($${total})` : '');
+  if (sqft && hSqft) hSqft.value = Number(sqft).toLocaleString() + ' sq ft';
+  if (choice && hChoice) hChoice.value = choice;
+  if (addons && hAddons) hAddons.value = addons.split(';').join(', ');
+  if (total && hTotal) hTotal.value = '$' + total;
+
+  if (pName && total && hBreakdown) {
+    hBreakdown.value = `Service: ${service || 'Custom'} | Package: ${pName} | Total: $${total}` + (addons ? ` | Add-ons: ${addons.split(';').join(', ')}` : '');
+  }
+
+  // Update Subject Line
+  const subInput = document.querySelector('input[name="_subject"]');
+  if (subInput && (pName || total)) {
+    subInput.value = `Estimate Inquiry: ${pName || 'Custom Project'} ($${total || 'Custom'}) — Orion Media Service`;
+  }
+
+  // Populate Message Field
+  const msg = document.getElementById('message');
+  if (msg) {
+    if (total || sqft || addons || choice) {
+      const lines = [];
+      lines.push('=== ONLINE ESTIMATE DETAILS ===');
+      if (service) lines.push('Service: ' + (service === 'realestate' ? 'Real Estate Photography & Media' : service.charAt(0).toUpperCase() + service.slice(1)));
+      if (pName) lines.push('Package: ' + pName);
+      if (sqft) lines.push('Property Size: ' + Number(sqft).toLocaleString() + ' sq ft');
+      if (choice) lines.push('Included Choice: ' + choice);
+      if (delivery) lines.push('Turnaround: ' + delivery);
+      if (addons) lines.push('Selected Add-Ons: ' + addons.split(';').join(', '));
+      if (total) lines.push('Calculated Estimate: $' + total);
+      lines.push('===============================');
+      lines.push('');
+      lines.push('Hi Ryan, I calculated this package online and would like to check your availability for my upcoming shoot!');
+      msg.value = lines.join('\n');
+      msg.style.borderColor = 'rgba(123,111,204,.6)';
+      msg.style.background  = 'rgba(123,111,204,.07)';
+    } else if (pkg) {
       msg.value = pkg;
       msg.style.borderColor = 'rgba(123,111,204,.6)';
       msg.style.background  = 'rgba(123,111,204,.07)';
@@ -587,7 +666,7 @@ document.getElementById('inquiryForm').addEventListener('submit', function() {
   }
 
   // Scroll straight to the form if params were passed
-  if (service || pkg) {
+  if (service || pkg || total) {
     setTimeout(() => {
       const form = document.getElementById('inquiryForm');
       if (form) form.scrollIntoView({ behavior: 'smooth', block: 'start' });

@@ -614,6 +614,128 @@ html[data-theme="light"] .calc-total-price {
     100% { box-shadow: 0 0 0 0 rgba(123, 111, 204, 0); }
 }
 
+/* LIVE ESTIMATE SUMMARY CARD IN FORM */
+.calc-live-summary-card {
+    background: rgba(123, 111, 204, 0.08);
+    border: 1px solid rgba(123, 111, 204, 0.35);
+    border-radius: 14px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.75rem;
+    transition: all 0.3s ease;
+}
+
+html[data-theme="light"] .calc-live-summary-card {
+    background: rgba(123, 111, 204, 0.06);
+    border-color: rgba(123, 111, 204, 0.25);
+}
+
+.calc-live-summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.65rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme="light"] .calc-live-summary-header {
+    border-bottom-color: rgba(0, 0, 0, 0.08);
+}
+
+.calc-live-summary-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--star-glow, #c9b8ff);
+    background: rgba(123, 111, 204, 0.2);
+    padding: 0.25rem 0.65rem;
+    border-radius: 100px;
+}
+
+.calc-live-summary-total {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--warm-highlight, #e8c97a);
+    font-family: var(--font-display, Georgia, serif);
+}
+
+.calc-live-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.75rem 1.25rem;
+    font-size: 0.84rem;
+}
+
+.calc-live-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.calc-live-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--star-dim, #b8bce0);
+    font-weight: 500;
+}
+
+.calc-live-val {
+    font-size: 0.88rem;
+    color: var(--starlight, #ffffff);
+    font-weight: 500;
+}
+
+html[data-theme="light"] .calc-live-val {
+    color: #1a1a2e;
+}
+
+.calc-live-summary-addons {
+    margin-top: 0.85rem;
+    padding-top: 0.75rem;
+    border-top: 1px dashed rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+html[data-theme="light"] .calc-live-summary-addons {
+    border-top-color: rgba(0, 0, 0, 0.08);
+}
+
+.calc-addon-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.25rem 0.65rem;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    font-size: 0.76rem;
+    color: var(--starlight, #ffffff);
+}
+
+html[data-theme="light"] .calc-addon-tag {
+    background: rgba(0, 0, 0, 0.04);
+    border-color: rgba(0, 0, 0, 0.08);
+    color: #1a1a2e;
+}
+
+.calc-live-summary-note {
+    margin-top: 0.75rem;
+    font-size: 0.74rem;
+    color: var(--star-dim, #b8bce0);
+    opacity: 0.85;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
 /* RESPONSIVE BREAKPOINTS */
 @media (max-width: 840px) {
     .calc-tabs-nav {

@@ -586,6 +586,45 @@
       </div>
 
       <div class="inquiry-form" id="estimateFormWrap">
+        <!-- Live Calculator Scope & Investment Summary Card -->
+        <div class="calc-live-summary-card" id="calc-live-summary-card">
+          <div class="calc-live-summary-header">
+            <div class="calc-live-summary-badge">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span>Calculated Scope Attached</span>
+            </div>
+            <div class="calc-live-summary-total">Total: $<span id="summary-card-total">450</span></div>
+          </div>
+          <div class="calc-live-summary-grid">
+            <div class="calc-live-item">
+              <span class="calc-live-label">Service &amp; Package</span>
+              <span class="calc-live-val" id="summary-card-pkg">Media Pro ($450)</span>
+            </div>
+            <div class="calc-live-item" id="summary-card-choice-item">
+              <span class="calc-live-label">Included Choice</span>
+              <span class="calc-live-val" id="summary-card-choice">Cinematic Video Walkthrough</span>
+            </div>
+            <div class="calc-live-item" id="summary-card-sqft-item">
+              <span class="calc-live-label">Property Size</span>
+              <span class="calc-live-val" id="summary-card-sqft">2,400 sq ft</span>
+            </div>
+            <div class="calc-live-item" id="summary-card-delivery-item">
+              <span class="calc-live-label">Turnaround</span>
+              <span class="calc-live-val" id="summary-card-delivery">48-Hour Turnaround</span>
+            </div>
+          </div>
+          <div class="calc-live-summary-addons" id="summary-card-addons-wrap">
+            <span class="calc-live-label" style="margin-right:0.25rem;">Selected Add-Ons:</span>
+            <div id="summary-card-addons-list" style="display:inline-flex;flex-wrap:wrap;gap:0.35rem;">
+              <span class="calc-addon-tag" style="opacity:0.7">None selected</span>
+            </div>
+          </div>
+          <div class="calc-live-summary-note">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            <span>All selections and calculated pricing are automatically attached to this inquiry.</span>
+          </div>
+        </div>
+
         <!-- Estimate Applied Banner -->
         <div class="calc-applied-banner" id="calc-applied-banner">
           <div class="calc-applied-content">
@@ -599,6 +638,15 @@
         </div>
 
         <form id="inquiryForm" action="https://formspree.io/f/xqedvayw" method="POST">
+          <!-- Hidden Calculator Fields for Formspree -->
+          <input type="hidden" name="estimated_service" id="calc-hidden-service" value="Real Estate Photography &amp; Media">
+          <input type="hidden" name="estimated_package" id="calc-hidden-package" value="Media Pro ($450)">
+          <input type="hidden" name="property_sqft" id="calc-hidden-sqft" value="2,400 sq ft">
+          <input type="hidden" name="included_choice" id="calc-hidden-choice" value="Cinematic Video Walkthrough">
+          <input type="hidden" name="selected_addons" id="calc-hidden-addons" value="None">
+          <input type="hidden" name="calculated_total" id="calc-hidden-total" value="$450">
+          <input type="hidden" name="savings_applied" id="calc-hidden-savings" value="Saves $25">
+          <input type="hidden" name="itemized_breakdown" id="calc-hidden-breakdown" value="">
           <div class="form-row">
             <div class="form-group">
               <label for="fname">First Name *</label>

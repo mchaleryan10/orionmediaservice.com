@@ -302,21 +302,39 @@
                 badge.style.display = 'none';
             }
         }
+
+        // Live synchronize selections to the attached form and live summary card
+        if (typeof window.calcSyncForm === 'function') {
+            window.calcSyncForm(total, savings);
+        }
     };
 
     // Build Formatted Scope String & Payload
-    function generateScopePayload() {
-        var totalEl = document.getElementById('calc-display-total');
-        var total = totalEl ? totalEl.textContent : '450';
+    function generateScopePayload(computedTotal, computedSavings) {
+        var total;
+        if (computedTotal !== undefined && computedTotal !== null) {
+            total = Number(computedTotal).toLocaleString();
+        } else {
+            var totalEl = document.getElementById('calc-display-total');
+            total = totalEl ? totalEl.textContent.trim() : '450';
+        }
+
+        var savings = (computedSavings !== undefined && computedSavings !== null) ? computedSavings : 0;
+
         var summary = {
             serviceKey: currentService,
             serviceName: '',
             packageName: '',
             packageKey: '',
+            packageBasePrice: 0,
+            delivery: '',
             sqft: sqft,
+            sqftDisplay: '',
             addons: [],
             total: total,
+            savings: savings,
             mediaChoice: '',
+            breakdown: '',
             textMessage: ''
         };
 
@@ -324,174 +342,336 @@
             summary.serviceName = 'Real Estate Photography & Media';
             summary.packageKey = state.realestate.pkg;
             summary.packageName = state.realestate.pkgName;
+            summary.packageBasePrice = state.realestate.pkgPrice;
 
             var choiceRadio = document.querySelector('input[name="mediapro-choice"]:checked');
-            var choiceLabel = (choiceRadio && choiceRadio.value === 'matterport') ? '3D Matterport Tour (includes 2D Floor Plan)' : 'Cinematic Video Walkthrough';
+            var choiceVal = choiceRadio ? choiceRadio.value : 'matterport';
             if (state.realestate.pkg === 'mediapro') {
-                summary.mediaChoice = choiceLabel;
+                summary.mediaChoice = (choiceVal === 'matterport')
+                    ? '3D Matterport Tour (includes 2D Floor Plan)'
+                    : 'Cinematic Video Walkthrough';
+            } else if (state.realestate.pkg === 'elite') {
+                summary.mediaChoice = 'Cinematic Video + 3D Matterport Tour Included';
             }
 
-            if (document.getElementById('re-addon-twilight-real') && document.getElementById('re-addon-twilight-real').checked) summary.addons.push('Real Twilight (+$150)');
-            if (document.getElementById('re-addon-twilight-ai') && document.getElementById('re-addon-twilight-ai').checked) summary.addons.push('AI Virtual Twilight (+$50)');
-            if (document.getElementById('re-addon-rush') && document.getElementById('re-addon-rush').checked) summary.addons.push('Express 9 AM Delivery (+$75)');
-            if (document.getElementById('re-addon-staging') && document.getElementById('re-addon-staging').checked) summary.addons.push('Virtual Staging (+$70)');
+            var isMatterport = (state.realestate.pkg === 'mediapro' && choiceVal === 'matterport') || (state.realestate.pkg === 'elite');
+            summary.sqftDisplay = Number(summary.sqft).toLocaleString() + ' sq ft';
+            if (summary.sqft > 2500) {
+                var extraBlocks = Math.ceil((summary.sqft - 2500) / 500);
+                var rate = isMatterport ? 50 : 25;
+                summary.sqftDisplay += ' (+$' + (extraBlocks * rate) + (isMatterport ? ' includes Matterport 3D scan' : ' size scale') + ')';
+            }
+
+            var twReal = document.getElementById('re-addon-twilight-real');
+            if (twReal && twReal.checked) summary.addons.push('Real Twilight (+$150)');
+            var twAi = document.getElementById('re-addon-twilight-ai');
+            if (twAi && twAi.checked) summary.addons.push('AI Virtual Twilight (+$50)');
+            var ru = document.getElementById('re-addon-rush');
+            if (ru && ru.checked) {
+                summary.addons.push('Express 9 AM Delivery (+$75)');
+                summary.delivery = 'Express Next-Morning 9:00 AM Guaranteed';
+            } else {
+                summary.delivery = '24–48 Hour Turnaround';
+            }
+            var st = document.getElementById('re-addon-staging');
+            if (st && st.checked) summary.addons.push('Virtual Staging (+$70)');
+
+            if (state.realestate.pkg === 'mediapro' && summary.savings === 0) summary.savings = 25;
+            if (state.realestate.pkg === 'elite' && summary.savings === 0) summary.savings = 50;
 
         } else if (currentService === 'weddings') {
             summary.serviceName = 'Wedding Videography';
             summary.packageKey = state.weddings.pkg;
             summary.packageName = state.weddings.pkgName;
+            summary.packageBasePrice = state.weddings.pkgPrice;
+            summary.delivery = '4–8 Week Full Delivery';
 
-            if (document.getElementById('wed-addon-second') && document.getElementById('wed-addon-second').checked) summary.addons.push('2nd Videographer (+$600)');
+            if (document.getElementById('wed-addon-second') && document.getElementById('wed-addon-second').checked) summary.addons.push('Second Videographer (+$600)');
             if (document.getElementById('wed-addon-raw') && document.getElementById('wed-addon-raw').checked) summary.addons.push('Raw Footage Drive (+$350)');
-            if (document.getElementById('wed-addon-teaser') && document.getElementById('wed-addon-teaser').checked) summary.addons.push('48-Hr Teaser Reel (+$300)');
-            if (document.getElementById('wed-addon-rehearsal') && document.getElementById('wed-addon-rehearsal').checked) summary.addons.push('Rehearsal Dinner (+$500)');
+            var wedTeaser = document.getElementById('wed-addon-teaser');
+            if (wedTeaser && wedTeaser.checked) {
+                summary.addons.push('48-Hr Instagram Teaser Reel (+$300)');
+                summary.delivery = '48-Hr Teaser Reel + 4-8 Wk Feature Film';
+            }
+            if (document.getElementById('wed-addon-rehearsal') && document.getElementById('wed-addon-rehearsal').checked) summary.addons.push('Rehearsal Dinner Coverage (+$500)');
             if (document.getElementById('wed-addon-booth') && document.getElementById('wed-addon-booth').checked) summary.addons.push('Drunk Advice Booth (+$350)');
 
         } else if (currentService === 'corporate') {
             summary.serviceName = 'Corporate & Commercial Video';
             summary.packageKey = state.corporate.pkg;
             summary.packageName = state.corporate.pkgName;
+            summary.packageBasePrice = state.corporate.pkgPrice;
+            summary.delivery = '7–10 Business Days';
 
             var corpRushPrice = getCorporateRushPrice();
-            if (document.getElementById('corp-addon-drone') && document.getElementById('corp-addon-drone').checked) summary.addons.push('Drone Aerials (+$150)');
-            if (document.getElementById('corp-addon-extended') && document.getElementById('corp-addon-extended').checked) summary.addons.push('Extended 3-5m Cut (+$300)');
-            if (document.getElementById('corp-addon-social') && document.getElementById('corp-addon-social').checked) summary.addons.push('Vertical 9:16 Cuts (+$150)');
-            if (document.getElementById('corp-addon-rush') && document.getElementById('corp-addon-rush').checked) summary.addons.push('5-Day Rush Delivery (+$' + corpRushPrice + ')');
+            if (document.getElementById('corp-addon-drone') && document.getElementById('corp-addon-drone').checked) summary.addons.push('Drone Aerial Footage (+$150)');
+            if (document.getElementById('corp-addon-extended') && document.getElementById('corp-addon-extended').checked) summary.addons.push('Extended 3-5m Director Cut (+$300)');
+            if (document.getElementById('corp-addon-social') && document.getElementById('corp-addon-social').checked) summary.addons.push('Vertical 9:16 Social Cuts (+$150)');
+            var corpRush = document.getElementById('corp-addon-rush');
+            if (corpRush && corpRush.checked) {
+                summary.addons.push('5-Day Rush Delivery (+$' + corpRushPrice + ')');
+                summary.delivery = '5-Day Express Rush Delivery';
+            }
 
         } else if (currentService === 'drone') {
             summary.serviceName = 'Drone Aerial Flight';
             summary.packageKey = state.drone.pkg;
             summary.packageName = state.drone.pkgName;
+            summary.packageBasePrice = state.drone.pkgPrice;
+            summary.delivery = '24–48 Hour Turnaround';
 
-            if (document.getElementById('drone-addon-raw') && document.getElementById('drone-addon-raw').checked) summary.addons.push('Raw D-Log Files (+$75)');
-            if (document.getElementById('drone-addon-twilight') && document.getElementById('drone-addon-twilight').checked) summary.addons.push('Twilight Sunset Flight (+$100)');
+            if (document.getElementById('drone-addon-raw') && document.getElementById('drone-addon-raw').checked) summary.addons.push('Uncut 4K D-Log Video Files (+$75)');
+            if (document.getElementById('drone-addon-twilight') && document.getElementById('drone-addon-twilight').checked) summary.addons.push('Sunset / Twilight Flight (+$100)');
+
+            if (state.drone.pkg === 'bundle' && summary.savings === 0) summary.savings = 75;
         }
 
+        // Build itemized breakdown string for Formspree
+        var parts = [
+            'Service: ' + summary.serviceName,
+            'Package: ' + summary.packageName + ' ($' + Number(summary.packageBasePrice).toLocaleString() + ')'
+        ];
+        if (summary.mediaChoice) parts.push('Choice: ' + summary.mediaChoice);
+        if (summary.sqftDisplay) parts.push('Size: ' + summary.sqftDisplay);
+        if (summary.delivery) parts.push('Delivery: ' + summary.delivery);
+        parts.push('Add-Ons: ' + (summary.addons.length > 0 ? summary.addons.join(', ') : 'None'));
+        parts.push('Total: $' + summary.total + (summary.savings > 0 ? ' (Saves $' + summary.savings + ')' : ''));
+        summary.breakdown = parts.join(' | ');
+
+        // Build formatted text message for textarea
         var lines = [];
         lines.push('=== ONLINE ESTIMATE DETAILS ===');
         lines.push('Service: ' + summary.serviceName);
-        lines.push('Package: ' + summary.packageName);
-        if (summary.sqft && currentService === 'realestate') {
-            var choiceRadio = document.querySelector('input[name="mediapro-choice"]:checked');
-            var isMatterport = (state.realestate.pkg === 'mediapro' && choiceRadio && choiceRadio.value === 'matterport') || (state.realestate.pkg === 'elite');
-            var sqftLine = 'Property Size: ' + Number(summary.sqft).toLocaleString() + ' sq ft';
-            if (summary.sqft > 2500) {
-                var extraBlocks = Math.ceil((summary.sqft - 2500) / 500);
-                var rate = isMatterport ? 50 : 25;
-                sqftLine += ' (+$' + (extraBlocks * rate) + (isMatterport ? ' includes Matterport 3D scan scaling' : ' standard size scale') + ')';
-            }
-            lines.push(sqftLine);
+        lines.push('Package: ' + summary.packageName + ' ($' + Number(summary.packageBasePrice).toLocaleString() + ')');
+        if (summary.sqftDisplay) {
+            lines.push('Property Size: ' + summary.sqftDisplay);
         }
         if (summary.mediaChoice) {
             lines.push('Included Choice: ' + summary.mediaChoice);
         }
-        if (summary.addons.length > 0) {
-            lines.push('Add-Ons: ' + summary.addons.join(', '));
+        if (summary.delivery) {
+            lines.push('Turnaround: ' + summary.delivery);
         }
-        lines.push('Calculated Estimate: $' + summary.total);
+        if (summary.addons.length > 0) {
+            lines.push('Selected Add-Ons: ' + summary.addons.join(', '));
+        } else {
+            lines.push('Selected Add-Ons: None');
+        }
+        var totalLine = 'Calculated Estimate: $' + summary.total;
+        if (summary.savings > 0) {
+            totalLine += ' (Bundle Savings: Saves $' + summary.savings + ')';
+        }
+        lines.push(totalLine);
         lines.push('===============================');
         lines.push('');
-        lines.push('Hi Ryan, I calculated this package online and would like to check your availability for my upcoming project!');
+        lines.push('Hi Ryan, I calculated this package online and would like to check your availability for my upcoming shoot!');
 
         summary.textMessage = lines.join('\n');
         return summary;
     }
 
-    // Form Autofill & Scroll Action
-    window.calcApplyEstimate = function () {
-        var payload = generateScopePayload();
+    // Preserve custom user comments when refreshing the scope breakdown in the message textarea
+    function updateMessagePreservingNotes(textarea, newScopeText) {
+        if (!textarea) return;
+        var currentVal = textarea.value || '';
+        var delimiter = '===============================';
+        var defaultClosing = 'Hi Ryan, I calculated this package online and would like to check your availability for my upcoming shoot!';
+        var defaultClosingAlt = 'Hi Ryan, I calculated this package online and would like to check your availability for my upcoming project!';
 
-        // 1. If on index.html with #homepageForm
-        var homeForm = document.getElementById('homepageForm');
-        var homeService = homeForm ? homeForm.querySelector('select[name="service"]') : null;
-        var homeMessage = homeForm ? homeForm.querySelector('textarea[name="message"]') : null;
+        if (currentVal.indexOf(delimiter) !== -1) {
+            var parts = currentVal.split(delimiter);
+            var afterDelimiter = parts.slice(1).join(delimiter);
+            var userText = afterDelimiter.replace(/^\r?\n\r?\n?/, '').trim();
 
-        // 2. If on contact.html with #inquiryForm
-        var inqForm = document.getElementById('inquiryForm');
-        var inqService = inqForm ? inqForm.querySelector('select[name="service"]') : null;
-        var inqMessage = inqForm ? inqForm.querySelector('textarea[name="message"]') : null;
-        var inqBudget = inqForm ? inqForm.querySelector('select[name="budget"]') : null;
+            if (!userText || userText === defaultClosing || userText === defaultClosingAlt) {
+                textarea.value = newScopeText;
+            } else {
+                var newHeader = newScopeText.split(delimiter)[0] + delimiter;
+                textarea.value = newHeader + '\n\n' + userText;
+            }
+        } else if (!currentVal.trim()) {
+            textarea.value = newScopeText;
+        } else {
+            var newHeader = newScopeText.split(delimiter)[0] + delimiter;
+            textarea.value = newHeader + '\n\n' + currentVal.trim();
+        }
+    }
 
-        var targetForm = homeForm || inqForm;
+    // Live Synchronize Selections, Scope, and Breakdown into the Form
+    window.calcSyncForm = function (computedTotal, computedSavings) {
+        var payload = generateScopePayload(computedTotal, computedSavings);
 
-        if (homeForm && homeService && homeMessage) {
-            // Map service to select option
+        // 1. Update Live Summary Card if present (estimate.html)
+        var cardTotal = document.getElementById('summary-card-total');
+        if (cardTotal) cardTotal.textContent = payload.total;
+
+        var cardPkg = document.getElementById('summary-card-pkg');
+        if (cardPkg) cardPkg.textContent = payload.packageName + ' ($' + Number(payload.packageBasePrice).toLocaleString() + ')';
+
+        var cardChoiceItem = document.getElementById('summary-card-choice-item');
+        var cardChoice = document.getElementById('summary-card-choice');
+        if (cardChoiceItem && cardChoice) {
+            if (payload.mediaChoice) {
+                cardChoiceItem.style.display = '';
+                cardChoice.textContent = payload.mediaChoice;
+            } else {
+                cardChoiceItem.style.display = 'none';
+            }
+        }
+
+        var cardSqftItem = document.getElementById('summary-card-sqft-item');
+        var cardSqft = document.getElementById('summary-card-sqft');
+        if (cardSqftItem && cardSqft) {
             if (payload.serviceKey === 'realestate') {
-                homeService.value = 'real-estate';
-            } else if (payload.serviceKey === 'weddings') {
-                homeService.value = 'wedding-video';
-            } else if (payload.serviceKey === 'corporate') {
-                homeService.value = 'commercial';
-            } else if (payload.serviceKey === 'drone') {
-                homeService.value = 'drone';
+                cardSqftItem.style.display = '';
+                cardSqft.textContent = payload.sqftDisplay;
+            } else {
+                cardSqftItem.style.display = 'none';
+            }
+        }
+
+        var cardDeliveryItem = document.getElementById('summary-card-delivery-item');
+        var cardDelivery = document.getElementById('summary-card-delivery');
+        if (cardDeliveryItem && cardDelivery) {
+            if (payload.delivery) {
+                cardDeliveryItem.style.display = '';
+                cardDelivery.textContent = payload.delivery;
+            } else {
+                cardDeliveryItem.style.display = 'none';
+            }
+        }
+
+        var cardAddonsList = document.getElementById('summary-card-addons-list');
+        if (cardAddonsList) {
+            if (payload.addons.length > 0) {
+                cardAddonsList.innerHTML = payload.addons.map(function (item) {
+                    return '<span class="calc-addon-tag">' + item + '</span>';
+                }).join('');
+            } else {
+                cardAddonsList.innerHTML = '<span class="calc-addon-tag" style="opacity:0.7">None selected</span>';
+            }
+        }
+
+        // 2. Update Formspree Hidden Inputs
+        var hService = document.getElementById('calc-hidden-service');
+        if (hService) hService.value = payload.serviceName;
+
+        var hPkg = document.getElementById('calc-hidden-package');
+        if (hPkg) hPkg.value = payload.packageName + ' ($' + Number(payload.packageBasePrice).toLocaleString() + ')';
+
+        var hSqft = document.getElementById('calc-hidden-sqft');
+        if (hSqft) hSqft.value = (payload.serviceKey === 'realestate' && payload.sqftDisplay) ? payload.sqftDisplay : 'N/A';
+
+        var hChoice = document.getElementById('calc-hidden-choice');
+        if (hChoice) hChoice.value = payload.mediaChoice || 'N/A';
+
+        var hAddons = document.getElementById('calc-hidden-addons');
+        if (hAddons) hAddons.value = payload.addons.length > 0 ? payload.addons.join('; ') : 'None';
+
+        var hTotal = document.getElementById('calc-hidden-total');
+        if (hTotal) hTotal.value = '$' + payload.total;
+
+        var hSavings = document.getElementById('calc-hidden-savings');
+        if (hSavings) hSavings.value = payload.savings > 0 ? ('Saves $' + payload.savings) : 'None';
+
+        var hBreakdown = document.getElementById('calc-hidden-breakdown');
+        if (hBreakdown) hBreakdown.value = payload.breakdown;
+
+        // 3. Update Target Form Fields (inquiryForm on estimate.html / contact.html or homepageForm on index.html)
+        var inqForm = document.getElementById('inquiryForm');
+        var homeForm = document.getElementById('homepageForm');
+        var targetForm = inqForm || homeForm;
+
+        if (targetForm) {
+            // Update Subject line for Formspree notification email
+            var subInput = targetForm.querySelector('input[name="_subject"]');
+            if (subInput) {
+                subInput.value = 'Estimate Inquiry: ' + payload.packageName + ' ($' + payload.total + ') — ' + payload.serviceName;
             }
 
-            homeMessage.value = payload.textMessage;
+            // Update Service Select
+            var selService = targetForm.querySelector('select[name="service"]');
+            if (selService) {
+                if (payload.serviceKey === 'realestate') {
+                    if (payload.packageKey === 'essential') selService.value = 're-essential';
+                    else if (payload.packageKey === 'aerial') selService.value = 're-aerial';
+                    else if (payload.packageKey === 'mediapro') selService.value = 're-media';
+                    else if (payload.packageKey === 'elite') selService.value = 're-elite';
+                    else selService.value = 're-media';
+                } else if (payload.serviceKey === 'weddings') {
+                    selService.value = 'wedding-video';
+                } else if (payload.serviceKey === 'corporate') {
+                    if (payload.packageKey === 'recap') selService.value = 'event-recap';
+                    else if (payload.packageKey === 'promo' || payload.packageKey === 'halfday') selService.value = 'commercial-video';
+                    else if (payload.packageKey === 'fullday') selService.value = 'brand-content';
+                    else selService.value = 'commercial-video';
+                } else if (payload.serviceKey === 'drone') {
+                    if (payload.packageKey === 'photos') selService.value = 'drone-re';
+                    else if (payload.packageKey === 'video') selService.value = 'drone-event';
+                    else selService.value = 'drone-custom';
+                }
+            }
 
-            // Show banner if present
+            // Update Budget Select
+            var selBudget = targetForm.querySelector('select[name="budget"]');
+            if (selBudget) {
+                var numTotal = parseInt(payload.total.toString().replace(/,/g, ''), 10) || 0;
+                if (numTotal < 300) selBudget.value = 'under-300';
+                else if (numTotal <= 600) selBudget.value = '300-600';
+                else if (numTotal <= 1000) selBudget.value = '600-1000';
+                else if (numTotal <= 2500) selBudget.value = '1000-2500';
+                else selBudget.value = '2500+';
+            }
+
+            // Update Message Textarea with Note Preservation
+            var msgTextarea = targetForm.querySelector('textarea[name="message"]');
+            if (msgTextarea) {
+                updateMessagePreservingNotes(msgTextarea, payload.textMessage);
+            }
+        }
+
+        return payload;
+    };
+
+    // Form Autofill, Visual Feedback & Scroll Action
+    window.calcApplyEstimate = function () {
+        var payload = window.calcSyncForm();
+
+        var inqForm = document.getElementById('inquiryForm');
+        var homeForm = document.getElementById('homepageForm');
+        var targetForm = inqForm || homeForm;
+
+        if (targetForm) {
+            // Show applied banner if present
             var banner = document.getElementById('calc-applied-banner');
             if (banner) {
                 var titleEl = banner.querySelector('.calc-applied-title span');
                 var descEl = banner.querySelector('.calc-applied-desc');
-                if (titleEl) titleEl.textContent = 'Package Applied: ' + payload.packageName + ' ($' + payload.total + ')';
-                if (descEl) descEl.textContent = 'Your estimated package details and scope have been added to the message field below. Feel free to add any additional notes or submit directly!';
+                if (titleEl) titleEl.textContent = 'Estimate Attached: ' + payload.packageName + ' ($' + payload.total + ')';
+                if (descEl) descEl.textContent = 'Your estimated package details and scope have been synced below. Review your shoot details and send anytime!';
                 banner.classList.add('active');
             }
 
-            // Scroll down to contact
-            var contactSection = document.getElementById('contact');
-            if (contactSection) {
-                contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Scroll down smoothly to booking form
+            var bookingWrap = document.getElementById('bookingFormSection') || targetForm.closest('.inquiry-form') || targetForm;
+            if (bookingWrap) {
+                bookingWrap.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
 
-            // Trigger visual pulse
-            var formWrap = homeForm.closest('.contact-form');
-            if (formWrap) {
-                formWrap.classList.remove('calc-form-highlight');
-                void formWrap.offsetWidth; // force reflow
-                formWrap.classList.add('calc-form-highlight');
+            // Trigger visual pulse glow on the form container
+            var formBox = targetForm.closest('.inquiry-form') || targetForm.closest('.contact-form') || targetForm;
+            if (formBox) {
+                formBox.classList.remove('calc-form-highlight');
+                void formBox.offsetWidth; // force reflow
+                formBox.classList.add('calc-form-highlight');
             }
 
-            return;
-        }
+            // Focus the first name field after scrolling
+            setTimeout(function () {
+                var firstInput = targetForm.querySelector('#fname') || targetForm.querySelector('#name') || targetForm.querySelector('input[type="text"]:not([style*="display:none"])');
+                if (firstInput) firstInput.focus();
+            }, 600);
 
-        if (inqForm && inqService && inqMessage) {
-            // Map to contact.html options
-            if (payload.serviceKey === 'realestate') {
-                if (payload.packageKey === 'essential') inqService.value = 're-essential';
-                else if (payload.packageKey === 'aerial') inqService.value = 're-aerial';
-                else if (payload.packageKey === 'mediapro') inqService.value = 're-media';
-                else if (payload.packageKey === 'elite') inqService.value = 're-elite';
-                else inqService.value = 're-media';
-            } else if (payload.serviceKey === 'weddings') {
-                inqService.value = 'wedding-video';
-            } else if (payload.serviceKey === 'corporate') {
-                inqService.value = 'commercial-video';
-            } else if (payload.serviceKey === 'drone') {
-                inqService.value = 'drone-custom';
-            }
-
-            var numTotal = parseInt(payload.total.replace(/,/g, ''), 10) || 0;
-            if (inqBudget) {
-                if (numTotal < 300) inqBudget.value = 'under-300';
-                else if (numTotal <= 600) inqBudget.value = '300-600';
-                else if (numTotal <= 1000) inqBudget.value = '600-1000';
-                else if (numTotal <= 2500) inqBudget.value = '1000-2500';
-                else inqBudget.value = '2500+';
-            }
-
-            inqMessage.value = payload.textMessage;
-
-            var inqBanner = document.getElementById('calc-applied-banner');
-            if (inqBanner) {
-                var inqTitle = inqBanner.querySelector('.calc-applied-title span');
-                var inqDesc = inqBanner.querySelector('.calc-applied-desc');
-                if (inqTitle) inqTitle.textContent = 'Estimate Attached: ' + payload.packageName + ' ($' + payload.total + ')';
-                if (inqDesc) inqDesc.textContent = 'Your calculated estimate has been filled into the form below. Add any details or hit Send Inquiry!';
-                inqBanner.classList.add('active');
-            }
-
-            inqForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
             return;
         }
 
@@ -502,6 +682,8 @@
             name: payload.packageName,
             sqft: payload.sqft,
             total: payload.total,
+            choice: payload.mediaChoice || '',
+            delivery: payload.delivery || '',
             addons: payload.addons.join(';')
         });
         window.location.href = 'contact.html?' + query.toString() + '#inquiryForm';
@@ -511,73 +693,45 @@
     function checkUrlParameters() {
         var params = new URLSearchParams(window.location.search);
         var sKey = params.get('service');
+        var pKey = params.get('pkg');
+        var sqftParam = params.get('sqft');
+
         if (sKey && ['realestate', 'weddings', 'corporate', 'drone'].indexOf(sKey) !== -1) {
             calcSwitchService(sKey);
         }
 
-        if (!params.has('total') && !params.has('pkg')) return;
-
-        var sKey = params.get('service');
-        var pKey = params.get('pkg');
-        var pName = params.get('name') || 'Selected Package';
-        var total = params.get('total') || '';
-        var sqftParam = params.get('sqft') || '';
-        var addonsParam = params.get('addons') || '';
-
-        var inqForm = document.getElementById('inquiryForm');
-        if (!inqForm) return;
-
-        var inqService = inqForm.querySelector('select[name="service"]');
-        var inqMessage = inqForm.querySelector('textarea[name="message"]');
-        var inqBudget = inqForm.querySelector('select[name="budget"]');
-
-        if (inqService) {
-            if (sKey === 'realestate') {
-                if (pKey === 'essential') inqService.value = 're-essential';
-                else if (pKey === 'aerial') inqService.value = 're-aerial';
-                else if (pKey === 'mediapro') inqService.value = 're-media';
-                else if (pKey === 'elite') inqService.value = 're-elite';
-                else inqService.value = 're-media';
+        if (pKey) {
+            if (sKey === 'realestate' || !sKey) {
+                if (pKey === 'essential') calcSelectRealEstatePackage('essential', 200, 'Essential Photography');
+                else if (pKey === 'aerial') calcSelectRealEstatePackage('aerial', 300, 'Aerial Pro');
+                else if (pKey === 'mediapro') calcSelectRealEstatePackage('mediapro', 450, 'Media Pro');
+                else if (pKey === 'elite') calcSelectRealEstatePackage('elite', 800, 'Elite Full Media');
             } else if (sKey === 'weddings') {
-                inqService.value = 'wedding-video';
+                if (pKey === 'highlight') calcSelectWeddingPackage('highlight', 2500, 'Highlight Film');
+                else if (pKey === 'cinema') calcSelectWeddingPackage('cinema', 4000, 'Cinema Feature Film');
+                else if (pKey === 'ultimate') calcSelectWeddingPackage('ultimate', 5500, 'Ultimate Experience');
             } else if (sKey === 'corporate') {
-                inqService.value = 'commercial-video';
+                if (pKey === 'recap') calcSelectCorporatePackage('recap', 1000, 'Event Recap Video');
+                else if (pKey === 'promo') calcSelectCorporatePackage('promo', 1000, 'Brand Commercial Promo');
+                else if (pKey === 'halfday') calcSelectCorporatePackage('halfday', 1500, 'Half-Day Brand Story');
+                else if (pKey === 'fullday') calcSelectCorporatePackage('fullday', 2500, 'Full-Day Production');
             } else if (sKey === 'drone') {
-                inqService.value = 'drone-custom';
+                if (pKey === 'photos') calcSelectDronePackage('photos', 150, 'Aerial Stills Package');
+                else if (pKey === 'video') calcSelectDronePackage('video', 200, 'Aerial 4K Video Reel');
+                else if (pKey === 'bundle') calcSelectDronePackage('bundle', 275, 'Full Aerial Stills + Video Bundle');
             }
         }
 
-        var numTotal = parseInt(total.replace(/,/g, ''), 10) || 0;
-        if (inqBudget && numTotal > 0) {
-            if (numTotal < 300) inqBudget.value = 'under-300';
-            else if (numTotal <= 600) inqBudget.value = '300-600';
-            else if (numTotal <= 1000) inqBudget.value = '600-1000';
-            else if (numTotal <= 2500) inqBudget.value = '1000-2500';
-            else inqBudget.value = '2500+';
+        if (sqftParam) {
+            var slider = document.getElementById('calc-slider-sqft');
+            if (slider) {
+                slider.value = sqftParam;
+                calcUpdateSqft(sqftParam);
+            }
         }
 
-        if (inqMessage) {
-            var lines = [];
-            lines.push('=== ONLINE ESTIMATE DETAILS ===');
-            lines.push('Service: ' + (sKey ? sKey.toUpperCase() : 'Custom'));
-            lines.push('Package: ' + pName);
-            if (sqftParam) lines.push('Property Size: ' + Number(sqftParam).toLocaleString() + ' sq ft');
-            if (addonsParam) lines.push('Add-Ons: ' + addonsParam.split(';').join(', '));
-            if (total) lines.push('Calculated Estimate: $' + total);
-            lines.push('===============================');
-            lines.push('');
-            lines.push('Hi Ryan, I calculated this package online and would like to check your availability for my upcoming shoot!');
-            inqMessage.value = lines.join('\n');
-        }
-
-        var inqBanner = document.getElementById('calc-applied-banner');
-        if (inqBanner) {
-            var inqTitle = inqBanner.querySelector('.calc-applied-title span');
-            var inqDesc = inqBanner.querySelector('.calc-applied-desc');
-            if (inqTitle) inqTitle.textContent = 'Estimate Attached: ' + pName + (total ? ' ($' + total + ')' : '');
-            if (inqDesc) inqDesc.textContent = 'Your online estimate has been loaded into your inquiry below. Review and send whenever ready!';
-            inqBanner.classList.add('active');
-        }
+        // Re-sync after processing query parameters
+        window.calcSyncForm();
     }
 
     window.calcDismissBanner = function () {
@@ -587,14 +741,26 @@
         }
     };
 
+    // Ensure form submit event captures the latest calculator values
+    function initFormSubmitSync() {
+        var form = document.getElementById('inquiryForm') || document.getElementById('homepageForm');
+        if (form) {
+            form.addEventListener('submit', function () {
+                window.calcSyncForm();
+            });
+        }
+    }
+
     // Initialize on DOM Ready
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', function () {
             calcRecalculate();
             checkUrlParameters();
+            initFormSubmitSync();
         });
     } else {
         calcRecalculate();
         checkUrlParameters();
+        initFormSubmitSync();
     }
 })();
