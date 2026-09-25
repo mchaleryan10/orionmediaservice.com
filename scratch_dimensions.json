@@ -4040,5 +4040,22 @@
         "path": "images/portfolio/real-estate/844-glebe-interior-07-full.webp"
       }
     ]
+  },
+  "images/heroes/realestate-hero-dahlia.jpg": {
+    "width": 2000,
+    "height": 1332,
+    "aspect_ratio": 1.5015,
+    "derivatives": [
+      {
+        "width": 600,
+        "height": 400,
+        "path": "images/heroes/realestate-hero-thumb.webp"
+      },
+      {
+        "width": 1600,
+        "height": 1066,
+        "path": "images/heroes/realestate-hero-full.webp"
+      }
+    ]
   }
 }
